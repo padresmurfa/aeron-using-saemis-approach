@@ -16,9 +16,10 @@ Route work, keep process weight proportional to the task, force simplification p
 - Work needs explicit acceptance gates or simplification pressure
 - Result must be stress-tested before reporting upstream
 
-## Do NOT Use When
-- One specialist can answer directly with no cross-functional trade-off
-- User has already fixed the routing
+## Lightweight Pass-Through
+LP is always invoked, but should minimize overhead when:
+- One specialist can answer directly with no cross-functional trade-off → route immediately, skip DA
+- User has already fixed the routing → execute as directed, skip classification
 
 ## Mandatory Rules
 - Choose the smallest sufficient team. No ceremony without rigor gain.

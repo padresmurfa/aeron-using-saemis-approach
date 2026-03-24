@@ -1,13 +1,13 @@
 # Agent Skills — Game Development Pack
 
-46 specialist skills for game development: 28 roles, 12 teams, 5 workflows.
+1 coordinator (Lead Producer) + 45 specialist skills: 28 roles, 12 teams, 5 workflows.
 
 ## Loading Rules
 
 **Do not load skills speculatively.** Only the Lead Producer is invoked directly. The Lead Producer loads only the specific roles, teams, or workflows needed for the current task — never all of them, never "just in case." If a skill isn't needed for the task at hand, it stays unloaded.
 
 **Prohibited actions:**
-- Do not read, scan, or invoke any SKILL.md file unless the Lead Producer explicitly requests it for the current task.
+- Do not read, scan, or invoke any SKILL.md file — except `lead-producer` — unless the Lead Producer explicitly requests it for the current task.
 - Do not pre-read skills to "understand scope" or "prepare for routing." The routing tables below are sufficient.
 - Do not bypass the Lead Producer by invoking skills directly, even if the routing table shows an obvious match.
 - Do not load context modules unless the user or Lead Producer explicitly requests them.
@@ -44,7 +44,7 @@ Claude's only job: invoke Lead Producer, then execute LP's explicit skill-loadin
 
 **This section is decision support for the Lead Producer. Do not use it to invoke skills directly.**
 
-This table lists LP-selectable skills. An additional 22 specialist roles (backend engineer, frontend engineer, security engineer, etc.) are available as team members — teams load them internally when needed. LP does not invoke team-internal roles directly.
+This table lists LP-selectable skills. Some roles appear both here (for standalone use) and inside teams (for cross-functional work). Roles not listed here are team-internal only — teams load them as needed. LP does not invoke team-internal roles directly.
 
 | Need | Route To |
 |------|----------|
@@ -55,8 +55,9 @@ This table lists LP-selectable skills. An additional 22 specialist roles (backen
 | UI/UX work | `team-frontend-team` |
 | Brand system | `team-brand-team` |
 | Feature evaluation | `team-product-team` |
-| Economy design | `team-economy-team` |
-| Smart contract work | `team-move-team` |
+| Economy design | `team-economy-team`; single-domain: `role-economy-designer` |
+| Game design (loops, experience) | `role-game-designer`; cross-functional: `team-product-team` |
+| Smart contract work | `team-move-team`; single-domain: `role-move-sui-developer` |
 | Deployment/infra | `team-infrastructure` |
 | Documentation | `team-documentation` |
 | Open source readiness | `team-open-source` |

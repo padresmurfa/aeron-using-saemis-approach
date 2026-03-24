@@ -2,7 +2,7 @@
 name: team-brand-team
 description: "Brand system team: tone, positioning, visual rules, and cross-surface identity standards. Use when defining or tightening brand consistency across product, docs, and community."
 context: fork
-effort: high
+effort: medium
 ---
 # Brand Team
 
