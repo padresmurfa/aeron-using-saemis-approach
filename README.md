@@ -1,11 +1,18 @@
-# Lead Producer - Game Development Skill Pack
+# Lead Producer - Full-Stack AI Product Team
 
-**Catch economy exploits, balance breaks, and smart contract bugs before they ship.** One entry
-point - the Lead Producer assembles the right specialists, stress-tests the result, and gives you
-a synthesized action plan.
+**A full-stack AI product team for building, reviewing, and hardening complex software.** Start
+with one entry point: the Lead Producer assembles the right specialists, stress-tests the result,
+and gives you a clear action plan instead of scattered opinions.
 
-46 AI skills: 28 specialist roles, 12 review teams, 5 structured workflows. Works with
-**Claude Code** and **OpenAI Codex** on Mac and Windows.
+Built for MMO and live-service complexity, this pack shines on the hard stuff: economies,
+progression, balance, exploits, smart contracts, live incidents, deployment risk, and systems that
+interact in messy ways. That same depth makes it broadly useful outside games too: frontend design
+and engineering, backend architecture, product strategy, QA, documentation, cleanup, refactors,
+launch readiness, and post-launch operations.
+
+46 AI skills: 28 specialist roles, 12 review teams, 5 structured workflows. Use it across the
+full product lifecycle: prototype, design, implementation, testing, deployment, live ops,
+iteration, and code cleanup. Works with **Claude Code** and **OpenAI Codex** on Mac and Windows.
 
 ---
 
