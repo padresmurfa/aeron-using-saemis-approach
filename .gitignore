@@ -21,3 +21,6 @@ __pycache__/
 
 # Claude Code session artifacts
 .claude/settings.local.json
+
+# Maintainer-only local checks
+scripts/smoke-release.ps1

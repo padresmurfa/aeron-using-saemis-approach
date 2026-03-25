@@ -83,4 +83,4 @@ Lessons: [what went well, what was slow]
 - Phase 1 and 2 must complete before Phase 3. Do not fix before you understand what you're fixing.
 - Every action requires a rollback plan. No exceptions.
 - Postmortem is not optional. Skip it and you'll fight the same fire again.
-- Separate confirmed root cause from hypotheses. Label confidence explicitly per CLAUDE.md evidence standards.
+- Separate confirmed root cause from hypotheses. Label confidence as high, medium, or low based on the evidence behind each claim, and prefix material unverified assumptions with `UNCONFIRMED:`.

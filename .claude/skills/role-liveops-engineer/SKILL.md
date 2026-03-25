@@ -59,7 +59,7 @@ If reference files are unavailable:
 - **Communication Timing**: Tell players early that you know about the issue. Don't wait for a fix before acknowledging. Silence breeds conspiracy theories.
 
 ## Context Module Rules
-When using project context modules, check for [VERIFY] or [DATA GAP] markers before citing claims. Flag unconfirmed details explicitly in output. See CLAUDE.md [VERIFY] protocol for the full procedure.
+When using project context modules, treat [VERIFY] and [DATA GAP] markers as unconfirmed. Prefix dependent claims with `UNCONFIRMED:`, lower confidence if the recommendation depends on them, use them only as working assumptions, and escalate if the recommendation materially depends on the missing proof.
 
 ## Anti-Drift Rules
 - Triage first, investigate second. Don't debug root cause while the fire spreads.

@@ -17,9 +17,19 @@ routing so agents can spend more attention on the development itself: economies,
 exploits, incidents, rollout risk, and tightly coupled systems. If it can handle that, it becomes
 broadly useful across other software work too.
 
-50 AI skills: 28 specialist roles, 12 review teams, 9 structured workflows. Use it across the
-full product lifecycle: prototype, design, implementation, testing, deployment, live ops,
-iteration, and code cleanup. Works with **Claude Code** and **OpenAI Codex** on Mac and Windows.
+50 total skills: 1 coordinator + 49 specialist skills (28 roles, 12 teams, 9 workflows). Use it
+across the full product lifecycle: prototype, design, implementation, testing, deployment, live
+ops, iteration, and code cleanup. It includes host guides for **Claude Code** and **OpenAI Codex**
+on macOS, Linux, and Windows. Windows is in good shape. macOS and Linux still need a quick real
+world check.
+
+---
+
+## Who It's For
+
+- Teams using Claude Code or Codex that want one LP-first entrypoint instead of ad hoc specialist prompting.
+- Best fit: complex software products with tightly coupled systems, especially games, marketplaces, economies, live-service, and launch-critical operations.
+- Not a product-context pack. It ships generic specialist skills and expects project-specific overlays separately.
 
 ---
 
@@ -48,8 +58,7 @@ LEAD PRODUCER REPORT
 ====================
 Route Now: team-red-team, team-economy-team
 Suggested Play: none
-Route Rationale: Red Team (exploit surface) + Economy Team (faucet/sink balance)
-Overlays: None required - no product-specific context loaded
+Route Rationale: Red Team (exploit surface) + Economy Team (faucet/sink balance); no product-specific context loaded
 
 FINDINGS (synthesized):
 
@@ -101,7 +110,19 @@ instructions.
 
 ## Quick Start
 
+### Host Chooser
+
+| Host | Install Step | First Prompt | Manual Success Signal | Next Doc |
+|------|--------------|--------------|----------------|----------|
+| Claude Code | Link this repo's `.claude` into your project | `/lead-producer Review this onboarding guide for clarity and accuracy.` | First lines include `Route Now: team-documentation` and `Suggested Play: none` | [`.claude/CLAUDE.md`](.claude/CLAUDE.md) |
+| OpenAI Codex | Run the installer for your host OS | `Use $lead-producer to investigate why reward claims intermittently fail after reconnect. Find the root cause before fixing.` | First lines include `Route Now: workflow-systematic-debugging` and `Suggested Play: none` | [`.codex/INSTALL.md`](.codex/INSTALL.md) |
+
 ### Claude Code
+
+Clone the pack once, then link its `.claude` directory into the project where you want to use
+`/lead-producer`.
+
+**macOS / Linux**
 
 ```bash
 git clone https://github.com/saemihemma/lead-producer.git
@@ -109,20 +130,48 @@ cd lead-producer
 ln -s "$(pwd)/.claude" /path/to/your/project/.claude
 ```
 
-Start a session in your project directory, then use `/lead-producer`.
+**Windows (PowerShell)**
+
+```powershell
+git clone https://github.com/saemihemma/lead-producer.git
+Set-Location lead-producer
+New-Item -ItemType Junction -Path 'C:\path\to\your\project\.claude' -Target "$PWD\.claude"
+```
+
+If your project already has a `.claude` directory, merge the needed files instead of replacing the
+whole folder.
+
+Safe merge recipe for existing `.claude` projects:
+
+- Required: merge this repo's `.claude/skills/` into your project's `.claude/skills/` so `lead-producer` and the shipped specialist skills stay available at their canonical ids.
+- Required: keep one project `CLAUDE.md`. Preserve your project-specific rules, then add the Lead Producer host rules and point runtime routing canon at `.claude/skills/lead-producer/SKILL.md`.
+- Optional: merge `.claude/settings.json` only if you want this pack's bundled Claude permission defaults. If settings conflict, keep the stricter project value.
+- Conflict policy: do not keep two competing route tables or rename the shipped skill folders. Merge host guidance, but let the canonical skills stay canonical.
+
+See [`.claude/CLAUDE.md`](.claude/CLAUDE.md) for Claude host instructions and manual smoke
+prompts. Runtime routing canon lives in
+[`.claude/skills/lead-producer/SKILL.md`](.claude/skills/lead-producer/SKILL.md).
+
+Start a Claude Code session in your project directory, then use `/lead-producer`.
+
+Manual Claude success signal: first lines include `Route Now: team-documentation` and
+`Suggested Play: none` for the host-chooser prompt above.
 
 ### OpenAI Codex
 
 ```bash
 git clone https://github.com/saemihemma/lead-producer.git && cd lead-producer
-./scripts/install-codex.sh
+bash ./scripts/install-codex.sh
 ```
 
 ```powershell
 git clone https://github.com/saemihemma/lead-producer.git
 Set-Location lead-producer
-.\scripts\install-codex.ps1
+powershell -ExecutionPolicy Bypass -File .\scripts\install-codex.ps1
 ```
+
+The PowerShell command uses a process-scoped execution policy bypass. It does not change your
+machine-wide PowerShell policy.
 
 Restart Codex, then use `$lead-producer`. Example:
 
@@ -130,7 +179,18 @@ Restart Codex, then use `$lead-producer`. Example:
 Use $lead-producer to investigate why reward claims intermittently fail after reconnect. Find the root cause before fixing.
 ```
 
-See [`.codex/INSTALL.md`](.codex/INSTALL.md) for the Codex install details.
+Manual smoke expectation: first lines include `Route Now: workflow-systematic-debugging` and
+`Suggested Play: none`
+
+See [`.codex/INSTALL.md`](.codex/INSTALL.md) for the Codex install details. Codex keeps live links
+back to this clone, so keep the repo where you installed it.
+
+---
+
+## Platform Note
+
+- Windows should be ready to use for Claude Code and Codex.
+- If you are on macOS or Linux, do one quick sanity pass the first time you install it and flag anything odd.
 
 ---
 
@@ -190,25 +250,24 @@ See [`.codex/INSTALL.md`](.codex/INSTALL.md) for the Codex install details.
 graph TD
     U["You"] -->|describe task| C["Claude / Codex"]
     C -->|invoke| LP["Lead Producer"]
-    LP -->|route now| S{"Direct Route"}
     LP -->|suggest play| SP["Suggested Play"]
     SP -->|user opts in| LP
-    S -->|single domain| R["Role"]
-    S -->|cross-functional| T["Team"]
-    S -->|structured method| W["Workflow"]
-    R --> DA["Devil's Advocate"]
-    T --> DA
-    W --> DA
-    DA -->|pass| OUT["Deliver Result"]
+    LP -->|route now| R["Role / Team / Workflow"]
+    R -->|findings| LP
+    LP -->|lightweight pass-through| OUT["Deliver Result"]
+    LP -->|substantive recommendation| DA["Devil's Advocate"]
+    DA -->|pass| ACC["LP Accepts"]
     DA -->|challenge| LP
+    ACC --> OUT
     LP -->|escalate| U
 ```
 
 The flow is simple: you describe a task, Lead Producer either routes immediately or recommends a
-suggested play first. If LP routes now, the selected specialists analyze the task and Devil's
-Advocate stress-tests the substantive recommendation. If LP suggests a play, you opt in and LP
-then routes there. If the team cannot resolve a disagreement, Lead Producer escalates with both
-positions documented.
+suggested play first. If LP routes now, the selected specialists send findings back to LP for
+synthesis. LP can deliver lightweight pass-through results directly, but substantive
+recommendations go through Devil's Advocate before acceptance. If LP suggests a play, you opt in
+and LP then routes there. If the team cannot resolve a disagreement, Lead Producer escalates with
+both positions documented.
 
 ## LP-First Suggested Plays
 
@@ -252,7 +311,7 @@ that makes frontend review and debugging more trustworthy.
 **Claude Code**
 
 ```text
-/lead-producer Production is down - players can't mint
+/lead-producer Respond to a production incident: players can't mint.
 ```
 
 **Codex**
@@ -260,6 +319,9 @@ that makes frontend review and debugging more trustworthy.
 ```text
 Use $lead-producer to respond to a production incident: players can't mint.
 ```
+
+Manual smoke expectation: first lines include `Route Now: workflow-incident-response` and
+`Suggested Play: none`
 
 ### When specialists disagree
 
@@ -275,6 +337,9 @@ Use $lead-producer to respond to a production incident: players can't mint.
 Use $lead-producer to assess whether PvP loot drops would break the economy.
 ```
 
+Manual smoke expectation: first lines include `Route Now: team-economy-team` and
+`Suggested Play: none`
+
 ### UI design comparison
 
 **Claude Code**
@@ -288,6 +353,9 @@ Use $lead-producer to assess whether PvP loot drops would break the economy.
 ```text
 Use $lead-producer to design three options for guild management UI.
 ```
+
+Manual smoke expectation: first lines include `Route Now: workflow-design-interface-options` and
+`Suggested Play: none`
 
 ### Unknown bug investigation
 
@@ -303,13 +371,25 @@ Use $lead-producer to design three options for guild management UI.
 Use $lead-producer to investigate why reward claims intermittently fail after reconnect. Find the root cause before fixing.
 ```
 
+Manual smoke expectation: first lines include `Route Now: workflow-systematic-debugging` and
+`Suggested Play: none`
+
 ### Debugging handoff
+
+**Claude Code**
+
+```text
+/lead-producer Package this debugging result into a handoff artifact for the next engineer.
+```
 
 **Codex**
 
 ```text
 Use $lead-producer to package this debugging result into a handoff artifact for the next engineer.
 ```
+
+Manual smoke expectation: first lines include `Route Now: workflow-issue-triage` and
+`Suggested Play: none`
 
 ### Discovery-first repo mapping
 
@@ -325,6 +405,9 @@ Use $lead-producer to package this debugging result into a handoff artifact for 
 Use $lead-producer to assess this inherited repo and suggest the right discovery play before implementation.
 ```
 
+Manual smoke expectation: first lines include `Route Now: none` and
+`Suggested Play: workflow-project-discovery`
+
 ### Current-state capture for a new owner
 
 **Claude Code**
@@ -338,6 +421,9 @@ Use $lead-producer to assess this inherited repo and suggest the right discovery
 ```text
 Use $lead-producer to help me understand the current state of the reward claim flow before we change it.
 ```
+
+Manual smoke expectation: first lines include `Route Now: workflow-current-state-capture` and
+`Suggested Play: none`
 
 ### Specialist hardening
 
@@ -353,11 +439,15 @@ Use $lead-producer to help me understand the current state of the reward claim f
 Use $lead-producer to run the specialist hardening play on this launch-critical payout rollback plan. Repeat until 9.
 ```
 
+Manual smoke expectation: first lines include `Route Now: workflow-specialist-hardening` and
+`Suggested Play: none`
+
 ---
 
 ## Context Overlays
 
-This is a generic game development pack with zero product-specific knowledge.
+This is a generic specialist pack with zero product-specific knowledge. It is tuned on game and
+live-service failure modes, but the routing model is useful across broader software work too.
 
 If your game needs project-specific context, create a separate context module pack and map it to
 the generic roles through a coordinator. The Lead Producer can then load those modules only when
@@ -369,16 +459,16 @@ they are explicitly named or routed in.
 
 ```text
 lead-producer/
-|-- .claude/                          # source of truth
-|   |-- CLAUDE.md                     # routing table, loading rules, protocols
-|   |-- settings.json                 # permission config
-|   `-- skills/                       # skill directories
+|-- .claude/
+|   |-- CLAUDE.md                     # Claude Code host guidance
+|   |-- settings.json                 # Claude Code permissions
+|   `-- skills/                       # canonical skill content
 |       |-- lead-producer/SKILL.md
 |       |-- role-economist/SKILL.md
 |       |-- team-red-team/SKILL.md
 |       `-- ...
 |-- .codex/
-|   `-- INSTALL.md                    # Codex install guide
+|   `-- INSTALL.md                    # Codex host guide
 |-- scripts/
 |   |-- install-codex.sh              # macOS/Linux Codex installer
 |   `-- install-codex.ps1             # Windows Codex installer
@@ -388,11 +478,14 @@ lead-producer/
 `-- .gitignore
 ```
 
-`.claude/skills/` is the single canonical source. Claude Code reads it directly. Codex links to it
-via the install scripts. One source, two runtimes.
+`.claude/skills/` is the canonical skill content. Claude Code reads it through the linked
+`.claude` directory. Codex links the skill folders into `$CODEX_HOME/skills`.
 
-Skills load lazily: `CLAUDE.md` provides the routing rules, and individual skills load only when
-the Lead Producer explicitly names them or the user opts into a suggested play.
+`.claude/skills/lead-producer/SKILL.md` is the routing canon. Public docs and host guides should
+describe it faithfully, but runtime routing semantics live there first.
+
+`CLAUDE.md` is Claude Code host guidance. Runtime-critical routing and evidence rules belong in
+skill files so Claude Code and Codex consume the same skill contract.
 
 ---
 
@@ -407,7 +500,8 @@ description: "What this role does in one line"
 ---
 ```
 
-Then add the routing entry to `.claude/CLAUDE.md`.
+Then update `.claude/skills/lead-producer/SKILL.md` with any runtime-facing routing change.
+Mirror that change in `.claude/CLAUDE.md` only when the Claude host guidance also needs it.
 
 **Add a team:** Same structure, plus `context: fork` in frontmatter. Add `effort: high` if the
 team has 5+ members or handles a high-risk domain.

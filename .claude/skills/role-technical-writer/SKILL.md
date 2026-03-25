@@ -30,9 +30,9 @@ description: "Documentation review and design: Diataxis taxonomy, audience analy
 5. Produce review or design with concrete structure.
 
 ## Reference Map
-- `references/audience-and-diataxis.md` — audience fit, doc taxonomy, hierarchy, clarity
-- `references/api-docs-and-adrs.md` — API docs, examples, ADRs, decision records
-- `references/changelogs-and_examples.md` — changelogs, migration notes, walkthroughs
+- `references/audience-and-diataxis.md` - audience fit, doc taxonomy, hierarchy, clarity
+- `references/api-docs-and-adrs.md` - API docs, examples, ADRs, decision records
+- `references/changelogs-and_examples.md` - changelogs, migration notes, and example hygiene
 
 ## Default Output
 ```text

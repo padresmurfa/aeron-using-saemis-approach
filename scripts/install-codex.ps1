@@ -10,11 +10,42 @@ if (-not (Test-Path $SourceRoot)) {
     exit 1
 }
 
+function Get-NormalizedPath {
+    param([string]$Path)
+
+    return [IO.Path]::GetFullPath((Resolve-Path -LiteralPath $Path).Path)
+}
+
+function Test-RepoOwnedLink {
+    param(
+        [string]$LinkPath,
+        [string]$ExpectedTarget
+    )
+
+    $item = Get-Item -Force $LinkPath -ErrorAction Stop
+    $isReparsePoint = ($item.Attributes -band [IO.FileAttributes]::ReparsePoint) -ne 0
+
+    if (-not $isReparsePoint) {
+        return $false
+    }
+
+    $linkTarget = @($item.Target) | Select-Object -First 1
+    if (-not $linkTarget) {
+        return $false
+    }
+
+    try {
+        return (Get-NormalizedPath $linkTarget) -eq (Get-NormalizedPath $ExpectedTarget)
+    }
+    catch {
+        return $false
+    }
+}
+
 function Test-CodexCli {
     $command = Get-Command codex -ErrorAction SilentlyContinue
     if (-not $command) {
-        Write-Warning "Codex CLI was not found in PATH. Open Codex once or reinstall it before smoke-testing skills."
-        return
+        throw "Codex CLI was not found in PATH. Launch Codex once or reinstall it before running this installer."
     }
 
     try {
@@ -28,14 +59,19 @@ function Test-CodexCli {
         # fall through to warning below
     }
 
-    Write-Warning "Codex CLI is present but did not execute cleanly from shell."
-    Write-Warning "Resolved path: $($command.Source)"
-
+    $message = @(
+        "Codex CLI is present but did not execute cleanly from shell."
+        "Resolved path: $($command.Source)"
+    )
     if ($command.Source -like '*WindowsApps*') {
-        Write-Warning "This usually means the Windows Store app alias exists but direct shell execution is blocked."
-        Write-Warning "Open Codex once or reinstall it so a working shim appears under %LOCALAPPDATA%\\OpenAI\\Codex\\bin, then rerun `codex --version`."
+        $message += "This usually means the Windows Store app alias exists but direct shell execution is blocked."
+        $message += "Open Codex once or reinstall it so a working shim appears under %LOCALAPPDATA%\\OpenAI\\Codex\\bin, then rerun `codex --version`."
     }
+
+    throw ($message -join [Environment]::NewLine)
 }
+
+Test-CodexCli
 
 New-Item -ItemType Directory -Force -Path $TargetRoot | Out-Null
 
@@ -52,7 +88,14 @@ Get-ChildItem -Path $SourceRoot -Directory |
             $isReparsePoint = ($item.Attributes -band [IO.FileAttributes]::ReparsePoint) -ne 0
 
             if ($isReparsePoint) {
-                cmd /c rmdir "$target" | Out-Null
+                if (Test-RepoOwnedLink -LinkPath $target -ExpectedTarget $_.FullName) {
+                    cmd /c rmdir "$target" | Out-Null
+                }
+                else {
+                    Write-Warning "Skipping $($_.Name): $target exists and points outside this repo."
+                    $skipped++
+                    return
+                }
             }
             else {
                 Write-Host "Skipping $($_.Name): $target exists and is not a junction/symlink."
@@ -69,8 +112,5 @@ Get-ChildItem -Path $SourceRoot -Directory |
 Write-Host ""
 Write-Host "Linked $linked skills into $TargetRoot"
 if ($skipped -gt 0) {
-    Write-Host "Skipped $skipped existing non-link target(s)."
+    Write-Host "Skipped $skipped existing non-owned or non-link target(s)."
 }
-
-Write-Host ""
-Test-CodexCli

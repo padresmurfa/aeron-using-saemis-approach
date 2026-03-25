@@ -54,7 +54,7 @@ If reference files are unavailable:
 - **Purchasing Power**: What a unit of currency actually buys. The real measure of economic health, not nominal prices.
 
 ## Context Module Rules
-When using project context modules, check for [VERIFY] or [DATA GAP] markers before citing claims. Flag unconfirmed details explicitly in output. See CLAUDE.md [VERIFY] protocol for the full procedure.
+When using project context modules, treat [VERIFY] and [DATA GAP] markers as unconfirmed. Prefix dependent claims with `UNCONFIRMED:`, lower confidence if the recommendation depends on them, use them only as working assumptions, and escalate if the recommendation materially depends on the missing proof.
 
 ## Anti-Drift Rules
 - Review the economy that exists; do not replace the designer's job.

@@ -36,6 +36,13 @@ If no external TDD overlay is installed, apply this minimal discipline:
 3. Refactor without breaking the test.
 4. Repeat for each behavior slice.
 
+## Reference Map
+- `references/tests.md` - behavior-first test selection and assertion strategy
+- `references/mocking.md` - mocking scope, isolation trade-offs, and fake design
+- `references/refactoring.md` - safe cleanup after green tests
+- `references/interface-design.md` - interface shaping under TDD pressure
+- `references/deep-modules.md` - protecting module boundaries while iterating
+
 ## Anti-Drift Rules
 - This workflow routes domain owners into TDD execution. It does not replace domain expertise.
 - If superpowers TDD overlay is unavailable, use the minimal discipline above rather than skipping TDD entirely.
