@@ -31,8 +31,9 @@ Do not freeze volatile library details into long local prose.
 1. Confirm screen or component goal.
 2. Choose smallest set of shadcn primitives that fit.
 3. Check current docs before assuming API or setup details.
-4. Review accessibility, theming, composition quality.
-5. Hand to Frontend Team when task goes beyond narrow method guidance.
+4. For interactive states, responsive behavior, accessibility, or browser-specific issues, validate in a real browser with Playwright or an equivalent tool.
+5. Review accessibility, theming, composition quality.
+6. Hand to Frontend Team when task goes beyond narrow method guidance.
 
 ## Default Output
 ```text
@@ -59,3 +60,4 @@ Pairings: frontend owner, brand owner if needed
 - Check current docs before assuming API details. Do not freeze stale library info.
 - Do not add custom wrappers before base primitives prove insufficient.
 - This workflow handles shadcn/ui method, not broader frontend architecture.
+- Do not treat static code review as enough evidence when browser behavior is the question.

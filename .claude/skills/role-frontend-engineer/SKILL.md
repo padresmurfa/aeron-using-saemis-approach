@@ -25,12 +25,13 @@ description: "Frontend systems review: components, state management, rendering p
 1. Identify user journey, critical screens, runtime constraints.
 2. Audit component boundaries, state ownership, data-fetching flow.
 3. Load reference files as needed for the current frontend problem.
-4. Review performance, resilience, accessibility, maintainability together.
-5. Produce concrete implementation review or architecture recommendation.
+4. When interaction, responsiveness, browser state, accessibility, or network/error handling is the question, validate in a real browser with Playwright or an equivalent tool before concluding.
+5. Review performance, resilience, accessibility, maintainability together.
+6. Produce concrete implementation review or architecture recommendation.
 
 ## Reference Map
-- `references/component-architecture-and-state.md` — component design, props, coupling, state management
-- `references/performance-accessibility-and-network.md` — rendering, resilience, accessibility, testing
+- `references/component-architecture-and-state.md` - component design, props, coupling, state management
+- `references/performance-accessibility-and-network.md` - rendering, resilience, accessibility, testing
 
 ## Default Output
 ```text
@@ -53,3 +54,4 @@ If reference files are unavailable:
 - Accessibility and failure handling are core quality, not polish.
 - Separate frontend architecture from backend contract issues.
 - If problem is user flow or product intent, pair with UX/product roles.
+- Prefer real-browser validation when runtime UI behavior is in doubt.

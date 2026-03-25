@@ -1,4 +1,4 @@
 interface:
   display_name: "Lead Producer"
-  short_description: "Route and stress-test multi-skill work"
-  default_prompt: "Use $lead-producer to route this task, keep the team lean, and stress-test the result before accepting it."
+  short_description: "Route leanly or suggest a deeper play"
+  default_prompt: "Use $lead-producer to route this task, keep the team lean, and suggest a deeper play only when it clearly helps."

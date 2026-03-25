@@ -11,11 +11,11 @@ angles on design, frontend, backend, product, QA, smart contracts, deployment, l
 iteration, and cleanup.
 
 Complex games that run from conception to live service are one of the hardest environments in
-software development. If a skill library can support MMO and live-service complexity—economies,
-progression, exploits, incidents, rollout risk, and tightly coupled systems—it becomes broadly
+software development. If a skill library can support MMO and live-service complexity, economies,
+progression, exploits, incidents, rollout risk, and tightly coupled systems, it becomes broadly
 useful across other software work too.
 
-47 AI skills: 28 specialist roles, 12 review teams, 6 structured workflows. Use it across the
+50 AI skills: 28 specialist roles, 12 review teams, 9 structured workflows. Use it across the
 full product lifecycle: prototype, design, implementation, testing, deployment, live ops,
 iteration, and code cleanup. Works with **Claude Code** and **OpenAI Codex** on Mac and Windows.
 
@@ -44,7 +44,9 @@ items from gathered resources and sell on the marketplace.
 ```text
 LEAD PRODUCER REPORT
 ====================
-Routing: Red Team (exploit surface) + Economy Team (faucet/sink balance)
+Route Now: team-red-team, team-economy-team
+Suggested Play: none
+Route Rationale: Red Team (exploit surface) + Economy Team (faucet/sink balance)
 Overlays: None required - no product-specific context loaded
 
 FINDINGS (synthesized):
@@ -81,11 +83,17 @@ The point is not bigger prompts. It is to make agents behave more like decision 
 evidence, compare trade-offs, state confidence, and make the next step obvious.
 
 It also comes from synthesis, not reinvention. This pack draws inspiration from `superpowers`,
-`compilation7`, and `gstack`, then adapts those ideas into a coordinated system for end-to-end MMO
-and live-service development. It is not a direct fork or bundled dependency on any of them.
+`compilation7`, `gstack`, and Claude Code Game Studios, then adapts those ideas into a coordinated
+system for end-to-end MMO and live-service development. It is not a direct fork or bundled
+dependency on any of them.
 
 You do not need to know the internal routing. Describe the problem. The Lead Producer figures out
-who to call.
+who to call, or whether to suggest a deeper play before routing.
+
+That only works if the pack stays lean. It loads only the roles, teams, and workflows a task
+actually needs so the model keeps its context window for the work itself instead of burning it on
+unused guidance. Less prompt bloat means better focus and fewer hallucinations from irrelevant
+instructions.
 
 ---
 
@@ -158,10 +166,13 @@ See [`.codex/INSTALL.md`](.codex/INSTALL.md) for the Codex install details.
 | Blue Team | Cleanup verification - dead code removal, regression check |
 | Open Source | OSS readiness - licensing, contribution guides, API surface |
 
-### 6 Workflows
+### 9 Workflows
 
 | Workflow | When To Use |
 |----------|-------------|
+| Project Discovery | Inherited repos, broad unknowns, or "understand this first" situations |
+| Current State Capture | Bounded subsystem orientation, current-reality understanding, and newcomer handoff |
+| Specialist Hardening | Repeated 3-reviewer rounds for high-stakes or hard-to-reverse work |
 | Incident Response | Production is broken. Detect -> triage -> act -> postmortem |
 | Systematic Debugging | Unknown bug or failure. Reproduce -> hypothesize -> test -> confirm root cause |
 | Issue Triage | Package debugging findings into a durable handoff artifact |
@@ -177,7 +188,9 @@ See [`.codex/INSTALL.md`](.codex/INSTALL.md) for the Codex install details.
 graph TD
     U["You"] -->|describe task| C["Claude / Codex"]
     C -->|invoke| LP["Lead Producer"]
-    LP -->|classify & route| S{"Select Specialists"}
+    LP -->|route now| S{"Direct Route"}
+    LP -->|suggest play| SP["Suggested Play"]
+    SP -->|user opts in| LP
     S -->|single domain| R["Role"]
     S -->|cross-functional| T["Team"]
     S -->|structured method| W["Workflow"]
@@ -189,10 +202,44 @@ graph TD
     LP -->|escalate| U
 ```
 
-The flow is simple: you describe a task, Lead Producer classifies it and picks the minimum viable
-team, specialists analyze it, Devil's Advocate stress-tests the result, and you get a consolidated
-report. If the team cannot resolve a disagreement, Lead Producer escalates with both positions
-documented.
+The flow is simple: you describe a task, Lead Producer either routes immediately or recommends a
+suggested play first. If LP routes now, the selected specialists analyze the task and Devil's
+Advocate stress-tests the substantive recommendation. If LP suggests a play, you opt in and LP
+then routes there. If the team cannot resolve a disagreement, Lead Producer escalates with both
+positions documented.
+
+## LP-First Suggested Plays
+
+Lead Producer is still the only documented entrypoint. When a task needs understanding before
+judgment, LP can recommend a deeper workflow without auto-running it:
+
+- `Suggested Play: workflow-project-discovery` for inherited repos, broad unknowns, or discovery-first work
+- `Suggested Play: workflow-current-state-capture` for bounded "what exists now" understanding before you change something
+
+A suggested play is a recommendation, not an automatic route. If you want it, reply to LP with
+"use the project discovery play" or "help me understand the current state of this system," and LP
+will route there immediately.
+
+Legacy note: older "reverse documentation" phrasing still routes through LP to current-state
+capture for compatibility.
+
+Project discovery is repo-wide. Current-state capture is bounded to one system, flow, or artifact
+cluster.
+
+## Specialist Hardening
+
+When the stakes are high or you explicitly want deeper pressure, LP can route directly to
+`workflow-specialist-hardening`. That workflow runs 3 contextualized reviewer slots per round and
+keeps going until the work clears the quality bar, needs a real user decision, or stops improving.
+Use it after discovery or current-state capture when understanding exists and the remaining problem
+is quality.
+
+## Frontend Companion Tooling
+
+For frontend-heavy work, strongly prefer Playwright or an equivalent real-browser loop when the
+question depends on interaction bugs, responsive behavior, accessibility, browser state, or
+network and error handling. This repo does not bundle Playwright; treat it as a companion tool
+that makes frontend review and debugging more trustworthy.
 
 ---
 
@@ -262,6 +309,48 @@ Use $lead-producer to investigate why reward claims intermittently fail after re
 Use $lead-producer to package this debugging result into a handoff artifact for the next engineer.
 ```
 
+### Discovery-first repo mapping
+
+**Claude Code**
+
+```text
+/lead-producer This codebase is inherited and messy. Figure out whether we should do a focused architecture spike or a broader discovery pass first.
+```
+
+**Codex**
+
+```text
+Use $lead-producer to assess this inherited repo and suggest the right discovery play before implementation.
+```
+
+### Current-state capture for a new owner
+
+**Claude Code**
+
+```text
+/lead-producer Help me understand the current state of the reward claim flow before we change it.
+```
+
+**Codex**
+
+```text
+Use $lead-producer to help me understand the current state of the reward claim flow before we change it.
+```
+
+### Specialist hardening
+
+**Claude Code**
+
+```text
+/lead-producer This payout rollback plan is high stakes. Run the specialist hardening play and repeat until 9.
+```
+
+**Codex**
+
+```text
+Use $lead-producer to run the specialist hardening play on this launch-critical payout rollback plan. Repeat until 9.
+```
+
 ---
 
 ## Context Overlays
@@ -301,7 +390,7 @@ lead-producer/
 via the install scripts. One source, two runtimes.
 
 Skills load lazily: `CLAUDE.md` provides the routing rules, and individual skills load only when
-the Lead Producer explicitly names them.
+the Lead Producer explicitly names them or the user opts into a suggested play.
 
 ---
 
@@ -328,4 +417,4 @@ modules to the generic roles in this pack.
 
 ## License
 
-Internal use. Adjust before open-sourcing.
+MIT License. See [LICENSE](LICENSE) for details.

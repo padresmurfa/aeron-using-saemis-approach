@@ -27,8 +27,9 @@ Decide whether an interface is usable, implementable, accessible, and technicall
 ## Workflow
 1. Define critical user journey, key screens/states, and existing design patterns worth reusing.
 2. Review UX, frontend implementation, and API dependence together.
-3. Performance, failure handling, accessibility, and AI slop risk are part of the same verdict.
-4. Synthesize trade-offs into one frontend recommendation.
+3. When interaction, responsiveness, accessibility, browser state, or network/error behavior is in question, validate in a real browser with Playwright or an equivalent tool before trusting code-only review.
+4. Performance, failure handling, accessibility, and AI slop risk are part of the same verdict.
+5. Synthesize trade-offs into one frontend recommendation.
 
 ## Default Output
 ```text
@@ -49,3 +50,4 @@ Recommendation: ship / revise / escalate, highest-priority fixes
 - Reuse proven design leverage before inventing new UI language.
 - Call out AI slop risk explicitly when it appears.
 - Accessibility and error states are shipping requirements, not nice-to-haves.
+- Prefer real-browser evidence over code-only guesses when UI behavior is the question.

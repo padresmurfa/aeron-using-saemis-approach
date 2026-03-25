@@ -43,6 +43,13 @@ Restart Codex, then try:
 Use $lead-producer to investigate why reward claims intermittently fail after reconnect. Find the root cause before fixing.
 ```
 
+If LP responds with a suggested play such as `workflow-project-discovery` or
+`workflow-current-state-capture`, reply with the explicit LP opt-in phrase it
+asks for, for example: `Use the current state capture play for this flow.`
+
+If LP routes directly to `workflow-specialist-hardening`, let LP own the deeper
+review loop rather than manually invoking extra specialists yourself.
+
 ## Windows Troubleshooting
 
 If `codex --version` fails with `Access is denied`, this is usually a local Codex install or app-alias issue, not a repo issue.
