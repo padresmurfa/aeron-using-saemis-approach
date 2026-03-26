@@ -2,10 +2,10 @@
 
 ## Definition
 
-The pre-Big-Bang state is the absolute condition in which only the Creator exists. It precedes not merely the material cosmos, but also every derivative category by which created minds usually describe reality.
+The pre-Big-Bang state is the absolute condition in which only Aru exists. It precedes not merely the material cosmos, but also every derivative category by which created minds usually describe reality.
 
 Primary references:
-- [The Creator](../entities/creator.md)
+- [Aru](../entities/creator.md)
 - [The Stillness Before the First Pulse](../../sagas/tales_of_creation/the_stillness_before_the_first_pulse.md)
 - [The First Pulse](../events/first_pulse.md)
 
@@ -28,7 +28,7 @@ In this state:
 - There is no matter.
 - There is no energy.
 
-There is only the Creator.
+There is only Aru.
 
 ## Ontological Character
 

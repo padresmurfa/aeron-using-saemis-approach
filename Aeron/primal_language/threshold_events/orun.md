@@ -19,7 +19,7 @@
 
 ## Canonical Status
 
-`Orun` is deduced from the current creation canon as the event immediately following the pre-Big-Bang state. Its detailed unfolding remains to be narrated later.
+`Orun` is the primal-language rendering of the First Pulse: the threshold event immediately following the pre-Big-Bang state.
 
 ## Boundaries
 
@@ -30,6 +30,8 @@
 - [Aru](../high_abstractions/aru.md) is the singular reality from which `Orun` proceeds.
 - [Vatha](../high_abstractions/vatha.md) is the unified will expressed in `Orun`.
 - [Dara](../high_abstractions/dara.md) moves from latent capacity toward act through `Orun`.
+- [Loran](../structural_principles/loran.md) is the oscillatory condition opened by `Orun`.
+- [Tavir](../structural_principles/tavir.md) is the complementary polarity stabilized by `Orun`.
 
 ## Note On Form
 

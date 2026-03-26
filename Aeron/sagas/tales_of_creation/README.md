@@ -9,3 +9,4 @@
 
 ## Current Tales
 - `the_stillness_before_the_first_pulse.md`
+- `the_striking_of_the_first_pulse.md`

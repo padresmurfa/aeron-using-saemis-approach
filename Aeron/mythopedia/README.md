@@ -14,7 +14,10 @@
 
 ## Current Entries
 - `entities/creator.md`
+- `entities/c.md`
 - `cosmology/pre_big_bang_state.md`
+- `cosmology/divine_oscillation.md`
+- `cosmology/primordial_unfolding.md`
 - `events/first_pulse.md`
 
 ## Relationship To Other Folders

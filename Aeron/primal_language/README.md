@@ -9,6 +9,7 @@
 
 ## Current Structure
 - `high_abstractions/` for first-order metaphysical roots
+- `structural_principles/` for oscillatory structures, relations, and world-shaping conditions
 - `threshold_events/` for foundational transitions that alter the shape of reality
 
 ## Current Entries
@@ -16,6 +17,11 @@
 - `high_abstractions/selem.md`
 - `high_abstractions/vatha.md`
 - `high_abstractions/dara.md`
+- `structural_principles/loran.md`
+- `structural_principles/tavir.md`
+- `structural_principles/phaes.md`
+- `structural_principles/seren.md`
+- `structural_principles/athal.md`
 - `threshold_events/orun.md`
 
 ## Canon
