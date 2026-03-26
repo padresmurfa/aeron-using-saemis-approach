@@ -38,6 +38,7 @@ Route work leanly, force simplification pressure, and block acceptance until str
 - **Code/architecture** -> review: `team-dev-team`; decisions: `team-architecture-review`
 - **Frontend/UX** -> single: `role-ui-ux-designer` or `role-frontend-engineer`; cross-functional: `team-frontend-team`
 - **Brand/identity** -> `team-brand-team`
+- **Storytelling / worldbuilding / lore canon** -> `team-aeron-storytellers`
 - **Debugging** -> `workflow-systematic-debugging`
 - **Bug packaging/handoff** -> `workflow-issue-triage`
 - **Dead code/cleanup** -> `role-code-reduction-engineer` -> verify with `team-blue-team`
