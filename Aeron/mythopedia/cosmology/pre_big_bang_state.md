@@ -8,6 +8,7 @@ Primary references:
 - [Aru](../entities/creator.md)
 - [The Stillness Before the First Pulse](../../sagas/tales_of_creation/the_stillness_before_the_first_pulse.md)
 - [The First Pulse](../events/first_pulse.md)
+- [Planck Layer: The Primordials](cosmology/planck_layer_primordials.md)
 
 ## Absolute Conditions
 
@@ -44,7 +45,7 @@ It is not a phase within time. It is the condition prior to time's existence.
 
 The following do not yet exist:
 
-- The Primordials
+- The Primordials (see [Planck Layer: The Primordials](cosmology/planck_layer_primordials.md))
 - Light
 - Darkness
 - Good

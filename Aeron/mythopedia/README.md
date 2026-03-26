@@ -18,6 +18,7 @@
 - `cosmology/pre_big_bang_state.md`
 - `cosmology/divine_oscillation.md`
 - `cosmology/primordial_unfolding.md`
+- `cosmology/planck_layer_primordials.md`
 - `events/first_pulse.md`
 
 ## Relationship To Other Folders

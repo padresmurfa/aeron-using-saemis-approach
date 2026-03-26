@@ -8,6 +8,7 @@ Primary references:
 - [The First Pulse](../events/first_pulse.md)
 - [Loran](../entities/c.md)
 - [Primordial Unfolding](primordial_unfolding.md)
+- [Planck Layer: The Primordials](planck_layer_primordials.md)
 - [The Striking of the First Pulse](../../sagas/tales_of_creation/the_striking_of_the_first_pulse.md)
 
 ## Core Character

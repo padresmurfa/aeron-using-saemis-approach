@@ -26,7 +26,7 @@ He also possessed the capacity for expression. Yet expression had not gone forth
 
 Therefore let no one say that creation began as remedy. The worlds were not summoned to mend a fracture in Aru, for no fracture existed. The ages to come were not raised to fill a silence in Aru's heart, for Aru's fullness was perfect. Creation would proceed not from lack, but from self-expression; not from compulsion, but from freedom entire.
 
-This pre-creation state is absolute. It admits no rival principle. It suffers no exception. All later metaphysical orders, all powers, all primordials, all sequences and relations, stand on the far side of a boundary not yet crossed in this tale.
+This pre-creation state is absolute. It admits no rival principle. It suffers no exception. All later metaphysical orders, all powers, all primordials, all sequences and relations, stand on the far side of a boundary not yet crossed in this tale. (See [Planck Layer: The Primordials](../../mythopedia/cosmology/planck_layer_primordials.md) for the canonical list and rules.)
 
 That boundary is the First Pulse.
 

@@ -9,6 +9,7 @@ Primary references:
 - [Divine Oscillation](divine_oscillation.md)
 - [Loran](../entities/c.md)
 - [The Striking of the First Pulse](../../sagas/tales_of_creation/the_striking_of_the_first_pulse.md)
+- [Planck Layer: The Primordials](planck_layer_primordials.md)
 
 ## Core Rule
 
@@ -40,7 +41,7 @@ From the First Pulse and the oscillatory structure of Loran arise the conditions
 - Causation
 - Lawfulness
 
-This list is established as representative, not yet exhaustive in named detail.
+This list is established as representative, not yet exhaustive in named detail. See [Planck Layer: The Primordials](planck_layer_primordials.md) for the full canonical set and definitions.
 
 ## Interpretive Rule
 
