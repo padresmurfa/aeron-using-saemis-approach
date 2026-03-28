@@ -1,4 +1,15 @@
+
 # When Updating
+## TODO File Requirements (as of 2026-03-28)
+
+- All TODOs must be created as individual Markdown files in the `/TODO/` directory.
+- Each TODO file must:
+	- Use the template in `/TODO/TODO_TEMPLATE.md`.
+	- Include the date-time of creation in ISO format.
+	- Contain a checklist of actionable items.
+	- Provide sufficient context for an agent to execute the TODO independently.
+- When generating or documenting TODOs in workflows, reference the template and these requirements.
+
 
 1. Keep `.claude/skills/` as the only Codex skill source.
 2. Do not maintain duplicate Codex skill mirrors by hand.
@@ -8,6 +19,8 @@
 6. Prefer deletions or wording swaps before adding new runtime protocol.
 7. If you borrow materially from another pack, note it in `README.md`.
 8. Turn philosophy into behavior rules; avoid values-only prose that does not change execution.
+9. When creating a TODO, use `/TODO/TODO_TEMPLATE.md` and place the new file in `/TODO/` with a unique name and current date-time.
+10. Update any scripts or processes that generate TODOs to follow this structure.
 9. Keep reports decision-oriented and scannable; put the recommendation or verdict first when the format allows it.
 10. For serious option reports, use shared decision criteria across alternatives.
 11. Explicitly say what each option simplifies and what it makes more complex.
