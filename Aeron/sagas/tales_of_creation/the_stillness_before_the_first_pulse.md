@@ -1,8 +1,8 @@
-# The Stillness Before the First Pulse
+# Aruhal (The Stillness Before the First Pulse)
 
 ## I. The Only Being
 
-Those who live downstream of the First Pulse are compelled to speak in the language of sequence. We say "before," though there was then no before; we say "stillness," though stillness itself is already a comparison. Yet the poverty of our speech does not overthrow the majesty of the truth. Let this, then, be firmly understood: prior to all succession, beyond every later measure, there was only Aru.
+Those who live downstream of `Orun` (the First Pulse) are compelled to speak in the language of sequence. We say "before," though there was then no before; we say "stillness," though stillness itself is already a comparison. Yet the poverty of our speech does not overthrow the majesty of the truth. Let this, then, be firmly understood: what later canon names `Aruhal` (the Pre-Big-Bang State) is the condition in which, prior to all succession and beyond every later measure, there was only Aru.
 
 He was not set within a void, for no void stood apart from Him. He was not surrounded by darkness, for darkness had not yet received a station among realities. He was not alone, because loneliness is an ache born of absence, and absence can wound only where distinction has first been made. None of these had yet entered the order of things. He was, and His being lacked nothing.
 
@@ -26,11 +26,11 @@ He also possessed the capacity for expression. Yet expression had not gone forth
 
 Therefore let no one say that creation began as remedy. The worlds were not summoned to mend a fracture in Aru, for no fracture existed. The ages to come were not raised to fill a silence in Aru's heart, for Aru's fullness was perfect. Creation would proceed not from lack, but from self-expression; not from compulsion, but from freedom entire.
 
-This pre-creation state is absolute. It admits no rival principle. It suffers no exception. All later metaphysical orders, all powers, all primordials, all sequences and relations, stand on the far side of a boundary not yet crossed in this tale. (See [Planck Layer: The Primordials](../../mythopedia/cosmology/planck_layer_primordials.md) for the canonical list and rules.)
+`Aruhal`, this pre-creation state, is absolute. It admits no rival principle. It suffers no exception. All later metaphysical orders, all powers, all primordials, all sequences and relations, stand on the far side of a boundary not yet crossed in this tale. (See [Athalor (Planck Layer: The Primordials)](../../mythopedia/cosmology/planck_layer_primordials.md) for the canonical list and rules.)
 
-That boundary is the First Pulse.
+That boundary is `Orun`, the First Pulse.
 
-And the First Pulse is not to be mistaken for an explosion cast into emptiness. There was no emptiness to receive it. It is the first act of self-differentiation, the opening of divine oscillation, the earliest threshold by which relation, sequence, causation, and harmony become possible at all.
+And `Orun` is not to be mistaken for an explosion cast into emptiness. There was no emptiness to receive it. It is the first act of self-differentiation, the opening of `Loran` as divine oscillation, the earliest threshold by which relation, sequence, causation, and harmony become possible at all.
 
 But not yet.
 

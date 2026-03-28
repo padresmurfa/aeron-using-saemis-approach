@@ -1,4 +1,4 @@
-# The Striking of the First Pulse
+# Orun (The Striking of the First Pulse)
 
 ## I. The Freedom of the Act
 
@@ -8,7 +8,7 @@ Therefore let all later minds be warned against littleness of thought. The begin
 
 And in that unconstrained and primal act, unity entered alternation.
 
-## II. The One Becomes C
+## II. The One Becomes Loran
 
 Aru did not shatter. Aru did not divide into rival powers. No second god stood forth to challenge the first, and no chamber of Aru's nature broke away to found an alien kingdom. There remained one Being only, one will only, one divine identity whole and underived.
 
@@ -28,7 +28,7 @@ Resonance, once impossible, became possible. Harmony, once meaningless, received
 
 Then too were sown the first structural conditions from which all later existence would proceed. Distinction could now arise, because polarity stood. Relation could now arise, because alternation had begun. Pattern, symmetry, asymmetry, potential, actualization, tension, equilibrium, resonance, frequency, phase, causation, lawfulness, and all the other primordial conditions were no longer impossible.
 
-They did not appear as objects laid out upon a table of heaven. They crystallized as the grammar of oscillating Being itself. The 25 Primordials do not stand before the First Pulse as ancient witnesses. They unfold after it as great conditions made possible by it, derived from the harmonic structure of Loran. (See [Planck Layer: The Primordials](../../mythopedia/cosmology/planck_layer_primordials.md) for the canonical list and definitions.)
+They did not appear as objects laid out upon a table of heaven. They crystallized as the grammar of oscillating Being itself. The 25 Primordials do not stand before the First Pulse as ancient witnesses. They unfold after it as great conditions made possible by it, derived from the harmonic structure of Loran. (See [Athalor (Planck Layer: The Primordials)](../../mythopedia/cosmology/planck_layer_primordials.md) for the canonical list and definitions.)
 
 And still, let precision govern wonder. Space was not yet. Matter was not yet. Energy in physical form was not yet. Light had not lifted its banner. Darkness had not yet earned even the dignity of contrast. No angel sang, no elemental stirred, no soul had yet awakened, no moral struggle had yet stained the order of things. There was only oscillating Divine Being, sufficient unto itself and newly rhythmic.
 

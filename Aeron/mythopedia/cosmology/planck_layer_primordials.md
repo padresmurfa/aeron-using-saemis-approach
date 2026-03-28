@@ -1,74 +1,67 @@
-# Planck Layer: The Primordials
+# Athalor (Planck Layer: The Primordials)
 
 ## Context
-At the moment of the Big Bang, only the Creator exists. During the Planck Era (≈10^-43 seconds), before space, time, matter, energy, or identity can meaningfully exist, the Creator brings forth the Primordials.
 
-Primordials are NOT beings, gods, spirits, intelligences, or agents. They do not think, choose, speak, conflict, or evolve. They are ontological axioms — the irreducible conditions that make existence possible.
+`Athalor` is the canonical primordial layer opened by [Athalor (Primordial Unfolding)](primordial_unfolding.md) during [Orunel (Creation Era)](../../primal_language/era_names/orunel.md). It corresponds analogically to the Planck-era foundation of reality before space, time, matter, or identity can fully emerge.
+
+Primordials are not beings, gods, spirits, intelligences, or agents. They do not think, choose, speak, conflict, or evolve. They are ontological axioms: the irreducible conditions that make existence possible.
 
 They are the structural grammar of reality.
 
-If a concept requires space, time, matter, will, morality, or identity, it is NOT a Primordial.
+## Current Canon Rule
 
-All later beings are emergent configurations of these axioms. Everything that exists in Aeron is ultimately a structured expression of these 25 Primordials.
+The layer itself is canonically `Athalor`. Individual primordial items are still often listed in English gloss for lookup, but their deeper lexical reconciliation belongs in `Aeron/primal_language/` rather than in improvised prose tables.
 
----
+## The 25 Primordials In English Gloss
 
-# The 25 Primordials
+### I. Differentiation Primitives
 
-## I. DIFFERENTIATION PRIMITIVES
-(Allow distinction to exist at all)
+1. Unity
+2. Distinction
+3. Boundary
+4. Multiplicity
 
-1. **Unity** — Absolute undivided being.
-2. **Distinction** — The possibility that A is not B.
-3. **Boundary** — The capacity for separation to hold.
-4. **Multiplicity** — The possibility of more than one.
+### II. Structural Primitives
 
-## II. STRUCTURAL PRIMITIVES
-(Allow ordered existence)
+5. Relation
+6. Structure
+7. Pattern
+8. Symmetry
+9. Asymmetry
+10. Continuity
+11. Discreteness
 
-5. **Relation** — A can refer to B.
-6. **Structure** — Relations can stabilize.
-7. **Pattern** — Structure can repeat.
-8. **Symmetry** — Balanced equivalence.
-9. **Asymmetry** — Imbalance or directional break.
-10. **Continuity** — Smooth transition.
-11. **Discreteness** — Quantization; countability.
+### III. Dynamical Primitives
 
-## III. DYNAMICAL PRIMITIVES
-(Allow change without requiring conventional time)
+12. Potential
+13. Actualization
+14. Tension
+15. Equilibrium
+16. Transformation
 
-12. **Potential** — Capacity to become.
-13. **Actualization** — Realization of potential.
-14. **Tension** — Difference seeking resolution.
-15. **Equilibrium** — Resolution of tension.
-16. **Transformation** — Structured transition between states.
+### IV. Ordering Primitives
 
-## IV. ORDERING PRIMITIVES
-(Allow sequence and lawfulness)
+17. Sequence
+18. Causation
+19. Constraint
+20. Lawfulness
 
-17. **Sequence** — Before/after possibility.
-18. **Causation** — Influence across distinction.
-19. **Constraint** — Limitation.
-20. **Lawfulness** — Stable constraint across instances.
+### V. Expressive Primitives
 
-## V. EXPRESSIVE PRIMITIVES
-(Seed layer of the Primal Language)
-
-21. **Resonance** — Harmonic compatibility.
-22. **Frequency** — Oscillatory identity.
-23. **Amplitude** — Intensity.
-24. **Phase** — Relative alignment.
-25. **Interference** — Interaction of oscillations.
-
----
+21. Resonance
+22. Frequency
+23. Amplitude
+24. Phase
+25. Interference
 
 ## Structural Rules
-- Primordials precede space, time, matter, and identity.
+
+- Primordials precede space, time, matter, and creaturely identity.
 - They do not possess will or personality.
 - They cannot rebel, corrupt, or evolve.
-- They do not "interact" as beings — they combine structurally.
+- They do not interact as beings; they combine structurally.
 - All later beings are emergent configurations of these axioms.
 
----
+## Canon Boundary
 
-*This Planck Layer is the foundation of Aeron's cosmology. All subsequent mythic events, entities, and languages are structured expressions of these Primordials.*
+`Athalor` is the foundation of Aeron's cosmology. All subsequent mythic events, entities, and languages are structured expressions of this primordial grammar.

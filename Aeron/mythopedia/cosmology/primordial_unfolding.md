@@ -1,30 +1,30 @@
-# Primordial Unfolding
+# Athalor (Primordial Unfolding)
 
 ## Definition
 
-The Primordials unfold after the First Pulse as structural consequences of divine oscillation. They do not exist prior to the First Pulse, and they are not introduced as independent objects detached from the Creator.
+`Athalor` is the first unfolding of primordial grammar after [Orun (The First Pulse)](../events/first_pulse.md). The Primordials do not exist before the First Pulse, and they do not appear as independent makers detached from the Creator.
 
 Primary references:
-- [The First Pulse](../events/first_pulse.md)
-- [Divine Oscillation](divine_oscillation.md)
-- [Loran](../entities/c.md)
-- [The Striking of the First Pulse](../../sagas/tales_of_creation/the_striking_of_the_first_pulse.md)
-- [Planck Layer: The Primordials](planck_layer_primordials.md)
+- [Orun (The First Pulse)](../events/first_pulse.md)
+- [Loran (Divine Oscillation)](divine_oscillation.md)
+- [Athal](../../primal_language/structural_principles/athal.md)
+- [Athalor](../../primal_language/era_names/athalor.md)
+- [Athalor (Planck Layer: The Primordials)](planck_layer_primordials.md)
 
 ## Core Rule
 
-The 25 Primordials crystallize as the grammar of oscillating Being.
+The Primordials unfold as the grammar of oscillating being.
 
 This means:
 
-- They unfold after the First Pulse
-- They derive from oscillation
-- They are structural conditions before they are narratively personified, if ever
-- They are not older than Loran
+- They unfold after the First Pulse.
+- They derive from `Loran`.
+- They are structural conditions before they are narratively personified, if ever.
+- They are not older than the Creator's oscillatory self-expression.
 
 ## Established Downstream Conditions
 
-From the First Pulse and the oscillatory structure of Loran arise the conditions for:
+From the First Pulse and the oscillatory structure of `Loran` arise the conditions for:
 
 - Distinction
 - Relation
@@ -41,7 +41,7 @@ From the First Pulse and the oscillatory structure of Loran arise the conditions
 - Causation
 - Lawfulness
 
-This list is established as representative, not yet exhaustive in named detail. See [Planck Layer: The Primordials](planck_layer_primordials.md) for the full canonical set and definitions.
+This list is representative, not yet an exhaustive one-to-one lexical table. See [Athalor (Planck Layer: The Primordials)](planck_layer_primordials.md) for the canonical layer description.
 
 ## Interpretive Rule
 
@@ -51,4 +51,4 @@ When later canon narrates Primordials as agents, powers, or personified realitie
 
 - The Primordials must not be described as preceding the First Pulse.
 - The Primordials must not be treated as external makers of the Creator.
-- Their unfolding must remain downstream of divine oscillation.
+- Their unfolding must remain downstream of `Loran`.

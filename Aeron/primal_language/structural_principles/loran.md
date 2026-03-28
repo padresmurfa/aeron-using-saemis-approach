@@ -6,7 +6,7 @@
 
 ## Meaning
 
-`Loran` names the oscillatory condition that begins when the Creator becomes `C` through `Orun`. It is not division into parts, but rhythmic alternation within one harmonic being.
+`Loran` names the oscillatory condition that begins when Aru becomes `Loran` through `Orun`. It is not division into parts, but rhythmic alternation within one harmonic being.
 
 ## Scope
 

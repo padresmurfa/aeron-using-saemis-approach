@@ -2,16 +2,16 @@
 
 ## Summary
 
-`Aru` is the sole absolute reality of Aeron. In the pre-Big-Bang state, Aru exists as singular, undivided Being with no outside, no relation, and no oscillation. At the First Pulse, Aru becomes [`Loran`](loran.md): not another being, but Aru in harmonic self-alternation.
+`Aru` is the sole absolute reality of Aeron. In [`Aruhal`](../cosmology/pre_big_bang_state.md), the Pre-Big-Bang State, Aru exists as singular, undivided Being with no outside, no relation, and no oscillation. At [`Orun`](../events/first_pulse.md), the First Pulse, Aru becomes [`Loran`](loran.md): not another being, but Aru in harmonic self-alternation.
 
 Primary references:
 - [The Stillness Before the First Pulse](../../sagas/tales_of_creation/the_stillness_before_the_first_pulse.md)
 - [The Striking of the First Pulse](../../sagas/tales_of_creation/the_striking_of_the_first_pulse.md)
-- [Pre-Big-Bang State](../cosmology/pre_big_bang_state.md)
-- [The First Pulse](../events/first_pulse.md)
+- [Aruhal (Pre-Big-Bang State)](../cosmology/pre_big_bang_state.md)
+- [Orun (The First Pulse)](../events/first_pulse.md)
 - [Loran](loran.md)
 
-## Core Nature In The Pre-Big-Bang State
+## Core Nature In Aruhal
 
 - Singular
 - Internally simple
@@ -40,7 +40,7 @@ Aru possesses will and the capacity for expression. In the pre-Big-Bang state:
 - Expression exists as capacity only, not as act.
 - Creation is not a response to lack, loneliness, tension, or compulsion.
 
-Creation begins only when Aru initiates the [First Pulse](../events/first_pulse.md).
+Creation begins only when Aru initiates [Orun (the First Pulse)](../events/first_pulse.md).
 
 ## Post-Pulse State
 

@@ -18,7 +18,7 @@
 
 ## First-Pulse Use
 
-At the First Pulse, `Tavir` is expressed as the harmonic polarity of `C`: metaphysically deeper than any later metaphors of expansion and containment, emission and reception, or crest and trough.
+At the First Pulse, `Tavir` is expressed as the harmonic polarity of `Loran`: metaphysically deeper than any later metaphors of expansion and containment, emission and reception, or crest and trough.
 
 ## Boundaries
 

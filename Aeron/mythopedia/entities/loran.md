@@ -2,12 +2,12 @@
 
 ## Summary
 
-`Loran` is the canonical designation for Aru after the First Pulse. Loran is not a second god, a split fragment, or a derivative being. Loran is the same singular Aru now existing as a dynamically oscillating, internally relational, harmonic being.
+`Loran` is the canonical designation for Aru after [Orun](../events/first_pulse.md), the First Pulse. Loran is not a second god, a split fragment, or a derivative being. Loran is the same singular Aru now existing as a dynamically oscillating, internally relational, harmonic being.
 
 Primary references:
 - [Aru](aru.md)
-- [The First Pulse](../events/first_pulse.md)
-- [Divine Oscillation](../cosmology/divine_oscillation.md)
+- [Orun (The First Pulse)](../events/first_pulse.md)
+- [Loran (Divine Oscillation)](../cosmology/divine_oscillation.md)
 - [The Striking of the First Pulse](../../sagas/tales_of_creation/the_striking_of_the_first_pulse.md)
 
 ## Identity

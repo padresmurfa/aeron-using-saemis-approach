@@ -1,18 +1,20 @@
-# Pre-Big-Bang State
+# Aruhal (Pre-Big-Bang State)
 
 ## Definition
 
-The pre-Big-Bang state is the absolute condition in which only Aru exists. It precedes not merely the material cosmos, but also every derivative category by which created minds usually describe reality.
+`Aruhal` is the absolute condition in which only [Aru](../entities/aru.md) exists. It precedes not merely the material cosmos, but every derivative category by which created minds later describe reality.
 
 Primary references:
-- [Aru](../entities/creator.md)
-- [The Stillness Before the First Pulse](../../sagas/tales_of_creation/the_stillness_before_the_first_pulse.md)
-- [The First Pulse](../events/first_pulse.md)
-- [Planck Layer: The Primordials](cosmology/planck_layer_primordials.md)
+- [Aru](../entities/aru.md)
+- [Selem](../../primal_language/high_abstractions/selem.md)
+- [Vatha](../../primal_language/high_abstractions/vatha.md)
+- [Dara](../../primal_language/high_abstractions/dara.md)
+- [Aruhal](../../primal_language/era_names/aruhal.md)
+- [Orun (The First Pulse)](../events/first_pulse.md)
 
 ## Absolute Conditions
 
-In this state:
+In `Aruhal`:
 
 - There is no outside.
 - There is no environment.
@@ -33,11 +35,12 @@ There is only Aru.
 
 ## Ontological Character
 
-The pre-Big-Bang state must be treated as:
+`Aruhal` must be treated as:
 
-- Immutable
 - Absolute
+- Pre-temporal
 - Beyond all derivative categories
+- Full rather than empty
 
 It is not a phase within time. It is the condition prior to time's existence.
 
@@ -45,7 +48,7 @@ It is not a phase within time. It is the condition prior to time's existence.
 
 The following do not yet exist:
 
-- The Primordials (see [Planck Layer: The Primordials](cosmology/planck_layer_primordials.md))
+- The Primordials
 - Light
 - Darkness
 - Good
@@ -58,8 +61,8 @@ Even "nothingness" is absent here, because nothingness still requires distinctio
 
 ## Interpretive Rule
 
-Narrative uses of terms such as "before," "stillness," or "silence" are analogical conveniences employed by beings who speak from within created sequence. They must not be taken to imply that time, sound, or comparison already existed in the pre-Big-Bang state.
+Narrative words such as "before," "stillness," or "silence" are analogical conveniences employed by beings who speak from within created sequence. They must not be taken to imply that time, sound, or comparison already existed in `Aruhal`.
 
 ## Structural Boundary
 
-All later metaphysical structures, including the 25 Primordials, unfold only after the Creator initiates the [First Pulse](../events/first_pulse.md).
+All later metaphysical structures unfold only after the Creator initiates [Orun (The First Pulse)](../events/first_pulse.md).

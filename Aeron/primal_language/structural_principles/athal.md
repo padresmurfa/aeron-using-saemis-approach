@@ -19,7 +19,7 @@
 
 ## First-Pulse Use
 
-At the level of the First Pulse, `Athal` is not yet a list of independent beings or objects. It is the deep ordering principle by which the 25 Primordials crystallize downstream as structural conditions of `C`.
+At the level of the First Pulse, `Athal` is not yet a list of independent beings or objects. It is the deep ordering principle by which the 25 Primordials crystallize downstream as structural conditions of `Loran`.
 
 ## Boundaries
 
