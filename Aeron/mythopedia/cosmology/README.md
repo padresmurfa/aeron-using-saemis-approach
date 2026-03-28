@@ -14,5 +14,6 @@ This directory contains canonical reference entries for the fundamental metaphys
 - `quark_era.md`: [Kethoran](../../primal_language/era_names/kethoran.md), the age of confinement and created interiority.
 - `hadron_era.md`: [Selkoran](../../primal_language/era_names/selkoran.md), the age of composite binding and nested interiority.
 - `lepton_era.md`: [Seraelon](../../primal_language/era_names/seraelon.md), the age of mobility, encounter, and transmissive relation.
+- `photon_era.md`: [Tavirelon](../../primal_language/era_names/tavirelon.md), the age of radiant saturation and field-like awareness.
 
 Refer to these files for the metaphysical and ontological rules that govern all subsequent mythic events and entities.

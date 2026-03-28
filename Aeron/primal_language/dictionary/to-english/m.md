@@ -1,6 +1,7 @@
 # M
 
 - [`Mirevar`](../../era_names/mirevar.md): Electroweak Separation Era; differentiated interaction and preference potential.
+- [`Mirasal`](../../structural_principles/mirasal.md): Echo Realms; memory-fields preserving layered harmonic traces.
 - [`Mirath`](../../structural_principles/mirath.md): Pressure Hosts; confined transformation pressure.
 - [`Mirasin`](../../structural_principles/mirasin.md): Echoes; residual harmonic traces carrying identity imprints.
 - `Mirath'ael'cathal`: internal catalytic capacity.

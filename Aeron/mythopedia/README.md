@@ -28,6 +28,7 @@
 - `cosmology/quark_era.md`
 - `cosmology/hadron_era.md`
 - `cosmology/lepton_era.md`
+- `cosmology/photon_era.md`
 - `events/first_pulse.md`
 - `timeline/README.md`
 
