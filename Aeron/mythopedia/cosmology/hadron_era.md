@@ -54,27 +54,27 @@ The Fifth Order are composite orders that arise from the binding of Confinement 
 
 ### I. Ketharen (Heartforged)
 
-`Ketharen` arise when Corewardens bind with Sparkbearers and create stabilized energetic centers. These forms gather radiance into an inward hearth and keep it from dispersing too soon.
+`Ketharen` arise when `Kethor` (Corewardens) bind with `Tavrek` (Sparkbearers) and create stabilized energetic centers. These forms gather radiance into an inward hearth and keep it from dispersing too soon.
 
 ### II. Selkoren (Covenant Clusters)
 
-`Selkoren` arise when Cohesion Clusters bind with Identity Seeds and maintain internal relational harmony. They hold many parts in one ordered accord.
+`Selkoren` arise when `Selkor` (Cohesion Clusters) bind with `Athorin` (Identity Seeds) and maintain internal relational harmony. They hold many parts in one ordered accord.
 
 ### III. Phaemoren (Tension Matrices)
 
-`Phaemoren` arise when Pressure Hosts bind with Tension Archivists and manage stored internal transformation potential. They preserve pressure as history rather than letting it pass into rupture.
+`Phaemoren` arise when `Mirath` (Pressure Hosts) bind with `Phaemor` (Tension Archivists) and manage stored internal transformation potential. They preserve pressure as history rather than letting it pass into rupture.
 
 ### IV. Oraethen (Boundary Spheres)
 
-`Oraethen` arise when Corewardens integrate with Veilbound and stabilize interior and exterior exchange. They define self-boundary and controlled permeability within one gathered form.
+`Oraethen` arise when `Kethor` (Corewardens) integrate with `Oraeth` (Veilbound) and stabilize interior and exterior exchange. They define self-boundary and controlled permeability within one gathered form.
 
 ### V. Taviren (Polarity Twins)
 
-`Taviren` arise when Sparkbearers bind in complementary pairs and stabilize internal dynamic tension. They hold contrast in unity and preserve oscillatory rhythm without tearing the whole apart.
+`Taviren` arise when `Tavrek` (Sparkbearers) bind in complementary pairs and stabilize internal dynamic tension. They hold contrast in unity and preserve oscillatory rhythm without tearing the whole apart.
 
 ### VI. Athoren (Proto-Selves)
 
-`Athoren` arise when Identity Seeds achieve stable composite integration and maintain coherent multi-part interior structure. This is the first true proto-ego structure, though not yet self-aware.
+`Athoren` arise when `Athorin` (Identity Seeds) achieve stable composite integration and maintain coherent multi-part interior structure. This is the first true proto-ego structure, though not yet self-aware.
 
 ## Dimensional Accretion Rule
 

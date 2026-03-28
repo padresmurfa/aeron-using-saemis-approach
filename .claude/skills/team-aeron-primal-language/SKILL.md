@@ -57,6 +57,7 @@ Verdict: Accept / Revise, next required actions
 
 ## Anti-Drift Rules
 - English gloss is explanatory only; it is never the canonical primal headword.
+- Once a primal headword is live, narrative surfaces should prefer the primal word alone or `PrimalWord (English gloss)`; English gloss by itself should be treated as a drift bug unless the context is explicitly dictionary-like.
 - Grammar rules are tendencies, not algorithms, and should be trusted only when they describe at least half the living corpus.
 - When a later specialization descends from an earlier root, preserve audible or visual family relation unless there is a strong reason not to.
 - Compound forms must remain legible in their parts: primary root, quoted infix, and suffix.

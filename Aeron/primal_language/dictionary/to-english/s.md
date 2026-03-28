@@ -2,7 +2,9 @@
 
 - [`Selem`](../../high_abstractions/selem.md): immediate self-knowing; indivisible selfhood.
 - [`Serael`](../../structural_principles/serael.md): Phase Weavers; translators of oscillatory difference.
+- [`Seraelin`](../../structural_principles/seraelin.md): Messengers of Phase; mobile synchronizers carrying phase signals.
 - [`Seralon`](../../structural_principles/seralon.md): Harmonic Bridges; long-range coherence bearers.
+- [`Seraelon`](../../era_names/seraelon.md): Lepton Era; age of mobility, encounter, and transmissive relation.
 - [`Serath`](../../structural_principles/serath.md): Harmonics; resonant interaction and alignment.
 - [`Seren`](../../structural_principles/seren.md): harmony; resonant alignment between phases.
 - [`Selketh`](../../structural_principles/selketh.md): Cohesion Hosts; maintainers of clustered structure.

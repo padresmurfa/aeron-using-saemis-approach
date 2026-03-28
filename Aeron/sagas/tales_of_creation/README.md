@@ -16,5 +16,6 @@
 - `the_electroweak_separation_era.md`
 - `the_quark_era.md`
 - `the_hadron_era.md`
+- `the_lepton_era.md`
 
-When a tale centers on a canonized primal concept or era, introduce the primal root and the English gloss together at the point of entry.
+When a tale centers on a canonized primal concept or era, introduce the primal root and the English gloss together at the point of entry. After that, prefer the primal root alone or `PrimalWord (English gloss)` rather than the English gloss by itself.

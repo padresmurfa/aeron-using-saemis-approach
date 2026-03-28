@@ -43,7 +43,7 @@ Produce mythic stories that are dramatically strong, canon-consistent, timeline-
 7. If `role-aeron-narrative-editor` returns `Revise`, the author revises and any materially affected editors review again.
 8. When accepted narrative introduces or revises canon terms, hand the resulting story, mythopedia, and timeline surfaces to `team-aeron-primal-language` for lexicon, grammar, and dictionary work.
 9. Apply any returned naming or first-introduction fixes before closing the package.
-10. Before final acceptance, verify that every newly canonized foundational concept has a primal root and that reports explicitly list coined roots with English left in gloss position only.
+10. Before final acceptance, verify that every newly canonized foundational concept has a primal root, that reports explicitly list coined roots with English left in gloss position only, and that prose does not refer to canonized parent concepts by English gloss alone where a primal headword exists.
 
 ## Default Output
 ```text
@@ -67,6 +67,8 @@ Verdict: Accept / Revise, next required actions
 - Revision notes must be returned to the Narrative Author, not silently patched by editors.
 - Preserve story quality and canon quality together; neither excuses failure in the other.
 - If a concept has a primal-language root, saga, mythopedia, and timeline surfaces must introduce the primal term and English gloss together rather than letting English masquerade as the canon name.
+- After first introduction, saga, mythopedia, and timeline surfaces should prefer the primal word alone or `PrimalWord (English gloss)`; English gloss by itself is reserved for explicit glossing, dictionary, or index contexts.
 - Team reports must name newly coined roots explicitly and must not present English placeholder labels as the authoritative canon term.
 - Do not accept sibling sections that read as structural clones of one another; repeated stock phrasing and recycled cadence are editorial defects, not mere preferences.
+- Do not accept sibling sections built on repeated template openings, recycled sentence skeletons, or one-note cadence; that is an editorial defect, not a stylistic quirk.
 - If grammar or dictionary issues are discovered during review, route them to `team-aeron-primal-language` rather than improvising silent naming drift inside the story pass.

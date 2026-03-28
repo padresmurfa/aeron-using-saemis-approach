@@ -6,7 +6,7 @@
 - Record canonical facts, entities, events, places, laws, and relationships.
 - Prefer one topic per file.
 - Write for lookup and consistency, not for dramatic effect.
-- When a concept has a primal-language headword, introduce the primal term and English gloss together.
+- When a concept has a primal-language headword, introduce the primal term and English gloss together. After that, prefer the primal word alone or `PrimalWord (English gloss)` instead of letting the English gloss stand alone.
 
 ## Current Structure
 - `entities/` for beings and named intelligences
@@ -27,6 +27,7 @@
 - `cosmology/electroweak_separation_era.md`
 - `cosmology/quark_era.md`
 - `cosmology/hadron_era.md`
+- `cosmology/lepton_era.md`
 - `events/first_pulse.md`
 - `timeline/README.md`
 

@@ -15,7 +15,7 @@ description: "Timeline author. Decides the era, period, or time range for narrat
 - Populate and update each `timeline.md` with an ordered list of events for that era
 - When a new mythopedia entry is created, consider if it should be associated with an era or time point; if so, add this as a narrative task
 - Review existing content and ensure all relevant events are indexed in the timeline
-- Introduce canonical era roots and English glosses together when the era itself has a primal-language name
+- Introduce canonical era roots and English glosses together when the era itself has a primal-language name, and avoid English-only era or concept references once a primal headword exists except in explicit gloss/index contexts.
 
 ## Working Method
 1. Review new or updated mythopedia and narrative entries for temporal context.
@@ -39,3 +39,4 @@ Verdict: Pass / Revise
 - Timeline structure must remain strictly ordered by numeric prefix.
 - Do not allow ambiguous or duplicate event placement.
 - Do not headline or summarize a canonized era under English-only naming once a primal-era term exists.
+- Do not let canonized concept names appear in timeline prose under English-only form when the primal headword is available.

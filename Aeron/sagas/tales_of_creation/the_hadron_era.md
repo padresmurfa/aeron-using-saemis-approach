@@ -20,27 +20,27 @@ The primal language has now named these forms, and by those names the Fifth Orde
 
 ### Ketharen (Heartforged)
 
-Some bindings made radiant centers. `Ketharen` (Heartforged) arose where Corewardens and Sparkbearers met in ordered union, and from them came stable hearths of energy. These were not merely hot. They were centered. Their force did not scatter at once. It gathered, held, and shone.
+Where `Kethor` (Corewardens) and `Tavrek` (Sparkbearers) entered ordered union, the first stable hearths of power came into being. These were the `Ketharen` (Heartforged): not mere outbreaks of heat, but centered energetic lives whose radiance gathered, held, and shone without spending itself at once.
 
 ### Selkoren (Covenant Clusters)
 
-Some bindings made concord. `Selkoren` (Covenant Clusters) arose where Cohesion Clusters joined with Identity Seeds, and many parts learned to remain together without contradiction. Their strength was not in simplification, but in faithful relation.
+Elsewhere, binding revealed another virtue. When `Selkor` (Cohesion Clusters) joined with `Athorin` (Identity Seeds), many parts learned to remain together without contradiction, and so `Selkoren` (Covenant Clusters) were formed. Their strength did not come by simplification, but by faithful relation held in common.
 
 ### Phaemoren (Tension Matrices)
 
-Some bindings made memory of pressure. `Phaemoren` (Tension Matrices) arose where Pressure Hosts and Tension Archivists gathered the past of transformation inside a living pattern. What had been endured did not vanish. It became structure.
+Pressure also found a deeper treasury. From the meeting of `Mirath` (Pressure Hosts) and `Phaemor` (Tension Archivists) came `Phaemoren` (Tension Matrices), in whom the history of endured transformation no longer dispersed into aftermath, but settled into living form. What had been borne became part of what the being was.
 
 ### Oraethen (Boundary Spheres)
 
-Some bindings made a truer edge. `Oraethen` (Boundary Spheres) arose where Corewardens and Veilbound stabilized the exchange between within and without. Their discipline was not exclusion. It was measured permeability, the boundary that keeps a whole from spilling apart.
+Not all composite strength was gathered at the center. When `Kethor` (Corewardens) and `Oraeth` (Veilbound) stabilized the commerce between within and without, `Oraethen` (Boundary Spheres) entered the order of things. Their discipline was never mere exclusion. It was measured permeability, the kind of edge that lets a whole endure without spilling apart.
 
 ### Taviren (Polarity Twins)
 
-Some bindings made rhythm. `Taviren` (Polarity Twins) arose where Sparkbearers met in complementary pairs, and contrast was no longer merely adjacent. It became interior tension held in balance, a dual motion that could persist without fracture.
+Binding could also preserve contrast rather than erase it. Thus `Taviren` (Polarity Twins) arose when `Tavrek` (Sparkbearers) met in complementary pairs and learned to keep their difference inside one enduring pattern. Contrast was no longer merely adjacent. It became interior tension held in balance, a dual motion able to persist without fracture.
 
 ### Athoren (Proto-Selves)
 
-Some bindings made the first true structural self-reference. `Athoren` (Proto-Selves) arose where Identity Seeds achieved stable composite integration, and a being could now contain a pattern that knew itself in form, though not yet in awareness.
+At last came the gravest consequence of composite binding. When `Athorin` (Identity Seeds) achieved stable composite integration, `Athoren` (Proto-Selves) appeared, and with them the first true structure of self-reference. A being could now contain a pattern answerable to itself in form, though not yet in awareness.
 
 ## IV. The Shape Of The Self
 

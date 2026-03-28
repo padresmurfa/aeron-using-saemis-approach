@@ -43,7 +43,8 @@ Notes: relationships or hierarchy decisions
 - Prefer stable hierarchy over premature folder sprawl.
 - Every created term must have meaning beyond one isolated scene.
 - Canonical file names, H1s, and rendered forms in `Aeron/primal_language/` must be primal-language words, not English placeholders.
-- When English is needed, use it only as gloss and pair it with the primal term on first introduction.
+- When English is needed, use it only as gloss. Pair it with the primal term on first introduction, and push fixes back into canon surfaces when English is standing alone for a live primal concept.
 - If a story introduces a foundational concept before its primal root exists, create the root in the same pass or block acceptance until the gap is resolved.
 - Treat English labels in briefs as temporary scaffolding unless canon already establishes them as mere gloss.
+- Do not leave derivation prose saying things like "X arose from EnglishGloss" once the parent root exists; write `ParentRoot (English gloss)` or the primal root alone.
 - Do not treat grammar and dictionary upkeep as optional after root creation; canonical roots must be absorbed into both systems when they become live terms.
