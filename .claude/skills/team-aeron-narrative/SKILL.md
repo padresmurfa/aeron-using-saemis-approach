@@ -43,7 +43,7 @@ Produce mythic stories that are dramatically strong, canon-consistent, timeline-
 7. If `role-aeron-narrative-editor` returns `Revise`, the author revises and any materially affected editors review again.
 8. When accepted narrative introduces or revises canon terms, hand the resulting story, mythopedia, and timeline surfaces to `team-aeron-primal-language` for lexicon, grammar, and dictionary work.
 9. Apply any returned naming or first-introduction fixes before closing the package.
-10. Before final acceptance, verify that every newly canonized foundational concept has a primal root, that reports explicitly list coined roots with English left in gloss position only, and that prose does not refer to canonized parent concepts by English gloss alone where a primal headword exists.
+10. Before final acceptance, verify that every newly canonized foundational concept has a primal root, that reports explicitly list coined roots with English left in gloss position only, that prose does not refer to canonized parent concepts by English gloss alone where a primal headword exists, and that no pre-soul material imports rebellion-against-`Aru`/`Loran` or good-versus-evil framing.
 
 ## Default Output
 ```text
@@ -72,3 +72,5 @@ Verdict: Accept / Revise, next required actions
 - Do not accept sibling sections that read as structural clones of one another; repeated stock phrasing and recycled cadence are editorial defects, not mere preferences.
 - Do not accept sibling sections built on repeated template openings, recycled sentence skeletons, or one-note cadence; that is an editorial defect, not a stylistic quirk.
 - If grammar or dictionary issues are discovered during review, route them to `team-aeron-primal-language` rather than improvising silent naming drift inside the story pass.
+- Do not accept any draft that frames `Aru`, `Loran`, or similarly fundamental cosmological orders as possible targets of rebellion; such language is metaphysically false in Aeron.
+- Before soul-bearing ethics exists, reject framing that imports biblical fall patterns, Luciferic foreshadowing, or intrinsic good/evil struggle into the cosmology.

@@ -7,7 +7,7 @@ Draft Status: current creation-era surfaces reviewed and naming drift corrected 
 Editor Findings:
 - Mythopedia: the live cosmological naming family now runs `Aruhal -> Orunel -> Athalor -> Lorathen -> Daralon -> Mirevar -> Kethoran`, with English retained as gloss rather than title-language canon.
 - Timeline: era headings and scope notes were reviewed against the accepted primal era names so the chronology no longer mixes two rival naming schemes.
-- Creator: the naming sweep did not alter metaphysical substance; it clarified designation and preserved the existing canon constraints around innocence, derivative being, and non-rebellion.
+- Creator: the naming sweep did not alter metaphysical substance; it clarified designation and preserved the existing canon constraints around innocence, derivative being, and inescapable inclusion within `Loran`.
 - Narrative: current creation tales now introduce the governing primal headword alongside the English gloss instead of letting English stand alone at entry.
 Primal Language Follow-Through:
 - The conflicting alternate era-name branch was rejected in favor of the already integrated canon family.

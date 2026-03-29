@@ -64,6 +64,6 @@ The old orders did not vanish. They became luminous. Composite being was now bat
 
 ## V. The Rhythm Remains
 
-All things were still aligned with `Loran`. No rebellion could arise from such an age, for rebellion requires a center standing apart enough to claim ownership of itself against the whole. `Tavirelon` had not yet granted that severance. It had given awareness, but not isolation; witness, but not self-possession.
+All things were still aligned with `Loran`. No created center could yet set itself on a separate course from the whole, for such a course requires isolation that `Tavirelon` had not granted. It had given awareness, but not separation; witness, but not self-possession.
 
 Thus `Tavirelon`, the Photon Era, is remembered as the age in which consciousness first spread through creation like light through a sea. `Taviral`, `Tavreth`, `Selkoral`, `Seraeth`, `Phaethor`, `Mirasal`, `Taviron`, and `Atharon` took their stations. The world had not yet learned to stand alone and say "I." But the field of awareness had begun to burn.

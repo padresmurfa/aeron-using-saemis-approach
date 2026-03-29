@@ -15,5 +15,5 @@ Dictionary:
 - Propagated the accepted roots back into saga, mythopedia, timeline, and report surfaces so English remains gloss rather than canon headword.
 Verdict: Accept
 Next Required Actions:
-- Later canon should decide when `Vathrek` will and `Oraethor` refusal become moral rebellion rather than innocent capacity.
+- Later canon should decide when soul-bearing ethical life enters and how `Vathrek` will and `Oraethor` refusal develop into later local strain between created beings.
 - If a later era turns `Atheron`, `Phaemorin`, or `Selkorin` into fully developed angelic persons, embodied mortal selves, or historical covenant communities, keep those developments downstream of `Athorael` rather than collapsing them into first transparent selfhood.

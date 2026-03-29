@@ -12,7 +12,7 @@ Interaction divided within itself. One current bent toward binding: the fastenin
 
 With this division, asymmetry descended from abstract condition into active relation. Influence no longer moved as a merely neutral exchange. It could lean. It could favor. It could intensify one bond rather than another, admit one conversion rather than another, sustain one tension while allowing another to spend itself.
 
-That leaning was not yet freedom. It was not moral judgment, not self-owned choice, not rebellion waiting in disguise. But it was the first flicker of preference, and preference is the earliest ember from which agency may someday draw flame.
+That leaning was not yet freedom. It was not moral judgment, not self-owned choice, not some hidden severance from `Loran` waiting in disguise. But it was the first flicker of preference, and preference is the earliest ember from which agency may someday draw flame.
 
 So arose the Third Order of Beings: interactional intelligences rather than merely structural ones. They remained aligned with `Loran` at their deepest layer, and every prior order retained its innocence. Yet all earlier beings grew more dimensionally intricate under this accretion. `Phaelor` now bore the first hint of directional flow. `Serael` and `Seralon` no longer kept resonance only intelligible, but selectively affine. `Tavral` began to host gradients of permeability rather than naked edge alone. The world had not yet become a theater of choice, but the stageboards had been laid.
 
@@ -54,6 +54,6 @@ Yet let precision hold the line. This was not moral will. No being yet possessed
 
 Thus `Mirevar`, the Electroweak Separation Era, is remembered as the age in which harmony became interaction and asymmetry became consequential. `Sevarn`, `Miravel`, `Tavhor`, `Orael`, `Selketh`, and `Athren` took their stations, and with them the universe acquired the earliest seed of agency.
 
-But corruption still slept unborn.
+But soul-bearing ethical categories still slept far downstream.
 
 Rebellion remained impossible. Will had not yet won independence. No creature could yet say no in full possession of itself. The world had learned how to lean, how to prefer, how to permit different outcomes to gather under law. Story had drawn nearer. Freedom had not yet arrived.

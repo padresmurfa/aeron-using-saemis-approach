@@ -23,7 +23,7 @@ In `Seraelon` (the Lepton Era), the `Oraelin` move between interiors, sense boun
 
 ## Boundaries
 
-`Oraelin` must not be mistaken for dream spirits, secret rebels, or free-willed message carriers. It is lawful threshold mobility, not hidden autonomy.
+`Oraelin` must not be mistaken for dream spirits, covert autonomous agents, or free-willed message carriers. It is lawful threshold mobility, not hidden autonomy.
 
 ## Relations
 

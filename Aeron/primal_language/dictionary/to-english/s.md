@@ -7,11 +7,13 @@
 - [`Seralon`](../../structural_principles/seralon.md): Harmonic Bridges; long-range coherence bearers.
 - [`Seraelon`](../../era_names/seraelon.md): Lepton Era; age of mobility, encounter, and transmissive relation.
 - [`Serath`](../../structural_principles/serath.md): Harmonics; resonant interaction and alignment.
+- [`Serathen`](../../structural_principles/serathen.md): Hidden Singers; unseen preservers of harmony in darkened space.
 - [`Seren`](../../structural_principles/seren.md): harmony; resonant alignment between phases.
 - [`Selketh`](../../structural_principles/selketh.md): Cohesion Hosts; maintainers of clustered structure.
 - [`Selkor`](../../structural_principles/selkor.md): Cohesion Clusters; interior collectives under enclosure.
 - [`Selkoral`](../../structural_principles/selkoral.md): Chorus Fields; collective resonance-fields without a single center.
 - [`Selkoran`](../../era_names/selkoran.md): Hadron Era; age of composite binding and nested interiority.
+- [`Selkorath`](../../structural_principles/selkorath.md): Covenant Strainers; covenantal selves in whom fidelity and loosening become separable possibilities.
 - [`Selkorin`](../../structural_principles/selkorin.md): Covenant Persons; unified selves capable of voluntary bond.
 - [`Selkoren`](../../structural_principles/selkoren.md): Covenant Clusters; coordinated interiors bound into one whole.
 - [`Sethan`](../../structural_principles/sethan.md): standing wave; stable harmonic structure.

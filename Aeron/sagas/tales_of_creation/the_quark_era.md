@@ -52,6 +52,6 @@ All earlier orders acquired new depth by this confinement. Primordials remained 
 
 ## V. The Rhythm Within
 
-Still corruption remained impossible. Interiority had appeared, but self-ownership had not. There was an inside now, but no separation from `Loran`; pressure, but not estrangement; retained history, but not autonomous memory. The rhythm still passed through all things.
+Still self-owned rupture remained impossible. Interiority had appeared, but self-ownership had not. There was an inside now, but no separation from `Loran`; pressure, but not estrangement; retained history, but not autonomous memory. The rhythm still passed through all things.
 
 Thus `Kethoran`, the Quark Era, is remembered as the age in which enclosure became real and the first true proto-self became structurally possible. `Kethor`, `Mirath`, `Tavrek`, `Oraeth`, `Athorin`, `Selkor`, and `Phaemor` took their stations. Creation had not yet said "I," but it had begun to build the interior in which that word might one day be heard.

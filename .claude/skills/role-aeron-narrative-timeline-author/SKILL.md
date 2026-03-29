@@ -40,3 +40,4 @@ Verdict: Pass / Revise
 - Do not allow ambiguous or duplicate event placement.
 - Do not headline or summarize a canonized era under English-only naming once a primal-era term exists.
 - Do not let canonized concept names appear in timeline prose under English-only form when the primal headword is available.
+- Do not summarize pre-soul eras as moral falls, rebellions against `Aru` or `Loran`, or good-versus-evil thresholds; timeline language must keep those later developments out of scope until canon actually introduces them.

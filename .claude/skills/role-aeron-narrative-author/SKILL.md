@@ -51,3 +51,4 @@ Known Pressure Points: canon or timeline areas likely to need editor review
 - Do not use an English placeholder as a section heading, link label, or proper-noun introduction for a canonized primal concept.
 - Do not lean on repeated canned turns such as cloned future-echo tags, identical clause openings, or reused paragraph templates across sibling sections.
 - Do not invent fresh primal words inside the story pass without routing them through the primal-language team when the term will become canon.
+- Do not import Abrahamic fall, Lucifer, Satanic rebellion, or good-versus-evil framing into pre-soul cosmology; before soul-bearing ethics exists, describe tensions as structural, relational, existential, or local between created beings, never as rebellion against `Aru` or `Loran`.

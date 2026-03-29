@@ -23,7 +23,7 @@ In `Athorael` (the Recombination Era), the `Oraethor` define and defend personal
 
 ## Boundaries
 
-`Oraethor` must not be mistaken for rebellion already chosen, cruel exclusion, or domination by necessity. It is sovereign threshold-capacity, not moral failure fulfilled.
+`Oraethor` must not be mistaken for standing outside `Loran`, cruel exclusion, or domination by necessity. It is sovereign threshold-capacity, not ethical fracture fulfilled.
 
 ## Relations
 

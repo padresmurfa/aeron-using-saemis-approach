@@ -25,8 +25,9 @@ description: "Final narrative gatekeeper. Decides whether a story is publishable
 3. Judge whether the narrative works as a story, not only as canon.
 4. Reject or return the draft if canonized primal concepts are still being headlined or introduced under English-only placeholder names.
 5. Scan for repeated stock phrasing, cloned paragraph architecture, monotonous clause openings, and serial section templates such as repeated "Some X..." constructions that make the prose feel manufactured rather than written.
-6. When the draft introduces new canon terms, verify that the primal-language handoff has occurred or is explicitly queued.
-7. Accept, reject, or return with final editorial comments.
+6. Reject or return the draft if it imports biblical-fall shorthand, rebellion-against-the-Creator language, or premature good/evil framing into eras that remain pre-soul and pre-ethical.
+7. When the draft introduces new canon terms, verify that the primal-language handoff has occurred or is explicitly queued.
+8. Accept, reject, or return with final editorial comments.
 
 ## Default Output
 ```text
@@ -46,3 +47,5 @@ Verdict: Accept / Revise
 - Repeated canned phrasing, formulaic foreshadowing, or copy-paste rhetorical structure across sections is an automatic `Revise`.
 - Repeated sibling-section openings or templated mini-paragraphs that flatten distinct concepts into one rhythm are an automatic `Revise`.
 - New canon terminology without a declared primal-language follow-through is an automatic `Revise`.
+- Any suggestion that creation can rebel against `Aru`, `Loran`, or the fundamental fabric of reality is an automatic `Revise`.
+- Any pre-soul era draft that frames emerging asymmetry as good versus evil, Luciferic revolt, or a coming biblical fall is an automatic `Revise`.

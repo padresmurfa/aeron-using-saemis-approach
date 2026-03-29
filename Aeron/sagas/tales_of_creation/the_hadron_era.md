@@ -6,7 +6,7 @@ The Quark Era had taught creation how to keep. It had learned enclosure, retenti
 
 Then binding deepened.
 
-The world did not break. It settled. Interior beings found one another under the same pressure and ceased to remain mere neighbors in confinement. They fused into higher unity. Multiple interiorities began to move as one body, not by surrendering their parts, but by ordering them into a common life. This was not rebellion. It was composition.
+The world did not break. It settled. Interior beings found one another under the same pressure and ceased to remain mere neighbors in confinement. They fused into higher unity. Multiple interiorities began to move as one body, not by surrendering their parts, but by ordering them into a common life. This was not secession. It was composition.
 
 ## II. The First Composite Unity
 
@@ -52,6 +52,6 @@ The old orders did not vanish. They deepened. The lines of prior creation gained
 
 ## V. The Rhythm Remains
 
-All things were still aligned with `Loran`. There was no rebellion in the binding, no secession in the plurality, no corruption in the tension. The rhythm permeated every interior.
+All things were still aligned with `Loran`. There was no secession in the binding, no fracture in the plurality, and no self-owned rupture in the tension. The rhythm permeated every interior.
 
 Thus `Selkoran`, the Hadron Era, is remembered as the age when created being first became structurally capable of containing itself in more than one layer. `Ketharen`, `Selkoren`, `Phaemoren`, `Oraethen`, `Taviren`, and `Athoren` took their stations. It was not yet self-aware. It was not yet free. But the house of the self had begun to rise.

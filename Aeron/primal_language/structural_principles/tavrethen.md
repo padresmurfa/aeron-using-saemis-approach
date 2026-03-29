@@ -23,7 +23,7 @@ In `Athorael` (the Recombination Era), the `Tavrethen` regulate internal and ext
 
 ## Boundaries
 
-`Tavrethen` must not be confused with tyranny, concealment as evil already chosen, or full refusal enacted against `Loran`. It is self-guarding sovereignty, not rebellion completed.
+`Tavrethen` must not be confused with tyranny, concealed ethical vice, or any capacity to step outside `Loran`. It is self-guarding sovereignty, not metaphysical revolt.
 
 ## Relations
 

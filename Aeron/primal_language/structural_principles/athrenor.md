@@ -23,7 +23,7 @@ In `Athorael` (the Recombination Era), the `Athrenor` maintain uniqueness indepe
 
 ## Boundaries
 
-`Athrenor` must not be mistaken for rebellion already enacted, wickedness, or alienation by necessity. It is individuated divergence, not moral breach.
+`Athrenor` must not be mistaken for metaphysical secession, soul-bearing vice, or alienation by necessity. It is individuated divergence, not ethical breach.
 
 ## Relations
 
@@ -33,4 +33,4 @@ In `Athorael` (the Recombination Era), the `Athrenor` maintain uniqueness indepe
 
 ## Note On Form
 
-`Athrenor` keeps the `athren` line audible because later possible rebellion must grow from lawful difference before it can ever become chosen estrangement.
+`Athrenor` keeps the `athren` line audible because later inter-creature asymmetry must grow from lawful difference before it can ever become durable strain.

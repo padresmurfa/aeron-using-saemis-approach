@@ -23,7 +23,7 @@ In `Mirevar` (the Electroweak Separation Era), the `Orael` allow subtle influenc
 
 ## Boundaries
 
-`Orael` must not be mistaken for death spirits, smugglers of law, or beings outside order. It is threshold intelligence, not rebellion in secret.
+`Orael` must not be mistaken for death spirits, smugglers of law, or beings outside order. It is threshold intelligence, not hidden autonomy outside reality's fabric.
 
 ## Relations
 

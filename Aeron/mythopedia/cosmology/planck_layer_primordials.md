@@ -58,7 +58,7 @@ The layer itself is canonically `Athalor`. Individual primordial items are still
 
 - Primordials precede space, time, matter, and creaturely identity.
 - They do not possess will or personality.
-- They cannot rebel, corrupt, or evolve.
+- They cannot take self-owned course, destabilize, or evolve.
 - They do not interact as beings; they combine structurally.
 - All later beings are emergent configurations of these axioms.
 

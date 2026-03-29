@@ -34,4 +34,4 @@ From stabilized oscillation emerge the archetypal intelligences:
 
 - These beings are lawful archetypes, not yet free moral agents.
 - `Lorathen` must not be confused with `Loraven`, which is the governing condition of the era rather than the era itself.
-- Corruption and rebellion remain impossible.
+- Self-owned strain and any separate course from `Loran` remain impossible.

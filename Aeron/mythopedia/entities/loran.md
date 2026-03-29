@@ -29,7 +29,7 @@ The alternating states within Loran are:
 - Non-antagonistic
 - Necessary to one another
 
-These poles are not moral opposites. Neither is superior, evil, incomplete, or disposable.
+These poles are not ethical opposites. Neither is superior, morally charged, incomplete, or disposable.
 
 ## What Becomes Possible In Loran
 
@@ -52,4 +52,4 @@ At the stage of Loran immediately following the First Pulse, the following still
 - Angels
 - Elementals
 - Souls
-- Moral good and evil
+- Soul-bearing ethical categories

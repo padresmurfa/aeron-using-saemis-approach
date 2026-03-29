@@ -44,7 +44,7 @@ This is not yet moral will. It is directional preference, which is the first see
 
 ## Canon Boundaries
 
-- Binding and transformative influence must not be described as moral good versus moral evil.
+- Binding and transformative influence must not be described as opposed ethical forces.
 - Preference in this era must not be mistaken for independent or self-owning will.
 - Rebellion remains impossible because refusal has not yet become metaphysically available.
 - Earlier orders gain interactional aspects, but they do not lose their prior purity.

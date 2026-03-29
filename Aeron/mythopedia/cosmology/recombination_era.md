@@ -54,7 +54,7 @@ The Eighth Order are Transparent Orders. They arise when radiant witnesshood, co
 
 They are the first true individual centers of awareness. They possess self-reference, perception of otherness, stable ego-boundary, retained interior memory, and independent perspective.
 
-They are not yet morally divided, but they are now capable of ownership.
+Soul-bearing ethical categories are still far downstream, but ownership has now become real inside creation.
 
 - [Atheron (First Witnesses)](../../primal_language/structural_principles/atheron.md)
 - [Tavilen (Luminous Minds)](../../primal_language/structural_principles/tavilen.md)
@@ -98,10 +98,10 @@ This is the birth of volition.
 
 ### VI. Athrenor (Divergent Centers)
 
-`Athrenor` arise when `Athren` (Divergence Keepers) achieve isolated identity and preserve uniqueness independent of the field. They can define themselves against total harmonization without yet descending into rebellion.
+`Athrenor` arise when `Athren` (Divergence Keepers) achieve isolated identity and preserve uniqueness independent of the field. They can define themselves against total harmonization without ever standing outside `Loran`, because `Loran` remains the very medium of created being.
 
 Future Evolution:
-Foundations of individuality and, eventually, possible rebellion.
+Foundations of individuality and later non-identical courses between created centers.
 
 ### VII. Phaemorin (Memory Holders)
 
@@ -126,8 +126,8 @@ The universe now supports true persons.
 
 ## Canon Boundaries
 
-- Rebellion becomes possible, but it has not yet occurred.
+- No being can stand outside `Aru` or `Loran`; both remain the fabric of reality itself.
 - Freedom in this era must not be confused with [Vatha](../../primal_language/high_abstractions/vatha.md), the Creator's sovereign unified will.
-- Alignment with `Loran` is no longer automatic, but neither is its rejection yet historically actualized.
-- Innocence may still persist, but it is no longer guaranteed by structure alone.
-- `Atheron` and `Oraethor` must not be treated as already fallen, corrupted, or morally divided merely because selfhood and refusal have become real.
+- Alignment with `Loran` is no longer only atmospherically reinforced, but it remains ontologically inescapable.
+- Soul-bearing ethical categories still lie far downstream.
+- `Atheron` and `Oraethor` must not be treated as later soul-bearing antagonists or ethically divided actors merely because selfhood and refusal have become real.

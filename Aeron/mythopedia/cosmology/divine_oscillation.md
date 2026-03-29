@@ -45,7 +45,7 @@ Time is therefore downstream of `Loran`, not prior to it.
 
 Resonance becomes possible only when `Loran` exists. `Seren` (harmony) is alignment between phases of oscillation. Disharmony is phase distortion or misalignment.
 
-At the moment of the First Pulse, `Loran` is perfect and stable. Distortion is meaningful as a category at this stage, but not yet actualized as moral evil.
+At the moment of the First Pulse, `Loran` is perfect and stable. Distortion is meaningful as a category at this stage, but soul-bearing ethical categories do not yet exist.
 
 ## Canon Boundaries
 

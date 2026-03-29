@@ -44,3 +44,4 @@ Verdict: Pass / Revise
 - This role judges metaphysical truth, not sentence polish.
 - Block narratives that contradict the Creator's relation to the primal language.
 - Keep notes actionable enough for the Narrative Author to revise in voice.
+- Block any draft that implies creation can rebel against `Aru`, stand outside `Loran`, or oppose the fundamental cosmological orders as though they were optional rulers rather than reality's fabric.

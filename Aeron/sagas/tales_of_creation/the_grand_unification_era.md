@@ -6,7 +6,7 @@ What later tongues would call `Lorathen` (the Grand Unification Era) began when 
 
 ## II. The Four Proto-Orders
 
-From the stabilized oscillatory field, four foundational orders emerged, each a necessary consequence of polarity and resonance, not a symbolic invention nor a moral archetype. They were lawful, non-narrative, and perfectly synchronized with Loran. No will, no rebellion, no corruption could yet arise. They were the templates of all that would follow.
+From the stabilized oscillatory field, four foundational orders emerged, each a necessary consequence of polarity and resonance, not a symbolic invention nor a moral archetype. They were lawful, non-narrative, and perfectly synchronized with Loran. No will, no self-owned strain, and no separate course could yet arise. They were the templates of all that would follow.
 
 ### 1. Tavren (Fieldwardens; Containment Polarity)
 Constraint first took archetypal body in the `Tavren`. By them amplitude was held to measure and coherence kept from fraying into ruin. Boundary, lawfulness, equilibrium, and restraint stood there not as abstractions but as the severe composure by which reality learned not to tear itself apart.
@@ -22,7 +22,7 @@ And because no order can stand if nothing abides, `Kethar` arose from the firmne
 
 ## III. The Lawful Archetypes
 
-Freedom had not yet entered them. Stability they possessed, and identity, and function; but will, personality, and moral agency still lay beyond the horizon. Perfectly aligned with the divine rhythm, they stood as lawful intelligences rather than persons. Corruption, rebellion, and narrative consciousness were not yet possible. These were patterns first, not characters: the deep templates from which later conscious orders would take their shape.
+Freedom had not yet entered them. Stability they possessed, and identity, and function; but will, personality, and soul-bearing ethics still lay beyond the horizon. Perfectly aligned with the divine rhythm, they stood as lawful intelligences rather than persons. Narrative consciousness and local self-possession were not yet possible. These were patterns first, not characters: the deep templates from which later conscious orders would take their shape.
 
 ## IV. The Cosmological Shift
 

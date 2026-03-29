@@ -42,3 +42,4 @@ Verdict: Pass / Revise
 - Block silent contradiction even when the prose is strong.
 - Give revision notes precise enough for the author to act on directly.
 - English-only handling of canonized era names or cosmological concepts is canon drift, not a mere style preference.
+- Block drafts that import biblical-fall or Luciferic-rebellion assumptions into pre-soul cosmology, or that frame `Aru`/`Loran` as possible objects of revolt.

@@ -8,7 +8,7 @@ This was the age later called `Daralon` (the Inflationary Era).
 
 Its greatness lay not in noise, nor in violence, nor in the collapse of law, but in the simple immensity of increase. Harmonic reality expanded more swiftly than full-phase coherence could be borne from region to region in one unbroken act. What had been universal in immediate reach now became universal in source yet local in persistence. Thus the field did not break, but it did separate into domains.
 
-Let no lesser mind mistake this for fracture in the Creator. Loran was not divided against Loran. The one Being remained one. But within that one harmonic majesty, locality now acquired durable standing. Regions could hold. Edges could matter. Delay could accumulate. Difference could be managed without yet becoming rebellion.
+Let no lesser mind mistake this for fracture in the Creator. Loran was not divided against Loran. The one Being remained one. But within that one harmonic majesty, locality now acquired durable standing. Regions could hold. Edges could matter. Delay could accumulate. Difference could be managed without yet becoming self-owned strain.
 
 ## II. The Birth of Domains
 
@@ -60,6 +60,6 @@ So the Second Order entered creation. With it locality became durable. Domain id
 
 But innocence had not departed.
 
-Misalignment could occur, yet not malice. Delay could arise, yet not betrayal. Divergence could threaten, yet not through willful revolt. The universe was now complex, but it remained unstained. No rebellion had entered. No corruption had been conceived. The great expansion multiplied offices, not sins.
+Misalignment could occur, yet not malice. Delay could arise, yet not soul-bearing conflict. Divergence could threaten, yet not through self-owned refusal. The universe was now complex, but it remained unstained. No created center had entered a separate course from `Loran`. The great expansion multiplied offices, not ethical fractures.
 
 Inflation is remembered, therefore, as the age in which unity learned breadth without losing its music. `Kethren`, `Tavral`, `Serael`, `Phaedren`, `Daravel`, `Seralon`, `Sethen`, and `Phaelor` took their stations, and the cosmos gained enough local persistence to host future stories without yet breeding sin. Complexity widened the stage; innocence still ruled it; every order answered, in its measure, to the single harmonic majesty of `Loran`.

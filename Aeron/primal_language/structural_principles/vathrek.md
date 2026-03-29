@@ -23,7 +23,7 @@ In `Athorael` (the Recombination Era), the `Vathrek` direct internal energy by c
 
 ## Boundaries
 
-`Vathrek` must not be confused with [Vatha](../high_abstractions/vatha.md), the Creator's sovereign unified will, nor with rebellion already chosen. It is finite created volition, not divine sovereignty or moral revolt.
+`Vathrek` must not be confused with [Vatha](../high_abstractions/vatha.md), the Creator's sovereign unified will, nor with any imagined capacity to stand outside `Loran`. It is finite created volition, not divine sovereignty or metaphysical secession.
 
 ## Relations
 

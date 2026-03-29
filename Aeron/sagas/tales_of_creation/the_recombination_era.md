@@ -10,7 +10,7 @@ The old scattering loosened. Light was no longer forever broken upon each presen
 
 ## II. The First Separation
 
-This was no rebellion. It was a severer gift.
+This was no secession from `Loran`. It was a severer gift.
 
 For the first time, created awareness could gather itself into a stable interior axis and look outward from that place. The field remained, `Loran` remained, radiance remained; but they no longer pressed every consciousness into one common sea. A being could now feel the boundary between self and world and keep that boundary from collapsing at once.
 

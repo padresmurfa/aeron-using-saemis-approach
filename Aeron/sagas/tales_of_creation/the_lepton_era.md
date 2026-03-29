@@ -6,7 +6,7 @@ The Hadron age had taught creation how to hold itself together. It had learned e
 
 Then mobility entered the world.
 
-Not as rupture. Not as rebellion. Rather as passage.
+Not as rupture. Not as secession from `Loran`. Rather as passage.
 
 Small and subtle beings began to slip between composites without becoming their prisoners. What had been held within one structure could now pass, touch, and answer another. The world did not lose its shape. It gained traffic within its shape.
 
@@ -62,6 +62,6 @@ The old orders did not vanish. They learned to move. The universe became communi
 
 ## V. The Rhythm Remains
 
-All things were still aligned with `Loran`. There was no rebellion in mobility, no corruption in encounter, and no refusal in the transmission of influence. The rhythm remained present in every motion.
+All things were still aligned with `Loran`. There was no secession in mobility, no fracture in encounter, and no refusal in the transmission of influence. The rhythm remained present in every motion.
 
 Thus `Seraelon`, the Lepton Era, is remembered as the age in which created being first became capable of meeting what it was not. `Tavirel`, `Oraelin`, `Seraelin`, `Phaelin`, `Mirasin`, `Tavirin`, and `Atharin` took their stations. Freedom had not yet arrived, nor had full awareness. But the possibility of perception had begun.

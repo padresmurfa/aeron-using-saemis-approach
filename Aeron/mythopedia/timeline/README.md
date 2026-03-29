@@ -20,7 +20,8 @@
 8. [Seraelon (Lepton Era)](eras/08-lepton/timeline.md)
 9. [Tavirelon (Photon Era)](eras/09-photon/timeline.md)
 10. [Athorael (Recombination Era)](eras/10-recombination/timeline.md)
+11. [Darathen (Dark Ages)](eras/11-dark-ages/timeline.md)
 
 ## Coverage Notes
-- Current documented chronology now runs from `Orun` through `Lorathen`, `Daralon`, `Mirevar`, `Kethoran`, `Selkoran`, `Seraelon`, `Tavirelon`, and `Athorael`.
-- Later creation milestones such as stars, worlds, embodied life, and enacted rebellion are not yet canonically detailed here.
+- Current documented chronology now runs from `Orun` through `Lorathen`, `Daralon`, `Mirevar`, `Kethoran`, `Selkoran`, `Seraelon`, `Tavirelon`, `Athorael`, and `Darathen`.
+- Later creation milestones such as stars, worlds, embodied life, soul-bearing ethics, and later inter-creature conflict are not yet canonically detailed here.
