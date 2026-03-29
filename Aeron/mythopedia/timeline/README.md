@@ -19,7 +19,8 @@
 7. [Selkoran (Hadron Era)](eras/07-hadron/timeline.md)
 8. [Seraelon (Lepton Era)](eras/08-lepton/timeline.md)
 9. [Tavirelon (Photon Era)](eras/09-photon/timeline.md)
+10. [Athorael (Recombination Era)](eras/10-recombination/timeline.md)
 
 ## Coverage Notes
-- Current documented chronology now runs from `Orun` through `Lorathen`, `Daralon`, `Mirevar`, `Kethoran`, `Selkoran`, `Seraelon`, and `Tavirelon`.
-- Later creation milestones such as transparent light, matter clarity, stars, worlds, and inhabited orders are not yet canonically detailed here.
+- Current documented chronology now runs from `Orun` through `Lorathen`, `Daralon`, `Mirevar`, `Kethoran`, `Selkoran`, `Seraelon`, `Tavirelon`, and `Athorael`.
+- Later creation milestones such as stars, worlds, embodied life, and enacted rebellion are not yet canonically detailed here.

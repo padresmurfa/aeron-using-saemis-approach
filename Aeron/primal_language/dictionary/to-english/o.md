@@ -4,5 +4,6 @@
 - [`Oraelin`](../../structural_principles/oraelin.md): Whisperers; subtle threshold-movers sensing permeability.
 - [`Oraeth`](../../structural_principles/oraeth.md): Veilbound; transitions between inner and outer states.
 - [`Oraethen`](../../structural_principles/oraethen.md): Boundary Spheres; composite shells of regulated exchange.
+- [`Oraethor`](../../structural_principles/oraethor.md): Boundary Sovereigns; self-aware centers defining and defending personal territory.
 - [`Orun`](../../threshold_events/orun.md): the First Pulse; first self-differentiating act.
 - [`Orunel`](../../era_names/orunel.md): Creation Era; the era opened by the First Pulse.

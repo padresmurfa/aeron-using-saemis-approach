@@ -29,6 +29,7 @@
 - `cosmology/hadron_era.md`
 - `cosmology/lepton_era.md`
 - `cosmology/photon_era.md`
+- `cosmology/recombination_era.md`
 - `events/first_pulse.md`
 - `timeline/README.md`
 

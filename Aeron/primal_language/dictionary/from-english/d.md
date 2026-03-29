@@ -1,6 +1,7 @@
 # D
 
 - `Divergence Keepers`: [`Athren`](../../structural_principles/athren.md).
+- `Divergent Centers`: [`Athrenor`](../../structural_principles/athrenor.md).
 - `divine oscillation`: [`Loran`](../../structural_principles/loran.md).
 - `Domain Embers`: [`Sethen`](../../structural_principles/sethen.md).
 - `Domain Thrones`: [`Kethren`](../../structural_principles/kethren.md).

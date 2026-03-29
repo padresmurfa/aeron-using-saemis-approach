@@ -34,12 +34,13 @@
 - `era_names/selkoran.md`
 - `era_names/seraelon.md`
 - `era_names/tavirelon.md`
+- `era_names/athorael.md`
 - `dictionary/README.md`
 - `dictionary/to-english/README.md`
 - `dictionary/from-english/README.md`
 
 ## Living Lexicon
-- The existing structural-principle corpus remains canonical, including `Loran`, `Tavir`, `Phaes`, `Seren`, `Athal`, `Loraven`, `Sethan`, `Tavren`, `Dareth`, `Serath`, `Kethar`, `Kethren`, `Tavral`, `Serael`, `Phaedren`, `Daravel`, `Seralon`, `Sethen`, `Phaelor`, `Sevarn`, `Miravel`, `Tavhor`, `Orael`, `Selketh`, `Athren`, `Kethor`, `Mirath`, `Tavrek`, `Oraeth`, `Athorin`, `Selkor`, `Phaemor`, `Ketharen`, `Selkoren`, `Phaemoren`, `Oraethen`, `Taviren`, `Athoren`, `Tavirel`, `Oraelin`, `Seraelin`, `Phaelin`, `Mirasin`, `Tavirin`, `Atharin`, `Taviral`, `Tavreth`, `Selkoral`, `Seraeth`, `Phaethor`, `Mirasal`, `Taviron`, and `Atharon`.
+- The existing structural-principle corpus remains canonical, including `Loran`, `Tavir`, `Phaes`, `Seren`, `Athal`, `Loraven`, `Sethan`, `Tavren`, `Dareth`, `Serath`, `Kethar`, `Kethren`, `Tavral`, `Serael`, `Phaedren`, `Daravel`, `Seralon`, `Sethen`, `Phaelor`, `Sevarn`, `Miravel`, `Tavhor`, `Orael`, `Selketh`, `Athren`, `Kethor`, `Mirath`, `Tavrek`, `Oraeth`, `Athorin`, `Selkor`, `Phaemor`, `Ketharen`, `Selkoren`, `Phaemoren`, `Oraethen`, `Taviren`, `Athoren`, `Tavirel`, `Oraelin`, `Seraelin`, `Phaelin`, `Mirasin`, `Tavirin`, `Atharin`, `Taviral`, `Tavreth`, `Selkoral`, `Seraeth`, `Phaethor`, `Mirasal`, `Taviron`, `Atharon`, `Atheron`, `Tavilen`, `Tavrethen`, `Selkorin`, `Vathrek`, `Athrenor`, `Phaemorin`, and `Oraethor`.
 - Compound forms are now tracked when a major root carries tightly bound sub-concepts. See `grammar/compound_words.md` and the `Mirath` entry for the first live examples.
 
 ## Canon

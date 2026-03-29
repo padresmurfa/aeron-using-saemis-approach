@@ -12,6 +12,7 @@
 - [`Selkor`](../../structural_principles/selkor.md): Cohesion Clusters; interior collectives under enclosure.
 - [`Selkoral`](../../structural_principles/selkoral.md): Chorus Fields; collective resonance-fields without a single center.
 - [`Selkoran`](../../era_names/selkoran.md): Hadron Era; age of composite binding and nested interiority.
+- [`Selkorin`](../../structural_principles/selkorin.md): Covenant Persons; unified selves capable of voluntary bond.
 - [`Selkoren`](../../structural_principles/selkoren.md): Covenant Clusters; coordinated interiors bound into one whole.
 - [`Sethan`](../../structural_principles/sethan.md): standing wave; stable harmonic structure.
 - [`Sethen`](../../structural_principles/sethen.md): Domain Embers; compressed standing-wave intensity.

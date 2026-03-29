@@ -1,6 +1,7 @@
 # C
 
 - `Covenant Clusters`: [`Selkoren`](../../structural_principles/selkoren.md).
+- `Covenant Persons`: [`Selkorin`](../../structural_principles/selkorin.md).
 - `Chorus Fields`: [`Selkoral`](../../structural_principles/selkoral.md).
 - `controlled instability`: [`Mirath'varen'kor`](../../structural_principles/mirath.md).
 - `Corewardens`: [`Kethor`](../../structural_principles/kethor.md).

@@ -13,3 +13,4 @@
 - `selkoran.md`
 - `seraelon.md`
 - `tavirelon.md`
+- `athorael.md`

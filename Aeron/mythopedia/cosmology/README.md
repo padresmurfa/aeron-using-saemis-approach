@@ -15,5 +15,6 @@ This directory contains canonical reference entries for the fundamental metaphys
 - `hadron_era.md`: [Selkoran](../../primal_language/era_names/selkoran.md), the age of composite binding and nested interiority.
 - `lepton_era.md`: [Seraelon](../../primal_language/era_names/seraelon.md), the age of mobility, encounter, and transmissive relation.
 - `photon_era.md`: [Tavirelon](../../primal_language/era_names/tavirelon.md), the age of radiant saturation and field-like awareness.
+- `recombination_era.md`: [Athorael](../../primal_language/era_names/athorael.md), the age of transparent perspective and isolated selfhood.
 
 Refer to these files for the metaphysical and ontological rules that govern all subsequent mythic events and entities.
