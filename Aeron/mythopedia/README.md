@@ -31,6 +31,7 @@
 - `cosmology/photon_era.md`
 - `cosmology/recombination_era.md`
 - `cosmology/dark_ages.md`
+- `cosmology/reionization_era.md`
 - `events/first_pulse.md`
 - `timeline/README.md`
 

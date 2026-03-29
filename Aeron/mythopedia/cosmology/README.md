@@ -17,5 +17,6 @@ This directory contains canonical reference entries for the fundamental metaphys
 - `photon_era.md`: [Tavirelon](../../primal_language/era_names/tavirelon.md), the age of radiant saturation and field-like awareness.
 - `recombination_era.md`: [Athorael](../../primal_language/era_names/athorael.md), the age of transparent perspective and isolated selfhood.
 - `dark_ages.md`: [Darathen](../../primal_language/era_names/darathen.md), the age of luminous silence and existential solitude.
+- `reionization_era.md`: [Daravelon](../../primal_language/era_names/daravelon.md), the age of first stellar ignition and outward-borne created radiance.
 
 Refer to these files for the metaphysical and ontological rules that govern all subsequent mythic events and entities.

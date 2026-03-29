@@ -2,3 +2,5 @@
 
 - `First Witnesses`: [`Atheron`](../../structural_principles/atheron.md).
 - `Fieldwardens`: [`Tavren`](../../structural_principles/tavren.md).
+- `Flamebearer Regents`: [`Vathoral`](../../structural_principles/vathoral.md).
+- `Forgers of Form`: [`Kethavel`](../../structural_principles/kethavel.md).

@@ -7,6 +7,7 @@
 - [`Tavirelon`](../../era_names/tavirelon.md): Photon Era; age of radiant saturation and field-like awareness.
 - [`Tavilen`](../../structural_principles/tavilen.md): Luminous Minds; localized interior lights capable of reflective cognition.
 - [`Tavilor`](../../structural_principles/tavilor.md): Keepers of the Inner Flame; self-held lights preserving clarity in luminous absence.
+- [`Taviloron`](../../structural_principles/taviloron.md): Starforged; self-held flames kindled into stable outward-radiant centers.
 - [`Tavirin`](../../structural_principles/tavirin.md): Entanglers; complementary movers that link distant entities.
 - [`Taviron`](../../structural_principles/taviron.md): Entangled Constellations; vast luminous linkages of mutual answerability.
 - [`Taviren`](../../structural_principles/taviren.md): Polarity Twins; complementary halves held in persistent unity.

@@ -4,6 +4,7 @@
 - [`Phaelor`](../../structural_principles/phaelor.md): Latency Keepers; regulators of widening timing fields.
 - [`Phaelin`](../../structural_principles/phaelin.md): Drift Seekers; mobile trackers of phase deviation.
 - [`Phaemor`](../../structural_principles/phaemor.md): Tension Archivists; retained internal sequence and phase history.
+- [`Phaemoral`](../../structural_principles/phaemoral.md): Memory Stars; radiant anchors of continuity across great spans.
 - [`Phaemorel`](../../structural_principles/phaemorel.md): Rememberers; inward dwellers in story whose identity is carried by remembrance.
 - [`Phaemorin`](../../structural_principles/phaemorin.md): Memory Holders; personal continuity and narrative history held in memory.
 - [`Phaemoren`](../../structural_principles/phaemoren.md): Tension Matrices; retained pressure and structural history in composite form.

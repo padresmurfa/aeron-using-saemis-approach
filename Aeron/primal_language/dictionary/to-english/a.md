@@ -6,8 +6,10 @@
 - [`Athalor`](../../era_names/athalor.md): Planck Layer and primordial unfolding span.
 - [`Atherel`](../../structural_principles/atherel.md): Silent Observers; contemplative witnesses sustained without outward stimulus.
 - [`Atheron`](../../structural_principles/atheron.md): First Witnesses; first true self-aware centers in creation.
+- [`Atheror`](../../structural_principles/atheror.md): Witness Sovereigns; contemplative lights whose seeing becomes truthful radiance.
 - [`Atharin`](../../structural_principles/atharin.md): Witnesses; detached observers that register encounter.
 - [`Atharon`](../../structural_principles/atharon.md): Witness Fires; stable observer-identities immersed in luminous totality.
+- [`Athralon`](../../structural_principles/athralon.md): Divergent Suns; radiant centers casting self-defined proportion into surrounding space.
 - [`Athorael`](../../era_names/athorael.md): Recombination Era; age of transparent perspective and isolated selfhood.
 - [`Athren`](../../structural_principles/athren.md): Divergence Keepers; lawful difference under interaction.
 - [`Athrenor`](../../structural_principles/athrenor.md): Divergent Centers; isolated selves preserving defining uniqueness.

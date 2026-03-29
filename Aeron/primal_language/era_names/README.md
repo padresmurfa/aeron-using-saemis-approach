@@ -15,3 +15,4 @@
 - `tavirelon.md`
 - `athorael.md`
 - `darathen.md`
+- `daravelon.md`
