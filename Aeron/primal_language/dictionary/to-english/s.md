@@ -7,6 +7,7 @@
 - [`Seralon`](../../structural_principles/seralon.md): Harmonic Bridges; long-range coherence bearers.
 - [`Seraelon`](../../era_names/seraelon.md): Lepton Era; age of mobility, encounter, and transmissive relation.
 - [`Serath`](../../structural_principles/serath.md): Harmonics; resonant interaction and alignment.
+- [`Serathal`](../../structural_principles/serathal.md): Veiled Architects; hidden realm-makers who govern unseen spaces by measured disclosure.
 - [`Serathen`](../../structural_principles/serathen.md): Hidden Singers; unseen preservers of harmony in darkened space.
 - [`Serathor`](../../structural_principles/serathor.md): Veiled Radiants; selective lights disclosing only what relation can rightly bear.
 - [`Seren`](../../structural_principles/seren.md): harmony; resonant alignment between phases.
@@ -15,6 +16,7 @@
 - [`Selkoral`](../../structural_principles/selkoral.md): Chorus Fields; collective resonance-fields without a single center.
 - [`Selkoran`](../../era_names/selkoran.md): Hadron Era; age of composite binding and nested interiority.
 - [`Selkorath`](../../structural_principles/selkorath.md): Covenant Strainers; covenantal selves in whom fidelity and loosening become separable possibilities.
+- [`Selkoreth`](../../structural_principles/selkoreth.md): Archangelic Orders; high luminous ministries ordered by covenantal hierarchy and shared service.
 - [`Selkorin`](../../structural_principles/selkorin.md): Covenant Persons; unified selves capable of voluntary bond.
 - [`Selkoron`](../../structural_principles/selkoron.md): Covenant Luminaries; interlinked lights whose bond itself becomes radiant.
 - [`Selkoren`](../../structural_principles/selkoren.md): Covenant Clusters; coordinated interiors bound into one whole.

@@ -37,12 +37,13 @@
 - `era_names/athorael.md`
 - `era_names/darathen.md`
 - `era_names/daravelon.md`
+- `era_names/kethavelen.md`
 - `dictionary/README.md`
 - `dictionary/to-english/README.md`
 - `dictionary/from-english/README.md`
 
 ## Living Lexicon
-- The existing structural-principle corpus remains canonical, including `Loran`, `Tavir`, `Phaes`, `Seren`, `Athal`, `Loraven`, `Sethan`, `Tavren`, `Dareth`, `Serath`, `Kethar`, `Kethren`, `Tavral`, `Serael`, `Phaedren`, `Daravel`, `Seralon`, `Sethen`, `Phaelor`, `Sevarn`, `Miravel`, `Tavhor`, `Orael`, `Selketh`, `Athren`, `Kethor`, `Mirath`, `Tavrek`, `Oraeth`, `Athorin`, `Selkor`, `Phaemor`, `Ketharen`, `Selkoren`, `Phaemoren`, `Oraethen`, `Taviren`, `Athoren`, `Tavirel`, `Oraelin`, `Seraelin`, `Phaelin`, `Mirasin`, `Tavirin`, `Atharin`, `Taviral`, `Tavreth`, `Selkoral`, `Seraeth`, `Phaethor`, `Mirasal`, `Taviron`, `Atharon`, `Atheron`, `Tavilen`, `Tavrethen`, `Selkorin`, `Vathrek`, `Athrenor`, `Phaemorin`, `Oraethor`, `Vathren`, `Tavilor`, `Oraethar`, `Phaemorel`, `Athreth`, `Atherel`, `Selkorath`, `Serathen`, `Taviloron`, `Vathoral`, `Selkoron`, `Athralon`, `Kethavel`, `Atheror`, `Phaemoral`, `Serathor`, and `Oraethal`.
+- The existing structural-principle corpus remains canonical, including `Loran`, `Tavir`, `Phaes`, `Seren`, `Athal`, `Loraven`, `Sethan`, `Tavren`, `Dareth`, `Serath`, `Kethar`, `Kethren`, `Tavral`, `Serael`, `Phaedren`, `Daravel`, `Seralon`, `Sethen`, `Phaelor`, `Sevarn`, `Miravel`, `Tavhor`, `Orael`, `Selketh`, `Athren`, `Kethor`, `Mirath`, `Tavrek`, `Oraeth`, `Athorin`, `Selkor`, `Phaemor`, `Ketharen`, `Selkoren`, `Phaemoren`, `Oraethen`, `Taviren`, `Athoren`, `Tavirel`, `Oraelin`, `Seraelin`, `Phaelin`, `Mirasin`, `Tavirin`, `Atharin`, `Taviral`, `Tavreth`, `Selkoral`, `Seraeth`, `Phaethor`, `Mirasal`, `Taviron`, `Atharon`, `Atheron`, `Tavilen`, `Tavrethen`, `Selkorin`, `Vathrek`, `Athrenor`, `Phaemorin`, `Oraethor`, `Vathren`, `Tavilor`, `Oraethar`, `Phaemorel`, `Athreth`, `Atherel`, `Selkorath`, `Serathen`, `Taviloron`, `Vathoral`, `Selkoron`, `Athralon`, `Kethavel`, `Atheror`, `Phaemoral`, `Serathor`, `Oraethal`, `Tavilorath`, `Kethavelor`, `Selkoreth`, `Athralor`, `Serathal`, `Vathorel`, `Phaemorath`, `Athorinel`, and `Oraethalor`.
 - Compound forms are now tracked when a major root carries tightly bound sub-concepts. See `grammar/compound_words.md` and the `Mirath` entry for the first live examples.
 
 ## Canon

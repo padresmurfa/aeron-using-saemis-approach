@@ -10,10 +10,12 @@
 - [`Atharin`](../../structural_principles/atharin.md): Witnesses; detached observers that register encounter.
 - [`Atharon`](../../structural_principles/atharon.md): Witness Fires; stable observer-identities immersed in luminous totality.
 - [`Athralon`](../../structural_principles/athralon.md): Divergent Suns; radiant centers casting self-defined proportion into surrounding space.
+- [`Athralor`](../../structural_principles/athralor.md): Divergent Lords; singular realm-bearers whose self-defined radiance consolidates into enduring courts.
 - [`Athorael`](../../era_names/athorael.md): Recombination Era; age of transparent perspective and isolated selfhood.
 - [`Athren`](../../structural_principles/athren.md): Divergence Keepers; lawful difference under interaction.
 - [`Athrenor`](../../structural_principles/athrenor.md): Divergent Centers; isolated selves preserving defining uniqueness.
 - [`Athreth`](../../structural_principles/athreth.md): Divergent Flames; self-defining fires testing identity beyond consensus.
 - [`Athoren`](../../structural_principles/athoren.md): Proto-Selves; coherent composite interiors capable of self-reference.
 - [`Athorin`](../../structural_principles/athorin.md): Identity Seeds; enclosed kernels of uniqueness.
+- [`Athorinel`](../../structural_principles/athorinel.md): Worldbound Seeds; finite loci of identity embedded within stabilized realm-made structures.
 - `ael`: inwardness; internal orientation used in compounds.

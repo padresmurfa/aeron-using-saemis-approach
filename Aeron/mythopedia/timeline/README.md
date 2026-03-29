@@ -22,7 +22,8 @@
 10. [Athorael (Recombination Era)](eras/10-recombination/timeline.md)
 11. [Darathen (Dark Ages)](eras/11-dark-ages/timeline.md)
 12. [Daravelon (Reionization Era)](eras/12-reionization/timeline.md)
+13. [Kethavelen (Stelliferous Era)](eras/13-stelliferous/timeline.md)
 
 ## Coverage Notes
-- Current documented chronology now runs from `Orun` through `Lorathen`, `Daralon`, `Mirevar`, `Kethoran`, `Selkoran`, `Seraelon`, `Tavirelon`, `Athorael`, `Darathen`, and `Daravelon`.
-- Later creation milestones such as worlds, embodied life, soul-bearing ethics, and later inter-creature conflict are not yet canonically detailed here.
+- Current documented chronology now runs from `Orun` through `Lorathen`, `Daralon`, `Mirevar`, `Kethoran`, `Selkoran`, `Seraelon`, `Tavirelon`, `Athorael`, `Darathen`, `Daravelon`, and `Kethavelen`.
+- Later creation milestones such as embodied life, soul-bearing ethics, and later inter-creature conflict are not yet canonically detailed here.

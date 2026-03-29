@@ -18,5 +18,6 @@ This directory contains canonical reference entries for the fundamental metaphys
 - `recombination_era.md`: [Athorael](../../primal_language/era_names/athorael.md), the age of transparent perspective and isolated selfhood.
 - `dark_ages.md`: [Darathen](../../primal_language/era_names/darathen.md), the age of luminous silence and existential solitude.
 - `reionization_era.md`: [Daravelon](../../primal_language/era_names/daravelon.md), the age of first stellar ignition and outward-borne created radiance.
+- `stelliferous_era.md`: [Kethavelen](../../primal_language/era_names/kethavelen.md), the age of stabilized realms, angelic ministry, and world-preparing cosmic architecture.
 
 Refer to these files for the metaphysical and ontological rules that govern all subsequent mythic events and entities.

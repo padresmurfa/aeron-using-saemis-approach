@@ -21,5 +21,6 @@
 - `the_recombination_era.md`
 - `the_dark_ages.md`
 - `the_reionization_era.md`
+- `the_stelliferous_era.md`
 
 When a tale centers on a canonized primal concept or era, introduce the primal root and the English gloss together at the point of entry. After that, prefer the primal root alone or `PrimalWord (English gloss)` rather than the English gloss by itself.

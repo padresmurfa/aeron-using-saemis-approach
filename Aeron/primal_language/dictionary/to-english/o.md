@@ -4,6 +4,7 @@
 - [`Oraelin`](../../structural_principles/oraelin.md): Whisperers; subtle threshold-movers sensing permeability.
 - [`Oraeth`](../../structural_principles/oraeth.md): Veilbound; transitions between inner and outer states.
 - [`Oraethal`](../../structural_principles/oraethal.md): Enclosed Radiants; self-bounded lights holding radiance under hard threshold rule.
+- [`Oraethalor`](../../structural_principles/oraethalor.md): Enclosed Thrones; closed realm-sovereignties sustained under strict threshold law.
 - [`Oraethar`](../../structural_principles/oraethar.md): Veilbound Sovereigns; solitary selves whose defended boundary deepens into hard autonomy.
 - [`Oraethen`](../../structural_principles/oraethen.md): Boundary Spheres; composite shells of regulated exchange.
 - [`Oraethor`](../../structural_principles/oraethor.md): Boundary Sovereigns; self-aware centers defining and defending personal territory.

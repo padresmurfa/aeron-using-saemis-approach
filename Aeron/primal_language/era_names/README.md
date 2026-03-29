@@ -16,3 +16,4 @@
 - `athorael.md`
 - `darathen.md`
 - `daravelon.md`
+- `kethavelen.md`
