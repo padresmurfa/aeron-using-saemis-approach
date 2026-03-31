@@ -118,7 +118,7 @@ This is the first true precursor to individual consciousness.
 Future Evolution:
 Seed of sentient beings.
 
-## Dimensional Accretion Rule
+## Ketharel (Dimensional Accretion Rule)
 
 All prior beings gain radiant aspects. Interiority becomes luminous, mobility becomes saturated, and composite identity becomes field-immersed. The universe becomes conscious as a whole, but not yet as isolated persons.
 

@@ -28,6 +28,7 @@ In the pre-Big-Bang state, `Selem` describes how the Creator knows Himself witho
 
 - [Aru](aru.md) is the absolute being in which `Selem` inheres.
 - [Vatha](vatha.md) depends on `Selem`, because unified will presumes unified selfhood.
+- [Darasel](darasel.md) depends on `Selem`, because true naming here is inwardly grounded in undivided self-knowing rather than external reference.
 
 ## Note On Form
 

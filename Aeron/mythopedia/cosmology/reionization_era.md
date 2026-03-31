@@ -122,7 +122,7 @@ Precursors to hidden deities, mystery keepers, and guarded revelatory orders.
 
 `Oraethal` arise when `Oraethar` (Veilbound Sovereigns) ignite under hard boundary rule and sustain radiance without wide reciprocity. They become the first structures in creation capable of large-scale self-enclosed luminous order, in which light is real but not freely shared.
 
-## Dimensional Accretion Rule
+## Ketharel (Dimensional Accretion Rule)
 
 All prior beings gain ignition aspects. Composite structures can now radiate, mobility can become illumination, memory can become myth-bearing continuity, and will can become stewardship.
 

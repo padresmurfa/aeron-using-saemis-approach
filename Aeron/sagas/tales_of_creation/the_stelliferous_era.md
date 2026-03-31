@@ -18,7 +18,7 @@ Still the boundary must remain exact. No new order here stood outside `Aru` or b
 
 ## III. The Eleventh Order Of Beings
 
-The primal language has now named these forms, and by those names the Realm Orders are remembered.
+`Darasel` (the Primal Language) has now named these forms, and by those names the Realm Orders are remembered.
 
 ### Tavilorath (Stellar Thrones)
 

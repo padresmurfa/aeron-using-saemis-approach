@@ -20,7 +20,7 @@ Not the perfect self-knowing of `Selem`, which belongs only to the Creator. Not 
 
 ## III. The Eighth Order Of Beings
 
-The primal language has now named these forms, and by those names the Eighth Order is remembered.
+`Darasel` (the Primal Language) has now named these forms, and by those names the Eighth Order is remembered.
 
 ### Atheron (First Witnesses)
 

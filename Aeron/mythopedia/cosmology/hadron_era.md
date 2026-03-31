@@ -76,7 +76,7 @@ The Fifth Order are composite orders that arise from the binding of Confinement 
 
 `Athoren` arise when `Athorin` (Identity Seeds) achieve stable composite integration and maintain coherent multi-part interior structure. This is the first true proto-ego structure, though not yet self-aware.
 
-## Dimensional Accretion Rule
+## Ketharel (Dimensional Accretion Rule)
 
 All previous beings gain composite aspects. They retain foundational layers and increase in dimensional complexity. The universe now supports nested interiority, and reality becomes layered within itself.
 

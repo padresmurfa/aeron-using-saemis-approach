@@ -111,7 +111,7 @@ Foundations of enlightenment archetypes.
 Future Evolution:
 Precursors to guardian spirits, hidden angels, and unsung protectors.
 
-## Dimensional Accretion Rule
+## Ketharel (Dimensional Accretion Rule)
 
 All prior beings gain solitary aspects. Awareness becomes interiorized, will becomes self-owned, and memory becomes narratively inhabited.
 

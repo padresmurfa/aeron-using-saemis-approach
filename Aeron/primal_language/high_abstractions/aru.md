@@ -30,6 +30,7 @@ In the pre-Big-Bang state, `Aru` is the broadest valid primal root. It names the
 - [Selem](selem.md) expresses `Aru` as immediate self-knowing.
 - [Vatha](vatha.md) expresses `Aru` as unified will.
 - [Dara](dara.md) expresses `Aru` as latent expression.
+- [Darasel](darasel.md) names the total ordered intelligibility contained within `Aru`'s being.
 
 ## Note On Form
 

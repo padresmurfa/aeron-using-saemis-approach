@@ -1,6 +1,7 @@
 # D
 
 - `Dark Ages`: [`Darathen`](../../era_names/darathen.md).
+- `Dimensional Accretion Rule`: [`Ketharel`](../../structural_principles/ketharel.md).
 - `Divergence Keepers`: [`Athren`](../../structural_principles/athren.md).
 - `Divergent Centers`: [`Athrenor`](../../structural_principles/athrenor.md).
 - `Divergent Flames`: [`Athreth`](../../structural_principles/athreth.md).

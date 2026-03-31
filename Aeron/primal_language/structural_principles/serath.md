@@ -22,7 +22,7 @@ In `Lorathen` (the Grand Unification Era), the `Serath` are the first order of b
 
 ## Boundaries
 
-`Serath` must not be confused with later pattern-weavers or proto-bearers of the Primal Language. It is a metaphysical stabilizer of relationships, not a conscious agent.
+`Serath` must not be confused with later pattern-weavers or proto-bearers of [Darasel](../high_abstractions/darasel.md), the Primal Language. It is a metaphysical stabilizer of relationships, not a conscious agent.
 
 ## Relations
 

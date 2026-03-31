@@ -50,6 +50,6 @@ After the First Pulse, Aru is canonically designated [`Loran`](loran.md). This i
 
 Harmony does not yet exist in this phase. Harmony requires relation, and relation requires distinction. Because distinction has not yet been activated, Aru is not yet harmonic; Aru is prior to harmony.
 
-## Relation To The Primal Language
+## Relation To Darasel
 
-`Aru` is the aggregate of all words in the primal language. Those words are not external tools applied to Aru from outside creation. They are later apprehensions of truths already contained within Aru's singular being.
+`Aru` is the aggregate of all words in [Darasel](../../primal_language/high_abstractions/darasel.md), the Primal Language. Those words are not external tools applied to Aru from outside creation. They are later apprehensions of truths already contained within Aru's singular being.

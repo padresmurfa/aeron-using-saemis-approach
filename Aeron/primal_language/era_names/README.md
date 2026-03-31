@@ -17,3 +17,5 @@
 - `darathen.md`
 - `daravelon.md`
 - `kethavelen.md`
+- `kethralen.md`
+- `athralen.md`

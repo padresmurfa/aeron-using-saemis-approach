@@ -3,6 +3,7 @@
 This directory contains canonical reference entries for the fundamental metaphysical structure of Aeron.
 
 ## Key Entries
+- `aeron.md`: [Aeron](../../primal_language/structural_principles/aeron.md), the central world whose layered continuity anchors current planetary canon.
 - `pre_big_bang_state.md`: [Aruhal](../../primal_language/era_names/aruhal.md), the absolute pre-creative condition.
 - `creation_era.md`: [Orunel](../../primal_language/era_names/orunel.md), the first created span opened by the Pulse.
 - `divine_oscillation.md`: [Loran](../../primal_language/structural_principles/loran.md), the first oscillatory relation within singular being.
@@ -19,5 +20,7 @@ This directory contains canonical reference entries for the fundamental metaphys
 - `dark_ages.md`: [Darathen](../../primal_language/era_names/darathen.md), the age of luminous silence and existential solitude.
 - `reionization_era.md`: [Daravelon](../../primal_language/era_names/daravelon.md), the age of first stellar ignition and outward-borne created radiance.
 - `stelliferous_era.md`: [Kethavelen](../../primal_language/era_names/kethavelen.md), the age of stabilized realms, angelic ministry, and world-preparing cosmic architecture.
+- `planetary_formation_era.md`: [Kethralen](../../primal_language/era_names/kethralen.md), the age of bound worlds, layered environments, and stable place before life.
+- `continental_differentiation_era.md`: [Athralen](../../primal_language/era_names/athralen.md), the age of articulated land, terrain identity, and geological memory before life.
 
 Refer to these files for the metaphysical and ontological rules that govern all subsequent mythic events and entities.

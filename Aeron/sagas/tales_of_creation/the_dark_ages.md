@@ -20,7 +20,7 @@ Not because later soul-bearing ethics had appeared; those still lay far downstre
 
 ## III. The Ninth Order Of Beings
 
-The primal language has now named these forms, and by those names the Ninth Order is remembered.
+`Darasel` (the Primal Language) has now named these forms, and by those names the Ninth Order is remembered.
 
 ### Vathren (Wayseekers)
 

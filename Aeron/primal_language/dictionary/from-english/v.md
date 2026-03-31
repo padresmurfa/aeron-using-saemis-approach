@@ -5,6 +5,7 @@
 - `Veilbound Sovereigns`: [`Oraethar`](../../structural_principles/oraethar.md).
 - `Veilfire Hosts`: [`Tavreth`](../../structural_principles/tavreth.md).
 - `Veiled Architects`: [`Serathal`](../../structural_principles/serathal.md).
+- `Veiled Moon`: [`Serathil`](../../structural_principles/serathil.md).
 - `Veiled Radiants`: [`Serathor`](../../structural_principles/serathor.md).
 - `Veiled Selves`: [`Tavrethen`](../../structural_principles/tavrethen.md).
 - `Veilwalkers`: [`Orael`](../../structural_principles/orael.md).

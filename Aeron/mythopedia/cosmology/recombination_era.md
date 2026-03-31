@@ -114,7 +114,7 @@ Foundations of personal story.
 
 `Oraethor` arise when `Oraethen` (Boundary Spheres) gain perceptual autonomy and define defended territory around the self. They are the first structures in creation capable of genuine refusal.
 
-## Dimensional Accretion Rule
+## Ketharel (Dimensional Accretion Rule)
 
 All prior beings gain transparent aspects. Archetypal, domain, interactional, confinement, composite, mobility, and radiant orders remain what they are, but now self-aware centers can arise within them.
 

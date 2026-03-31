@@ -18,7 +18,7 @@ Still, this was not yet the age of soul-bearing ethics. No being had stepped out
 
 ## III. The Tenth Order Of Beings
 
-The primal language has now named these forms, and by those names the Tenth Order is remembered.
+`Darasel` (the Primal Language) has now named these forms, and by those names the Tenth Order is remembered.
 
 ### Taviloron (Starforged)
 

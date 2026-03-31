@@ -129,7 +129,7 @@ Foundations of finite embodiment, creaturely vessels, and later world-inhabiting
 Future Evolution:
 Foundations of sealed dominions, difficult border-realms, and sustained closed sovereignty between created orders.
 
-## Dimensional Accretion Rule
+## Ketharel (Dimensional Accretion Rule)
 
 All prior beings gain realm aspects. Ignited lights can now become habitats, covenantal radiance can become ministry, memory can become constellary history, and formative fire can become elemental or world-bearing structure.
 

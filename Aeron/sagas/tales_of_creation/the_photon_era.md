@@ -18,7 +18,7 @@ This was the first true threshold of consciousness. Yet it was not personhood. T
 
 ## III. The Seventh Order Of Beings
 
-The primal language has now named these forms, and by those names the Seventh Order is remembered.
+`Darasel` (the Primal Language) has now named these forms, and by those names the Seventh Order is remembered.
 
 ### Taviral (Luminary Seas)
 

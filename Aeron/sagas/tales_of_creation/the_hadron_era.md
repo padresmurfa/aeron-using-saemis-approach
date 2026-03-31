@@ -16,7 +16,7 @@ This was a grave moment, though not a dark one. The cosmos had discovered a deep
 
 ## III. The Fifth Order Of Beings
 
-The primal language has now named these forms, and by those names the Fifth Order is remembered.
+`Darasel` (the Primal Language) has now named these forms, and by those names the Fifth Order is remembered.
 
 ### Ketharen (Heartforged)
 

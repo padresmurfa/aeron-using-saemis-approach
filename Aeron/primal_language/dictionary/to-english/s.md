@@ -1,25 +1,33 @@
 # S
 
 - [`Selem`](../../high_abstractions/selem.md): immediate self-knowing; indivisible selfhood.
+- [`Seravel`](../../structural_principles/seravel.md): Moons; phase-bearing reflective lights answering the luminaries around worlds.
 - [`Serael`](../../structural_principles/serael.md): Phase Weavers; translators of oscillatory difference.
+- [`Seraelen`](../../structural_principles/seraelen.md): Horizon Keepers; land-borne stewards of climate rhythm and seasonal continuity.
+- [`Seraelor`](../../structural_principles/seraelor.md): Axis Keepers; world-turning phase stewards of tilt, spin, and recurrence.
 - [`Seraelin`](../../structural_principles/seraelin.md): Messengers of Phase; mobile synchronizers carrying phase signals.
 - [`Seraeth`](../../structural_principles/seraeth.md): Phase Mirrors; reflective bearers of oscillatory pattern.
 - [`Seralon`](../../structural_principles/seralon.md): Harmonic Bridges; long-range coherence bearers.
+- [`Seramor`](../../structural_principles/seramor.md): Blood Moon; the deep red tide-moon of Aeron.
 - [`Seraelon`](../../era_names/seraelon.md): Lepton Era; age of mobility, encounter, and transmissive relation.
 - [`Serath`](../../structural_principles/serath.md): Harmonics; resonant interaction and alignment.
 - [`Serathal`](../../structural_principles/serathal.md): Veiled Architects; hidden realm-makers who govern unseen spaces by measured disclosure.
 - [`Serathen`](../../structural_principles/serathen.md): Hidden Singers; unseen preservers of harmony in darkened space.
+- [`Serathil`](../../structural_principles/serathil.md): Veiled Moon; the masked passage-moon of Aeron.
 - [`Serathor`](../../structural_principles/serathor.md): Veiled Radiants; selective lights disclosing only what relation can rightly bear.
 - [`Seren`](../../structural_principles/seren.md): harmony; resonant alignment between phases.
+- [`Serenel`](../../structural_principles/serenel.md): Silver Moon; the bright governing tide-moon of Aeron.
 - [`Selketh`](../../structural_principles/selketh.md): Cohesion Hosts; maintainers of clustered structure.
 - [`Selkor`](../../structural_principles/selkor.md): Cohesion Clusters; interior collectives under enclosure.
 - [`Selkoral`](../../structural_principles/selkoral.md): Chorus Fields; collective resonance-fields without a single center.
+- [`Selkorel`](../../structural_principles/selkorel.md): Soil Weavers; slow harmonizers that turn weathered stone into fertile substrate.
 - [`Selkoran`](../../era_names/selkoran.md): Hadron Era; age of composite binding and nested interiority.
 - [`Selkorath`](../../structural_principles/selkorath.md): Covenant Strainers; covenantal selves in whom fidelity and loosening become separable possibilities.
 - [`Selkoreth`](../../structural_principles/selkoreth.md): Archangelic Orders; high luminous ministries ordered by covenantal hierarchy and shared service.
 - [`Selkorin`](../../structural_principles/selkorin.md): Covenant Persons; unified selves capable of voluntary bond.
 - [`Selkoron`](../../structural_principles/selkoron.md): Covenant Luminaries; interlinked lights whose bond itself becomes radiant.
 - [`Selkoren`](../../structural_principles/selkoren.md): Covenant Clusters; coordinated interiors bound into one whole.
+- [`Solaryth`](../../structural_principles/solaryth.md): Solaryth; the life-affirming primary luminary of Aeron.
 - [`Sethan`](../../structural_principles/sethan.md): standing wave; stable harmonic structure.
 - [`Sethen`](../../structural_principles/sethen.md): Domain Embers; compressed standing-wave intensity.
 - [`Sevarn`](../../structural_principles/sevarn.md): Binders; attractive coherence through interaction.

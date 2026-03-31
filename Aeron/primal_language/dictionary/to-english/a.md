@@ -2,6 +2,7 @@
 
 - [`Aru`](../../high_abstractions/aru.md): absolute being; undivided reality.
 - [`Aruhal`](../../era_names/aruhal.md): Pre-Big-Bang State; Aru-alone before creation.
+- [`Aeron`](../../structural_principles/aeron.md): Aeron; the proper primal name of the central world of the current corpus.
 - [`Athal`](../../structural_principles/athal.md): primordial grammar; lawful patterning of oscillating being.
 - [`Athalor`](../../era_names/athalor.md): Planck Layer and primordial unfolding span.
 - [`Atherel`](../../structural_principles/atherel.md): Silent Observers; contemplative witnesses sustained without outward stimulus.
@@ -9,10 +10,12 @@
 - [`Atheror`](../../structural_principles/atheror.md): Witness Sovereigns; contemplative lights whose seeing becomes truthful radiance.
 - [`Atharin`](../../structural_principles/atharin.md): Witnesses; detached observers that register encounter.
 - [`Atharon`](../../structural_principles/atharon.md): Witness Fires; stable observer-identities immersed in luminous totality.
+- [`Athralen`](../../era_names/athralen.md): Continental Differentiation Era; age of articulated land and terrain identity.
 - [`Athralon`](../../structural_principles/athralon.md): Divergent Suns; radiant centers casting self-defined proportion into surrounding space.
 - [`Athralor`](../../structural_principles/athralor.md): Divergent Lords; singular realm-bearers whose self-defined radiance consolidates into enduring courts.
 - [`Athorael`](../../era_names/athorael.md): Recombination Era; age of transparent perspective and isolated selfhood.
 - [`Athren`](../../structural_principles/athren.md): Divergence Keepers; lawful difference under interaction.
+- [`Athrenel`](../../structural_principles/athrenel.md): Rift Mothers; boundary-opening clefts that separate land into distinct regions.
 - [`Athrenor`](../../structural_principles/athrenor.md): Divergent Centers; isolated selves preserving defining uniqueness.
 - [`Athreth`](../../structural_principles/athreth.md): Divergent Flames; self-defining fires testing identity beyond consensus.
 - [`Athoren`](../../structural_principles/athoren.md): Proto-Selves; coherent composite interiors capable of self-reference.

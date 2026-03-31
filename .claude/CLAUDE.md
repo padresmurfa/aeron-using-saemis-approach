@@ -1,6 +1,6 @@
 # Lead Producer Pack - Claude Code Host Guide
 
-57 total skills: 1 coordinator + 56 specialist skills (34 roles, 13 teams, 9 workflows).
+58 total skills: 1 coordinator + 57 specialist skills (35 roles, 13 teams, 9 workflows).
 
 This file is Claude Code host guidance. Canonical skill content lives in `.claude/skills/`.
 Codex uses the same skill files through linked installs and follows `.codex/INSTALL.md` for

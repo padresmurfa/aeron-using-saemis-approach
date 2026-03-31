@@ -109,7 +109,7 @@ This is the first structural precursor to consciousness.
 Future Evolution:
 Foundations of self-awareness, observer-souls, and sentient beings.
 
-## Dimensional Accretion Rule
+## Ketharel (Dimensional Accretion Rule)
 
 All prior beings gain mobility aspects. Composite Orders now interact dynamically, experience encounter, and accumulate relational memory. The universe becomes communicative.
 

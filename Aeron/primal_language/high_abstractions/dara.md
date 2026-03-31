@@ -28,6 +28,7 @@ In the pre-Big-Bang state, `Dara` describes the fact that the Creator can expres
 
 - [Vatha](vatha.md) gives `Dara` its volitional root.
 - [Orun](../threshold_events/orun.md) is the first act in which `Dara` crosses from capacity toward manifest differentiation.
+- [Darasel](darasel.md) arises where `Dara` is understood as name-bearing intelligibility rather than outward projection alone.
 
 ## Note On Form
 

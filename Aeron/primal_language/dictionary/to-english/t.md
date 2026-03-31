@@ -9,11 +9,21 @@
 - [`Tavilor`](../../structural_principles/tavilor.md): Keepers of the Inner Flame; self-held lights preserving clarity in luminous absence.
 - [`Taviloron`](../../structural_principles/taviloron.md): Starforged; self-held flames kindled into stable outward-radiant centers.
 - [`Tavilorath`](../../structural_principles/tavilorath.md): Stellar Thrones; realm-bearing stellar cores sustaining long-lived luminous order.
+- [`Taviloran`](../../structural_principles/taviloran.md): Gravethrones; localized wells of deep harmonic pull that center forming worlds.
+- [`Taviril`](../../structural_principles/taviril.md): Blue Moon; the far-sighted stormglass moon of Aeron.
 - [`Tavirin`](../../structural_principles/tavirin.md): Entanglers; complementary movers that link distant entities.
 - [`Taviron`](../../structural_principles/taviron.md): Entangled Constellations; vast luminous linkages of mutual answerability.
 - [`Taviren`](../../structural_principles/taviren.md): Polarity Twins; complementary halves held in persistent unity.
+- [`Taviran`](../../structural_principles/taviran.md): Luminaries; named celestial lights bearing governing radiance.
 - [`Tavral`](../../structural_principles/tavral.md): Boundary Lords; guarded domain edges.
+- [`Tavralen`](../../structural_principles/tavralen.md): Boundary Rings; local shield-bearers that preserve a world's guarded edge.
+- [`Tavraleth`](../../structural_principles/tavraleth.md): Shield Wardens; surface-near protectors of magnetic and atmospheric survivability.
 - [`Tavrek`](../../structural_principles/tavrek.md): Sparkbearers; concentrated energetic contrast in enclosure.
+- [`Tavrekal`](../../structural_principles/tavrekal.md): Ash Moon; the cinder-forge moon of Aeron.
+- [`Tavreken`](../../structural_principles/tavreken.md): Fire Veins; volcanic conduits that release interior renewal through the crust.
+- [`Tavrekor`](../../structural_principles/tavrekor.md): Ember Vaults; regulated deep embers that preserve interior fire in forming worlds.
 - [`Tavrethen`](../../structural_principles/tavrethen.md): Veiled Selves; self-guarding interior fires with conscious threshold control.
 - [`Tavreth`](../../structural_principles/tavreth.md): Veilfire Hosts; blazing coherences ordered within total immersion.
+- [`Tavirath`](../../structural_principles/tavirath.md): Constellations; arranged star-relations readable as higher celestial grammar.
 - [`Tavren`](../../structural_principles/tavren.md): Fieldwardens; containment polarity and stabilized amplitude.
+- [`Taviloren`](../../structural_principles/taviloren.md): Stars; fixed heavenly fires bearing named correspondence.

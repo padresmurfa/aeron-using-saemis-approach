@@ -1,6 +1,6 @@
 # Grammar
 
-`grammar` records the observed tendencies of the primal language.
+`grammar` records the observed tendencies of [Darasel](../high_abstractions/darasel.md), the Primal Language.
 
 ## Rule Of Use
 - Grammar here is descriptive, not mechanical.

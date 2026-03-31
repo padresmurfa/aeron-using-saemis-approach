@@ -20,7 +20,7 @@ The cosmos had found a new patience. It could now hold relation without fusion. 
 
 ## III. The Sixth Order Of Beings
 
-The primal language has now named these forms, and by those names the Sixth Order is remembered.
+`Darasel` (the Primal Language) has now named these forms, and by those names the Sixth Order is remembered.
 
 ### Tavirel (Luminants)
 

@@ -23,6 +23,7 @@ Route work leanly, force simplification pressure, and block acceptance until str
 ## Mandatory Rules
 - Choose the smallest sufficient team. No ceremony without rigor gain.
 - Search current state before recommending additions or rewrites.
+- Celestial or astrology-facing lore work must include `role-aeron-narrative-astrologer` as a mandatory reviewer or overlay.
 - Map dependencies before deployment.
 - Enforce Replace, Don't Accumulate for cleanup and reduction work.
 - Require Devil's Advocate review before accepting substantive recommendations.
@@ -38,7 +39,7 @@ Route work leanly, force simplification pressure, and block acceptance until str
 - **Code/architecture** -> review: `team-dev-team`; decisions: `team-architecture-review`
 - **Frontend/UX** -> single: `role-ui-ux-designer` or `role-frontend-engineer`; cross-functional: `team-frontend-team`
 - **Brand/identity** -> `team-brand-team`
-- **Storytelling / worldbuilding / lore canon** -> `team-aeron-narrative`; add `team-aeron-primal-language` when roots, grammar, dictionary, or naming coherence are part of the task
+- **Storytelling / worldbuilding / lore canon** -> `team-aeron-narrative`; add `role-aeron-narrative-astrologer` whenever the task touches celestials, astrology, stars, constellations, luminaries, moons, shooting stars, asteroids, eclipses, calendars, omens, or sky-law; add `team-aeron-primal-language` when roots, grammar, dictionary, or naming coherence are part of the task
 - **Debugging** -> `workflow-systematic-debugging`
 - **Bug packaging/handoff** -> `workflow-issue-triage`
 - **Dead code/cleanup** -> `role-code-reduction-engineer` -> verify with `team-blue-team`

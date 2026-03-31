@@ -23,7 +23,9 @@
 11. [Darathen (Dark Ages)](eras/11-dark-ages/timeline.md)
 12. [Daravelon (Reionization Era)](eras/12-reionization/timeline.md)
 13. [Kethavelen (Stelliferous Era)](eras/13-stelliferous/timeline.md)
+14. [Kethralen (Planetary Formation Era)](eras/14-planetary-formation/timeline.md)
+15. [Athralen (Continental Differentiation Era)](eras/15-continental-differentiation/timeline.md)
 
 ## Coverage Notes
-- Current documented chronology now runs from `Orun` through `Lorathen`, `Daralon`, `Mirevar`, `Kethoran`, `Selkoran`, `Seraelon`, `Tavirelon`, `Athorael`, `Darathen`, `Daravelon`, and `Kethavelen`.
-- Later creation milestones such as embodied life, soul-bearing ethics, and later inter-creature conflict are not yet canonically detailed here.
+- Current documented chronology now runs from `Orun` through `Lorathen`, `Daralon`, `Mirevar`, `Kethoran`, `Selkoran`, `Seraelon`, `Tavirelon`, `Athorael`, `Darathen`, `Daravelon`, `Kethavelen`, `Kethralen`, and `Athralen`.
+- Later creation milestones such as life, soul-bearing ethics, culture, and later inter-creature conflict are not yet canonically detailed here.
