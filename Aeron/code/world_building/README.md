@@ -13,6 +13,7 @@ This directory holds deterministic simulation scripts for Aeron's physical devel
 - `plate_system.py`: deterministic plate-system simulation that imports and ticks `proto_tectonics.py`
 - `large_scale_topography.py`: deterministic large-scale topography generation that imports and ticks `plate_system.py`
 - `volcanic_impact_resurfacing.py`: deterministic volcanic and impact resurfacing simulation that imports and ticks `large_scale_topography.py`
+- `basic_regolith_weathering.py`: deterministic basic regolith and weathering simulation that imports and ticks `volcanic_impact_resurfacing.py`
 
 ## Scope Boundaries
 
@@ -25,6 +26,7 @@ This directory holds deterministic simulation scripts for Aeron's physical devel
 - The plate-system layer builds on the proto-tectonic layer and exists to turn those broad tectonic conditions into discrete plate regions, motion vectors, boundary behaviors, and first-order crust creation and destruction rates.
 - The large-scale topography layer builds on the plate-system layer and exists to turn plate motion into first-order relief: proto-continents, basins, ridges, arcs, uplifts, rifts, highlands, and lowlands.
 - The volcanic and impact resurfacing layer builds on the large-scale topography layer and exists to determine how hotspots, flood basalts, volcanic provinces, impacts, and crater retention continually scar and rework that relief.
+- The basic regolith and weathering layer builds on the resurfacing layer and exists to determine how barren rock breaks down into dust, chemically altered crust, talus, and crude sediment, so the surface gains age and texture before full erosion modeling begins.
 - These scripts do not yet generate continents, tectonic maps, climate fields, ocean circulation, or GIS outputs.
 - Later continent and terrain work should build on this layer rather than collapsing all world-building scope into one file.
 
@@ -135,6 +137,18 @@ At this layer, exact numeric obliquity and detailed orbital ephemerides remain e
 - how much old crust survives into the present surface
 - whether the barren world reads as heavily reworked, transitional, or ancient and scarred
 
+## Basic Regolith And Weathering Outputs
+
+`basic_regolith_weathering.py` answers:
+
+- how strongly surface rock fractures under thermal cycling, impact scarring, and volcanic reworking
+- how much dust the barren world generates
+- whether atmosphere and surface liquids permit rough chemical weathering at all
+- how much crude talus and sediment accumulates
+- how much regolith mantles the surface and how thick that mantle becomes
+- how much bedrock remains exposed
+- whether the barren world reads as pristine magmatic rock, fractured bare rock, dusty scars, rubble-talused barrens, or weathered regolith barrens
+
 ## Usage
 
 ```bash
@@ -156,6 +170,8 @@ python3 Aeron/code/world_building/large_scale_topography.py
 python3 Aeron/code/world_building/large_scale_topography.py --step-years 900000000
 python3 Aeron/code/world_building/volcanic_impact_resurfacing.py
 python3 Aeron/code/world_building/volcanic_impact_resurfacing.py --step-years 900000000
+python3 Aeron/code/world_building/basic_regolith_weathering.py
+python3 Aeron/code/world_building/basic_regolith_weathering.py --step-years 900000000
 ```
 
 ## Current Rules
@@ -172,3 +188,4 @@ python3 Aeron/code/world_building/volcanic_impact_resurfacing.py --step-years 90
 - `plate_system.py` uses `proto_tectonics.py` as a library, which in turn uses all earlier layers, so discrete plate motions only emerge after the lithosphere, atmosphere, crust, and thermal regime have already crossed the required thresholds.
 - `large_scale_topography.py` uses `plate_system.py` as a library, which in turn uses all earlier layers, so first-order relief only appears once plate regions, motions, and crust budgets already exist.
 - `volcanic_impact_resurfacing.py` uses `large_scale_topography.py` as a library, which in turn uses all earlier layers, so resurfacing and surface scarring only appear once tectonic structure and relief already exist.
+- `basic_regolith_weathering.py` uses `volcanic_impact_resurfacing.py` as a library and consults the coupled atmosphere and temperature states, so barren-surface texture only emerges once the world already has crust, atmosphere, thermal cycling, tectonic relief, and resurfacing scars to work on.
