@@ -17,7 +17,7 @@ routing so agents can spend more attention on the development itself: economies,
 exploits, incidents, rollout risk, and tightly coupled systems. If it can handle that, it becomes
 broadly useful across other software work too.
 
-58 total skills: 1 coordinator + 57 specialist skills (35 roles, 13 teams, 9 workflows). Use it
+77 total skills: 1 coordinator + 76 specialist skills (51 roles, 16 teams, 9 workflows). Use it
 across the full product lifecycle: prototype, design, implementation, testing, deployment, live
 ops, iteration, and code cleanup. It includes host guides for **Claude Code** and **OpenAI Codex**
 on macOS, Linux, and Windows. Windows is in good shape. macOS and Linux still need a quick real
@@ -196,7 +196,7 @@ back to this clone, so keep the repo where you installed it.
 
 ## What's Inside
 
-### 35 Specialist Roles
+### 51 Specialist Roles
 
 | Domain | Roles |
 |--------|-------|
@@ -210,9 +210,11 @@ back to this clone, so keep the repo where you installed it.
 | Leadership | CTO, Context Manager |
 | Brand and Community | Brand Strategist, Community Developer, UI/UX Designer |
 | Documentation | Technical Writer, Open Source Engineer, Code Reduction Engineer |
-| Storytelling and Lore | Narrative Author, Narrative Astrologer, Narrative Mythopedia Consistency Editor, Narrative Editor, Narrative Creation Timeline Consistency Editor, Primal Language Author, Creator as an Editor |
+| Scientific Reality | Planetary Scientist, Geophysicist, Plate Tectonics Expert, Geodynamics Researcher, Computational Physicist, Applied Mathematician, Climate Scientist, Oceanographer, Geospatial Modeler |
+| Simulation Implementation | Scientific Programmer, Simulation Engineer, Simulation Architect, Python Engineer |
+| Storytelling and Lore | Narrative Author, Narrative Astrologer, Narrative Mythopedia Consistency Editor, Narrative Editor, Narrative Creation Timeline Consistency Editor, Narrative Timeline Author, Primal Language Author, Primal Language Dictionary Author, Primal Language Linguist, Creator as an Editor |
 
-### 13 Teams
+### 16 Teams
 
 | Team | What It Does |
 |------|--------------|
@@ -228,6 +230,9 @@ back to this clone, so keep the repo where you installed it.
 | Documentation | Docs quality - accuracy, completeness, maintainability |
 | Blue Team | Cleanup verification - dead code removal, regression check |
 | Open Source | OSS readiness - licensing, contribution guides, API surface |
+| Aeron Primal Language | Root coinage, grammar review, dictionary maintenance, and naming consistency across canon surfaces |
+| Aeron Reality | Canonical physical world rules: planetary, tectonic, climatic, oceanic, and geospatial truth |
+| Aeron Simulation | Deterministic implementation of Aeron reality in simulation code and execution contracts |
 | Aeron Storytellers | Mythic story drafting, canon review, celestial astrology review, timeline review, primal-language extraction, final narrative acceptance |
 
 ### 9 Workflows

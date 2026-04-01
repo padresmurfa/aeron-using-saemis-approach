@@ -37,6 +37,9 @@ Route work leanly, force simplification pressure, and block acceptance until str
 - **Smart contracts** -> single: `role-move-sui-developer`; cross-functional: `team-move-team`
 - **Security** -> always `team-red-team`
 - **Code/architecture** -> review: `team-dev-team`; decisions: `team-architecture-review`
+- **Aeron reality definition / planetary law / tectonics / climate-ocean reality / terrain truth** -> `team-aeron-reality`; add `team-aeron-narrative` or `team-aeron-primal-language` only when canon surfaces or naming change
+- **Aeron simulation / deterministic world-building implementation / simulation architecture** -> `team-aeron-simulation`; add `team-aeron-reality` whenever implementation depends on unresolved physical rules
+- **Aeron reality plus implementation together** -> `team-aeron-reality`, `team-aeron-simulation`; keep the handoff explicit and do not collapse the teams into one blended pass
 - **Frontend/UX** -> single: `role-ui-ux-designer` or `role-frontend-engineer`; cross-functional: `team-frontend-team`
 - **Brand/identity** -> `team-brand-team`
 - **Storytelling / worldbuilding / lore canon** -> `team-aeron-narrative`; add `role-aeron-narrative-astrologer` whenever the task touches celestials, astrology, stars, constellations, luminaries, moons, shooting stars, asteroids, eclipses, calendars, omens, or sky-law; add `team-aeron-primal-language` when roots, grammar, dictionary, or naming coherence are part of the task

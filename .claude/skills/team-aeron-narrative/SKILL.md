@@ -29,6 +29,8 @@ Produce mythic stories that are dramatically strong, canon-consistent, timeline-
 - The task is only technical documentation or software analysis
 - A narrow copyedit is needed without canon consequences
 - Primal-language grammar, dictionary, or lexicon work is the primary task
+- Physical reality-definition or scientific world-modeling is the primary task
+- Deterministic simulation implementation is the primary task
 
 ## Canonical Output Surfaces
 - `Aeron/sagas/` for stories
@@ -80,3 +82,4 @@ Verdict: Accept / Revise, next required actions
 - Do not accept any draft that frames `Aru`, `Loran`, or similarly fundamental cosmological orders as possible targets of rebellion; such language is metaphysically false in Aeron.
 - Before soul-bearing ethics exists, reject framing that imports biblical fall patterns, Luciferic foreshadowing, or intrinsic good/evil struggle into the cosmology.
 - Do not close celestial, astrological, or omen-bearing lore work until `role-aeron-narrative-astrologer` has reviewed it.
+- Narrative expresses canon and lived interpretation; it must not silently redefine scientific reality or simulation mechanics.
