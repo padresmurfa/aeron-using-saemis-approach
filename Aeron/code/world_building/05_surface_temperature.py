@@ -4,21 +4,45 @@
 from __future__ import annotations
 
 import argparse
+import math
 from dataclasses import dataclass
 from decimal import Decimal, getcontext
-from typing import Iterable
+from pathlib import Path
+from typing import Iterable, Sequence
 
 try:
-    from . import early_atmosphere, planet
+    from .world_building_paths import step_output_path
+    from .world_building_support import load_pipeline_module, materialize_layer_states
 except ImportError:
-    import early_atmosphere  # type: ignore
-    import planet  # type: ignore
+    from world_building_paths import step_output_path  # type: ignore
+    from world_building_support import load_pipeline_module, materialize_layer_states  # type: ignore
+
+early_atmosphere = load_pipeline_module(__package__, __file__, "04_early_atmosphere")
+planet = load_pipeline_module(__package__, __file__, "01_planet")
 
 getcontext().prec = 50
 
 PRESSURE_GRADIENT_SATURATION_BAR = Decimal("1.5")
 SEASONAL_CYCLING_BONUS_C = Decimal("4")
 VALIDATION_STEP_YEARS = 100_000_000
+ZONAL_LATITUDE_BAND_COUNT = 181
+PROFILE_LATITUDES = (0.0, 45.0, 90.0)
+TEMPERATURE_BAND_COLORS = {
+    "molten_extreme": "#8b0000",
+    "steamhouse_hot": "#d1495b",
+    "hot": "#edae49",
+    "temperate": "#72b7b2",
+    "cold": "#4c78a8",
+    "frozen": "#264653",
+}
+TEMPERATURE_BAND_LABELS = {
+    "molten_extreme": "Molten Extreme",
+    "steamhouse_hot": "Steamhouse Hot",
+    "hot": "Hot",
+    "temperate": "Temperate",
+    "cold": "Cold",
+    "frozen": "Frozen",
+}
 
 
 @dataclass(frozen=True)
@@ -67,6 +91,10 @@ def clamp_unit_interval(value: Decimal) -> Decimal:
     if value > Decimal("1"):
         return Decimal("1")
     return value
+
+
+def temperature_visualization_output_path(current_file: str) -> Path:
+    return step_output_path(current_file, "zonal_bands.png")
 
 
 def pressure_factor_at(atmospheric_pressure_bar: Decimal) -> Decimal:
@@ -306,8 +334,11 @@ def surface_temperature_state_from_atmosphere_state(
 
 
 def simulate(criteria: planet.SimulationCriteria) -> Iterable[SurfaceTemperatureState]:
-    for base_state in early_atmosphere.simulate(criteria):
-        yield surface_temperature_state_from_atmosphere_state(base_state)
+    def build_states() -> Iterable[SurfaceTemperatureState]:
+        for base_state in early_atmosphere.simulate(criteria):
+            yield surface_temperature_state_from_atmosphere_state(base_state)
+
+    return materialize_layer_states(__file__, criteria, build_states)
 
 
 def first_surface_liquids_state(
@@ -317,6 +348,196 @@ def first_surface_liquids_state(
         if state.surface_liquid_state in {"transient", "stable"}:
             return state
     return None
+
+
+def zonal_temperature_c_at(
+    state: SurfaceTemperatureState, latitude_degrees: float
+) -> Decimal:
+    """Project the modeled global thermal state into latitude bands.
+
+    The layer owns a mean surface temperature and an equator-to-pole delta, but
+    not longitude-resolved geometry. This zonal view therefore uses a symmetric
+    `cos(latitude)^2` profile. Subtracting two-thirds preserves the modeled
+    area-weighted mean while the equator-to-pole contrast remains exactly the
+    simulated `equator_to_pole_delta_c`.
+    """
+
+    latitude_radians = math.radians(latitude_degrees)
+    latitudinal_shape = Decimal(str((math.cos(latitude_radians) ** 2) - (2.0 / 3.0)))
+    return state.mean_surface_temp_c + (state.equator_to_pole_delta_c * latitudinal_shape)
+
+
+def zonal_latitude_samples() -> list[float]:
+    return [
+        -90.0 + (180.0 * index / (ZONAL_LATITUDE_BAND_COUNT - 1))
+        for index in range(ZONAL_LATITUDE_BAND_COUNT)
+    ]
+
+
+def zonal_temperature_band_heatmap(
+    states: Sequence[SurfaceTemperatureState],
+) -> tuple[list[list[int]], list[float], dict[float, list[float]]]:
+    state_order = (
+        "molten_extreme",
+        "steamhouse_hot",
+        "hot",
+        "temperate",
+        "cold",
+        "frozen",
+    )
+    band_to_code = {name: index for index, name in enumerate(state_order)}
+    latitudes = zonal_latitude_samples()
+    heatmap = [[0 for _ in states] for _ in latitudes]
+    profile_series = {latitude: [] for latitude in PROFILE_LATITUDES}
+
+    for state_index, state in enumerate(states):
+        for latitude_index, latitude in enumerate(latitudes):
+            zonal_temperature = zonal_temperature_c_at(state, latitude)
+            band = average_temperature_band_at(zonal_temperature)
+            heatmap[latitude_index][state_index] = band_to_code[band]
+        for latitude in PROFILE_LATITUDES:
+            profile_series[latitude].append(float(zonal_temperature_c_at(state, latitude)))
+
+    return heatmap, latitudes, profile_series
+
+
+def write_zonal_temperature_bands_png(
+    states: Sequence[SurfaceTemperatureState], current_file: str
+) -> Path:
+    try:
+        import matplotlib
+
+        matplotlib.use("Agg")
+        from matplotlib import pyplot as plt
+        from matplotlib.colors import BoundaryNorm, ListedColormap
+        from matplotlib.patches import Patch
+    except ImportError as exc:  # pragma: no cover - import-time dependency guard
+        raise ImportError(
+            "Zonal temperature visualization requires matplotlib. Install "
+            "dependencies with `python3 -m pip install -r requirements.txt`."
+        ) from exc
+
+    if not states:
+        raise ValueError("Surface temperature visualization requires at least one state.")
+
+    output_path = temperature_visualization_output_path(current_file)
+    heatmap, latitudes, profile_series = zonal_temperature_band_heatmap(states)
+    ages_myr = [
+        float(Decimal(state.age_years) / planet.YEARS_PER_MYR) for state in states
+    ]
+    first_liquid_state = first_surface_liquids_state(states)
+    first_liquid_age_myr = (
+        float(Decimal(first_liquid_state.age_years) / planet.YEARS_PER_MYR)
+        if first_liquid_state is not None
+        else None
+    )
+
+    fig = plt.figure(figsize=(13.6, 9.8), facecolor="#f6f1e8")
+    grid = fig.add_gridspec(2, 1, height_ratios=(1.0, 1.4), hspace=0.28)
+    profile_ax = fig.add_subplot(grid[0, 0])
+    heatmap_ax = fig.add_subplot(grid[1, 0])
+
+    profile_ax.set_facecolor("#fffdf8")
+    profile_colors = {0.0: "#d1495b", 45.0: "#edae49", 90.0: "#264653"}
+    profile_labels = {0.0: "Equator", 45.0: "45°", 90.0: "Pole"}
+    for latitude in PROFILE_LATITUDES:
+        profile_ax.plot(
+            ages_myr,
+            profile_series[latitude],
+            color=profile_colors[latitude],
+            linewidth=2.4,
+            label=profile_labels[latitude],
+        )
+    if first_liquid_age_myr is not None:
+        profile_ax.axvline(
+            first_liquid_age_myr,
+            color="#1f2937",
+            linewidth=1.2,
+            linestyle="--",
+            alpha=0.7,
+        )
+    profile_ax.set_xlim(ages_myr[0], ages_myr[-1])
+    profile_ax.set_ylabel("Temperature (C)", color="#1f2937")
+    profile_ax.set_title(
+        "05 Surface Temperature: Zonal Thermal Bands",
+        loc="left",
+        color="#1f2937",
+        fontsize=18,
+        pad=14,
+    )
+    profile_ax.grid(True, axis="y", color="#d7d2c8", linewidth=0.8, alpha=0.8)
+    for spine in profile_ax.spines.values():
+        spine.set_color("#d7d2c8")
+    profile_ax.tick_params(colors="#6b7280")
+    profile_ax.legend(frameon=False, ncol=3, loc="upper right")
+
+    band_order = (
+        "molten_extreme",
+        "steamhouse_hot",
+        "hot",
+        "temperate",
+        "cold",
+        "frozen",
+    )
+    cmap = ListedColormap([TEMPERATURE_BAND_COLORS[band] for band in band_order])
+    norm = BoundaryNorm(
+        [-0.5, 0.5, 1.5, 2.5, 3.5, 4.5, 5.5],
+        cmap.N,
+    )
+    heatmap_ax.set_facecolor("#fffdf8")
+    heatmap_ax.imshow(
+        heatmap,
+        origin="lower",
+        aspect="auto",
+        extent=(ages_myr[0], ages_myr[-1], latitudes[0], latitudes[-1]),
+        cmap=cmap,
+        norm=norm,
+        interpolation="nearest",
+    )
+    if first_liquid_age_myr is not None:
+        heatmap_ax.axvline(
+            first_liquid_age_myr,
+            color="#1f2937",
+            linewidth=1.2,
+            linestyle="--",
+            alpha=0.7,
+        )
+    heatmap_ax.set_xlabel("Age (Myr)", color="#1f2937")
+    heatmap_ax.set_ylabel("Latitude (degrees)", color="#1f2937")
+    heatmap_ax.set_yticks([-90, -60, -30, 0, 30, 60, 90])
+    heatmap_ax.tick_params(colors="#6b7280")
+    for spine in heatmap_ax.spines.values():
+        spine.set_color("#d7d2c8")
+
+    legend_handles = [
+        Patch(color=TEMPERATURE_BAND_COLORS[band], label=TEMPERATURE_BAND_LABELS[band])
+        for band in band_order
+    ]
+    fig.legend(
+        handles=legend_handles,
+        frameon=False,
+        ncol=3,
+        loc="lower center",
+        bbox_to_anchor=(0.5, 0.055),
+    )
+
+    fig.text(
+        0.125,
+        0.02,
+        (
+            "Zonal-only projection: local latitude bands are derived from the "
+            "modeled mean surface temperature plus the simulated equator-to-pole "
+            "contrast. No longitude-resolved surface geometry is implied at this layer."
+        ),
+        ha="left",
+        va="bottom",
+        fontsize=10,
+        color="#6b7280",
+    )
+    fig.subplots_adjust(left=0.08, right=0.97, top=0.93, bottom=0.16, hspace=0.30)
+    fig.savefig(output_path, dpi=180, bbox_inches="tight", facecolor=fig.get_facecolor())
+    plt.close(fig)
+    return output_path
 
 
 def validate_model() -> None:
@@ -340,10 +561,10 @@ def validate_model() -> None:
 def print_input_criteria(criteria: planet.SimulationCriteria) -> None:
     fields = [
         ("layer_name", "surface_temperature_regime"),
-        ("early_atmosphere_source", "early_atmosphere.py"),
-        ("primary_crust_source", "primary_crust.py"),
-        ("interior_source", "interior.py"),
-        ("planet_source", "planet.py"),
+        ("early_atmosphere_source", "04_early_atmosphere.py"),
+        ("primary_crust_source", "03_primary_crust.py"),
+        ("interior_source", "02_interior.py"),
+        ("planet_source", "01_planet.py"),
         ("coupled_atmosphere_layer", "true"),
         ("coupled_primary_crust_layer", "true"),
         ("coupled_interior_layer", "true"),
@@ -382,7 +603,7 @@ def print_input_criteria(criteria: planet.SimulationCriteria) -> None:
     print()
 
 
-def print_table(criteria: planet.SimulationCriteria) -> None:
+def print_table(states: Sequence[SurfaceTemperatureState]) -> None:
     headers = (
         ("step", 8),
         ("age_myr", 12),
@@ -404,7 +625,7 @@ def print_table(criteria: planet.SimulationCriteria) -> None:
     print(header_line)
     print(divider_line)
 
-    for state in simulate(criteria):
+    for state in states:
         age_myr = planet.format_decimal(
             Decimal(state.age_years) / planet.YEARS_PER_MYR, 3
         )
@@ -425,8 +646,7 @@ def print_table(criteria: planet.SimulationCriteria) -> None:
         )
 
 
-def print_present_day_summary(criteria: planet.SimulationCriteria) -> None:
-    states = list(simulate(criteria))
+def print_present_day_summary(states: Sequence[SurfaceTemperatureState]) -> None:
     final_state = states[-1]
     first_liquid_state = first_surface_liquids_state(states)
 
@@ -474,9 +694,20 @@ def main() -> int:
     except ValueError as exc:
         raise SystemExit(str(exc))
 
+    states = simulate(criteria)
+    if not states:
+        raise SystemExit("Surface temperature simulation produced no timestep states.")
+
     print_input_criteria(criteria)
-    print_table(criteria)
-    print_present_day_summary(criteria)
+    print_table(states)
+    print_present_day_summary(states)
+
+    try:
+        write_zonal_temperature_bands_png(states, __file__)
+    except (ImportError, OSError, ValueError) as exc:
+        raise SystemExit(
+            f"Failed to write zonal temperature visualization: {exc}"
+        ) from exc
     return 0
 
 

@@ -6,19 +6,65 @@ from __future__ import annotations
 import argparse
 from dataclasses import dataclass
 from decimal import Decimal, getcontext
+from pathlib import Path
 from typing import Iterable
 
+import numpy as np
+
 try:
-    from . import early_atmosphere, planet, surface_temperature, volcanic_impact_resurfacing
+    from .world_building_support import load_pipeline_module, materialize_layer_states
+    from .world_building_surface import (
+        PlanetSurface,
+        accumulate_flow,
+        clear_frame_directory,
+        deep_copy_surface,
+        diffuse_scalar,
+        frame_output_dir,
+        frame_sample_indices,
+        gradient_magnitude,
+        load_planet_surface,
+        normalized,
+        save_planet_surface,
+        subdivided_surface_grid_resolution,
+        surface_json_payload,
+        surface_state_output_path,
+        terrain_class_from_fields,
+        visualization_output_path,
+    )
 except ImportError:
-    import early_atmosphere  # type: ignore
-    import planet  # type: ignore
-    import surface_temperature  # type: ignore
-    import volcanic_impact_resurfacing  # type: ignore
+    from world_building_support import load_pipeline_module, materialize_layer_states  # type: ignore
+    from world_building_surface import (  # type: ignore
+        PlanetSurface,
+        accumulate_flow,
+        clear_frame_directory,
+        deep_copy_surface,
+        diffuse_scalar,
+        frame_output_dir,
+        frame_sample_indices,
+        gradient_magnitude,
+        load_planet_surface,
+        normalized,
+        save_planet_surface,
+        subdivided_surface_grid_resolution,
+        surface_json_payload,
+        surface_state_output_path,
+        terrain_class_from_fields,
+        visualization_output_path,
+    )
+
+early_atmosphere = load_pipeline_module(__package__, __file__, "04_early_atmosphere")
+planet = load_pipeline_module(__package__, __file__, "01_planet")
+surface_temperature = load_pipeline_module(
+    __package__, __file__, "05_surface_temperature"
+)
+volcanic_impact_resurfacing = load_pipeline_module(
+    __package__, __file__, "09_volcanic_impact_resurfacing"
+)
 
 getcontext().prec = 50
 
 VALIDATION_STEP_YEARS = 100_000_000
+FRAME_DIRECTORY_NAME = "10_regolith"
 
 
 @dataclass(frozen=True)
@@ -72,6 +118,15 @@ def parse_args() -> argparse.Namespace:
         help=(
             "Fixed iteration step in years. Must evenly divide the full "
             "5.4 billion year simulation span. Default: %(default)s."
+        ),
+    )
+    parser.add_argument(
+        "--surface-grid-resolution",
+        default=volcanic_impact_resurfacing.large_scale_topography.plate_system.DEFAULT_SURFACE_GRID_RESOLUTION,
+        help=(
+            "Coarse surface grid resolution as <longitude>x<latitude> cells for "
+            "the inherited shared geometry. Default: "
+            f"{volcanic_impact_resurfacing.large_scale_topography.plate_system.DEFAULT_SURFACE_GRID_RESOLUTION}."
         ),
     )
     return parser.parse_args()
@@ -612,20 +667,426 @@ def basic_regolith_weathering_state_from_inputs(
     )
 
 
+def regolith_surface_artifact_key(resolution: tuple[int, int]) -> str:
+    return (
+        "regolith_surface:"
+        f"{volcanic_impact_resurfacing.large_scale_topography.plate_system.surface_grid_resolution_label(resolution)}"
+    )
+
+
+def regolith_present_output_path(current_file: str) -> Path:
+    return visualization_output_path(current_file, "__regolith_present.png")
+
+
+def build_regolith_surface(
+    resurfacing_surface: PlanetSurface, regolith_state: BasicRegolithWeatheringState
+) -> PlanetSurface:
+    surface = deep_copy_surface(resurfacing_surface)
+    slope = gradient_magnitude(surface, surface.elevation)
+    slope_norm = normalized(slope)
+    fracture_pressure = np.clip(
+        (0.45 * surface.fracture_susceptibility)
+        + (0.20 * slope_norm)
+        + (0.20 * surface.impact_intensity)
+        + (0.15 * surface.volcanic_hotspot),
+        0.0,
+        1.0,
+    )
+    regolith_source = (
+        (0.35 * fracture_pressure)
+        + (0.20 * float(regolith_state.dust_generation_index))
+        + (0.20 * float(regolith_state.chemical_weathering_index))
+        + (0.15 * float(regolith_state.talus_accumulation_fraction))
+        + (0.10 * surface.impact_intensity)
+    )
+    regolith_source *= 1.0 - (0.65 * surface.volcanic_hotspot)
+    regolith_source = np.clip(regolith_source, 0.0, None)
+
+    target_mean_depth = max(0.03, float(regolith_state.mean_regolith_thickness_m))
+    source_mean = float(np.mean(regolith_source))
+    if source_mean > 0.0:
+        surface.regolith_depth = regolith_source * (target_mean_depth / source_mean)
+    else:
+        surface.regolith_depth = np.full_like(regolith_source, target_mean_depth)
+
+    flow_source = np.clip(
+        surface.regolith_depth
+        * slope_norm
+        * float(regolith_state.sediment_accumulation_fraction),
+        0.0,
+        None,
+    )
+    runoff_proxy, receivers = accumulate_flow(surface, surface.elevation, flow_source)
+    transport = np.minimum(
+        surface.regolith_depth * 0.18 * slope_norm,
+        surface.regolith_depth * 0.22,
+    )
+    elevation_delta = np.zeros(surface.region_ids.shape[0], dtype=float)
+    regolith_delta = np.zeros(surface.region_ids.shape[0], dtype=float)
+    for index, receiver in enumerate(receivers):
+        receiver_index = int(receiver)
+        if receiver_index == index:
+            continue
+        moved = float(transport[index])
+        elevation_delta[index] -= 0.16 * moved
+        elevation_delta[receiver_index] += 0.16 * moved
+        regolith_delta[index] -= moved
+        regolith_delta[receiver_index] += moved
+
+    surface.elevation += elevation_delta
+    surface.elevation = diffuse_scalar(
+        surface.elevation, surface.neighbor_indices, iterations=3, alpha=0.14
+    )
+    surface.regolith_depth = np.clip(surface.regolith_depth + regolith_delta, 0.0, None)
+    surface.regolith_depth = diffuse_scalar(
+        surface.regolith_depth, surface.neighbor_indices, iterations=2, alpha=0.10
+    )
+    surface.runoff_flux = np.sqrt(np.clip(normalized(runoff_proxy), 0.0, 1.0))
+    surface.weathering_intensity = np.clip(
+        (0.38 * fracture_pressure)
+        + (0.24 * float(regolith_state.chemical_weathering_index))
+        + (0.20 * slope_norm)
+        + (0.18 * normalized(surface.regolith_depth + 0.01)),
+        0.0,
+        1.0,
+    )
+    surface.dust_cover = np.clip(
+        (0.55 * normalized(surface.regolith_depth + 0.01))
+        + (0.25 * float(regolith_state.dust_generation_index))
+        + (0.20 * (1.0 - slope_norm)),
+        0.0,
+        1.0,
+    )
+    surface.exposed_bedrock_fraction = np.clip(
+        1.0
+        - (0.78 * normalized(surface.regolith_depth + 0.01))
+        - (0.12 * surface.dust_cover)
+        - (0.10 * surface.volcanic_hotspot),
+        0.0,
+        1.0,
+    )
+    surface.surface_age_proxy = np.clip(
+        (0.72 * surface.surface_age_proxy)
+        + (0.18 * surface.weathering_intensity)
+        + (0.10 * surface.exposed_bedrock_fraction),
+        0.0,
+        1.0,
+    )
+    surface.basin_index = np.clip(
+        (0.70 * surface.basin_index)
+        + (0.30 * normalized(np.maximum(-surface.elevation, 0.0))),
+        0.0,
+        1.0,
+    )
+    surface.terrain_class = terrain_class_from_fields(
+        surface.elevation,
+        surface.boundary_influence_type,
+        surface.basin_tendency,
+        surface.uplift_tendency,
+    )
+    surface.metadata.update(
+        {
+            "source_layer": "10_basic_regolith_weathering.py",
+            "texture_state": regolith_state.texture_state,
+            "mean_regolith_thickness_m": float(regolith_state.mean_regolith_thickness_m),
+            "regolith_coverage_fraction": float(regolith_state.regolith_coverage_fraction),
+            "sediment_accumulation_fraction": float(regolith_state.sediment_accumulation_fraction),
+        }
+    )
+    return surface
+
+
+def regolith_surface_for_index(
+    index: int,
+    proto_states: tuple[volcanic_impact_resurfacing.large_scale_topography.plate_system.proto_tectonics.ProtoTectonicsState, ...],
+    plate_states: tuple[volcanic_impact_resurfacing.large_scale_topography.plate_system.PlateSystemState, ...],
+    topography_states: tuple[volcanic_impact_resurfacing.large_scale_topography.LargeScaleTopographyState, ...],
+    temperature_states: tuple[volcanic_impact_resurfacing.large_scale_topography.surface_temperature.SurfaceTemperatureState, ...],
+    resurfacing_states: tuple[volcanic_impact_resurfacing.VolcanicImpactResurfacingState, ...],
+    regolith_states: tuple[BasicRegolithWeatheringState, ...],
+    resolution: tuple[int, int],
+    cache: dict[int, PlanetSurface],
+) -> PlanetSurface:
+    if index not in cache:
+        resurfacing_surface = volcanic_impact_resurfacing.resurfacing_surface_for_index(
+            index,
+            proto_states,
+            plate_states,
+            topography_states,
+            temperature_states,
+            resurfacing_states,
+            resolution,
+            {},
+        )
+        cache[index] = build_regolith_surface(resurfacing_surface, regolith_states[index])
+    return cache[index]
+
+
+def write_regolith_map_png(
+    surface: PlanetSurface,
+    output_path: Path,
+    *,
+    title: str,
+    subtitle: str,
+) -> Path:
+    try:
+        import matplotlib
+
+        matplotlib.use("Agg")
+        from matplotlib import pyplot as plt
+    except ImportError as exc:  # pragma: no cover - dependency guard
+        raise ImportError(
+            "Regolith visualization requires matplotlib. Install dependencies "
+            "with `python3 -m pip install -r requirements.txt`."
+        ) from exc
+
+    figure, axis = plt.subplots(figsize=(16.6, 9.2), facecolor="#f6f1e8")
+    axis.set_facecolor("#fffdf8")
+    regolith_grid = surface.regolith_depth.reshape(
+        surface.latitude_cells, surface.longitude_cells
+    )
+    image = axis.imshow(
+        regolith_grid,
+        origin="lower",
+        extent=(-180, 180, -90, 90),
+        aspect="auto",
+        cmap="copper",
+        interpolation="nearest",
+    )
+    colorbar = figure.colorbar(image, ax=axis, pad=0.02, fraction=0.04)
+    colorbar.set_label("Regolith Depth (m)", color="#1f2937")
+    colorbar.ax.tick_params(colors="#6b7280")
+
+    slope_grid = gradient_magnitude(surface, surface.elevation).reshape(
+        surface.latitude_cells, surface.longitude_cells
+    )
+    axis.contour(
+        slope_grid,
+        levels=4,
+        colors="#1f2937",
+        linewidths=0.55,
+        alpha=0.45,
+        origin="lower",
+        extent=(-180, 180, -90, 90),
+    )
+
+    axis.set_title(title, fontsize=18, color="#1f2937", loc="left", pad=14)
+    axis.text(
+        0.0,
+        1.01,
+        subtitle,
+        transform=axis.transAxes,
+        ha="left",
+        va="bottom",
+        fontsize=10.5,
+        color="#6b7280",
+    )
+    axis.set_xlabel("Longitude (degrees)", color="#1f2937", fontsize=11)
+    axis.set_ylabel("Latitude (degrees)", color="#1f2937", fontsize=11)
+    axis.set_xticks([-180, -120, -60, 0, 60, 120, 180])
+    axis.set_yticks([-90, -60, -30, 0, 30, 60, 90])
+    axis.tick_params(colors="#6b7280")
+    axis.grid(color="#d7d2c8", linewidth=0.5, alpha=0.18)
+    for spine in axis.spines.values():
+        spine.set_color("#d7d2c8")
+    figure.subplots_adjust(left=0.07, right=0.82, top=0.90, bottom=0.10)
+    figure.savefig(
+        output_path,
+        dpi=180,
+        bbox_inches="tight",
+        facecolor=figure.get_facecolor(),
+    )
+    plt.close(figure)
+    return output_path
+
+
+def write_regolith_artifacts(
+    proto_states: tuple[volcanic_impact_resurfacing.large_scale_topography.plate_system.proto_tectonics.ProtoTectonicsState, ...],
+    plate_states: tuple[volcanic_impact_resurfacing.large_scale_topography.plate_system.PlateSystemState, ...],
+    topography_states: tuple[volcanic_impact_resurfacing.large_scale_topography.LargeScaleTopographyState, ...],
+    temperature_states: tuple[volcanic_impact_resurfacing.large_scale_topography.surface_temperature.SurfaceTemperatureState, ...],
+    resurfacing_states: tuple[volcanic_impact_resurfacing.VolcanicImpactResurfacingState, ...],
+    regolith_states: tuple[BasicRegolithWeatheringState, ...],
+    resolution: tuple[int, int],
+    current_file: str,
+    cache: dict[int, PlanetSurface],
+) -> Path | None:
+    if not regolith_states:
+        return None
+
+    present_surface = regolith_surface_for_index(
+        len(regolith_states) - 1,
+        proto_states,
+        plate_states,
+        topography_states,
+        temperature_states,
+        resurfacing_states,
+        regolith_states,
+        resolution,
+        cache,
+    )
+    state_path = save_planet_surface(
+        present_surface,
+        surface_state_output_path(
+            current_file,
+            present_surface.longitude_cells,
+            present_surface.latitude_cells,
+        ),
+    )
+    write_regolith_map_png(
+        present_surface,
+        regolith_present_output_path(current_file),
+        title="10 Basic Regolith / Weathering: Present-Day Surface",
+        subtitle=(
+            f"Equirectangular projection, "
+            f"{present_surface.longitude_cells}x{present_surface.latitude_cells} "
+            "shared surface cells colored by regolith depth."
+        ),
+    )
+    frames_dir = clear_frame_directory(frame_output_dir(
+        current_file,
+        FRAME_DIRECTORY_NAME,
+        present_surface.longitude_cells,
+        present_surface.latitude_cells,
+    ))
+    for index in frame_sample_indices(len(regolith_states)):
+        frame_surface = regolith_surface_for_index(
+            index,
+            proto_states,
+            plate_states,
+            topography_states,
+            temperature_states,
+            resurfacing_states,
+            regolith_states,
+            resolution,
+            cache,
+        )
+        write_regolith_map_png(
+            frame_surface,
+            frames_dir / f"frame_{frame_surface.step_index:04d}.png",
+            title="10 Basic Regolith / Weathering",
+            subtitle=(
+                f"Timestep {frame_surface.step_index}, age "
+                f"{frame_surface.age_years / 1_000_000.0:.1f} Myr."
+            ),
+        )
+    return state_path
+
+
+def build_regolith_surface_extra(
+    surface: PlanetSurface,
+    *,
+    current_file: str,
+    state_path: Path,
+    tectonic_resolution: tuple[int, int],
+) -> dict[str, object]:
+    terrain_payload = surface_json_payload(
+        surface,
+        state_path=state_path,
+        frame_directory=frame_output_dir(
+            current_file,
+            FRAME_DIRECTORY_NAME,
+            surface.longitude_cells,
+            surface.latitude_cells,
+        ),
+    )
+    return {
+        "tectonic_mesh_reference": {
+            "state_path": str(
+                surface_state_output_path(
+                    volcanic_impact_resurfacing.large_scale_topography.plate_system.__file__,
+                    tectonic_resolution[0],
+                    tectonic_resolution[1],
+                )
+            ),
+            "surface_grid_resolution": (
+                f"{tectonic_resolution[0]}x{tectonic_resolution[1]}"
+            ),
+            "mesh_level": "tectonic_mesh",
+        },
+        "terrain_mesh": terrain_payload,
+        "surface_geometry": terrain_payload,
+        "surface_summary": {
+            "mean_regolith_depth_m": float(np.mean(surface.regolith_depth)),
+            "max_regolith_depth_m": float(np.max(surface.regolith_depth)),
+            "mean_runoff_flux_index": float(np.mean(surface.runoff_flux)),
+            "mean_slope_index": float(np.mean(gradient_magnitude(surface, surface.elevation))),
+        },
+    }
+
+
 def simulate(
     criteria: planet.SimulationCriteria,
+    surface_grid_resolution: tuple[int, int] | None = None,
 ) -> Iterable[BasicRegolithWeatheringState]:
-    resurfacing_states = volcanic_impact_resurfacing.simulate(criteria)
-    atmosphere_states = early_atmosphere.simulate(criteria)
-    temperature_states = surface_temperature.simulate(criteria)
-    for resurfacing_state, atmosphere_state, temperature_state in zip(
-        resurfacing_states,
-        atmosphere_states,
-        temperature_states,
-    ):
-        yield basic_regolith_weathering_state_from_inputs(
-            resurfacing_state, atmosphere_state, temperature_state
+    resolution = surface_grid_resolution or volcanic_impact_resurfacing.large_scale_topography.plate_system.parse_surface_grid_resolution(
+        volcanic_impact_resurfacing.large_scale_topography.plate_system.DEFAULT_SURFACE_GRID_RESOLUTION
+    )
+    proto_states = tuple(volcanic_impact_resurfacing.large_scale_topography.plate_system.proto_tectonics.simulate(criteria, resolution))
+    plate_states = tuple(volcanic_impact_resurfacing.large_scale_topography.plate_system.simulate(criteria, resolution))
+    topography_states = tuple(volcanic_impact_resurfacing.large_scale_topography.simulate(criteria, resolution))
+    temperature_states = tuple(surface_temperature.simulate(criteria))
+    resurfacing_states = tuple(volcanic_impact_resurfacing.simulate(criteria, resolution))
+    atmosphere_states = tuple(early_atmosphere.simulate(criteria))
+
+    def build_states() -> Iterable[BasicRegolithWeatheringState]:
+        for resurfacing_state, atmosphere_state, temperature_state in zip(
+            resurfacing_states,
+            atmosphere_states,
+            temperature_states,
+        ):
+            yield basic_regolith_weathering_state_from_inputs(
+                resurfacing_state, atmosphere_state, temperature_state
+            )
+
+    surface_cache: dict[int, PlanetSurface] = {}
+
+    def extra_builder(
+        states: tuple[BasicRegolithWeatheringState, ...],
+    ) -> dict[str, object] | None:
+        if not states:
+            return None
+        present_surface = regolith_surface_for_index(
+            len(states) - 1,
+            proto_states,
+            plate_states,
+            topography_states,
+            temperature_states,
+            resurfacing_states,
+            states,
+            resolution,
+            surface_cache,
         )
+        state_path = surface_state_output_path(
+            __file__,
+            present_surface.longitude_cells,
+            present_surface.latitude_cells,
+        )
+        return build_regolith_surface_extra(
+            present_surface,
+            current_file=__file__,
+            state_path=state_path,
+            tectonic_resolution=resolution,
+        )
+
+    return materialize_layer_states(
+        __file__,
+        criteria,
+        build_states,
+        extra_builder=extra_builder,
+        artifact_key=regolith_surface_artifact_key(resolution),
+        artifact_writer=lambda states: write_regolith_artifacts(
+            proto_states,
+            plate_states,
+            topography_states,
+            temperature_states,
+            resurfacing_states,
+            states,
+            resolution,
+            __file__,
+            surface_cache,
+        ),
+    )
 
 
 def first_textured_surface_state(
@@ -640,14 +1101,25 @@ def first_textured_surface_state(
     return None
 
 
-def validate_model() -> None:
-    volcanic_impact_resurfacing.validate_model()
+def validate_model(
+    surface_grid_resolution: tuple[int, int] | None = None,
+) -> None:
+    resolution = surface_grid_resolution or volcanic_impact_resurfacing.large_scale_topography.plate_system.parse_surface_grid_resolution(
+        volcanic_impact_resurfacing.large_scale_topography.plate_system.DEFAULT_SURFACE_GRID_RESOLUTION
+    )
+    volcanic_impact_resurfacing.validate_model(resolution)
     reference_criteria = planet.build_criteria(VALIDATION_STEP_YEARS)
-    states = list(simulate(reference_criteria))
+    states = list(simulate(reference_criteria, resolution))
     initial_state = states[0]
     present_state = states[-1]
     first_textured_state = first_textured_surface_state(states)
     present_terrain_states = {feature.terrain_state for feature in present_state.features}
+    terrain_resolution = subdivided_surface_grid_resolution(resolution)
+    surface = load_planet_surface(
+        surface_state_output_path(
+            __file__, terrain_resolution[0], terrain_resolution[1]
+        )
+    )
 
     if initial_state.texture_state != "pristine_magmatic_surface":
         raise ValueError("The earliest regolith state should still be pristine and magmatic.")
@@ -673,18 +1145,27 @@ def validate_model() -> None:
         "talus_volcanic_highlands",
     } & present_terrain_states:
         raise ValueError("Present-day regolith features should show distinct textured terrains.")
+    if surface.mesh_level != "terrain_mesh":
+        raise ValueError("Regolith weathering must continue on the refined terrain mesh.")
+    if float(np.mean(surface.regolith_depth)) <= 0.50:
+        raise ValueError("Present-day regolith surface should sustain broad regolith depth.")
+    if float(np.mean(surface.runoff_flux)) <= 0.02:
+        raise ValueError("Present-day regolith surface should preserve downhill transport structure.")
 
 
-def print_input_criteria(criteria: planet.SimulationCriteria) -> None:
+def print_input_criteria(
+    criteria: planet.SimulationCriteria, surface_grid_resolution: tuple[int, int]
+) -> None:
+    lon_cells, lat_cells = surface_grid_resolution
     fields = [
         ("layer_name", "basic_regolith_and_weathering"),
-        ("resurfacing_source", "volcanic_impact_resurfacing.py"),
-        ("large_scale_topography_source", "large_scale_topography.py"),
-        ("surface_temperature_source", "surface_temperature.py"),
-        ("early_atmosphere_source", "early_atmosphere.py"),
-        ("primary_crust_source", "primary_crust.py"),
-        ("interior_source", "interior.py"),
-        ("planet_source", "planet.py"),
+        ("resurfacing_source", "09_volcanic_impact_resurfacing.py"),
+        ("large_scale_topography_source", "08_large_scale_topography.py"),
+        ("surface_temperature_source", "05_surface_temperature.py"),
+        ("early_atmosphere_source", "04_early_atmosphere.py"),
+        ("primary_crust_source", "03_primary_crust.py"),
+        ("interior_source", "02_interior.py"),
+        ("planet_source", "01_planet.py"),
         ("coupled_resurfacing_layer", "true"),
         ("coupled_topography_layer", "true"),
         ("coupled_surface_temperature_layer", "true"),
@@ -707,6 +1188,9 @@ def print_input_criteria(criteria: planet.SimulationCriteria) -> None:
                 Decimal(criteria.step_years) / planet.YEARS_PER_MYR, 6
             ),
         ),
+        ("shared_surface_geometry", "true"),
+        ("surface_grid_resolution", f"{lon_cells}x{lat_cells}"),
+        ("surface_state_contract", "PlanetSurface"),
         ("fracture_model", "thermal_plus_impact_plus_volcanic_scaling"),
         ("dust_model", "mechanical_fragment_plus_aeolian_support"),
         ("chemical_weathering_model", "atmosphere_gated_coarse_reaction_index"),
@@ -728,7 +1212,9 @@ def print_input_criteria(criteria: planet.SimulationCriteria) -> None:
     print()
 
 
-def print_table(criteria: planet.SimulationCriteria) -> None:
+def print_table(
+    criteria: planet.SimulationCriteria, surface_grid_resolution: tuple[int, int]
+) -> None:
     headers = (
         ("step", 8),
         ("age_myr", 12),
@@ -749,7 +1235,7 @@ def print_table(criteria: planet.SimulationCriteria) -> None:
     print(header_line)
     print(divider_line)
 
-    for state in simulate(criteria):
+    for state in simulate(criteria, surface_grid_resolution):
         age_myr = planet.format_decimal(
             Decimal(state.age_years) / planet.YEARS_PER_MYR, 3
         )
@@ -769,10 +1255,18 @@ def print_table(criteria: planet.SimulationCriteria) -> None:
         )
 
 
-def print_present_day_summary(criteria: planet.SimulationCriteria) -> None:
-    states = list(simulate(criteria))
+def print_present_day_summary(
+    criteria: planet.SimulationCriteria, surface_grid_resolution: tuple[int, int]
+) -> None:
+    states = list(simulate(criteria, surface_grid_resolution))
     final_state = states[-1]
     first_textured_state = first_textured_surface_state(states)
+    terrain_resolution = subdivided_surface_grid_resolution(surface_grid_resolution)
+    surface = load_planet_surface(
+        surface_state_output_path(
+            __file__, terrain_resolution[0], terrain_resolution[1]
+        )
+    )
 
     assert first_textured_state is not None
 
@@ -814,6 +1308,11 @@ def print_present_day_summary(criteria: planet.SimulationCriteria) -> None:
             planet.format_decimal(final_state.exposed_bedrock_fraction, 6),
         ),
         ("texture_state", final_state.texture_state),
+        ("surface_region_count", str(surface.region_ids.shape[0])),
+        ("surface_mesh_level", surface.mesh_level),
+        ("surface_state_path", str(surface_state_output_path(
+            __file__, terrain_resolution[0], terrain_resolution[1]
+        ))),
         ("first_textured_surface_step", str(first_textured_state.step_index)),
         (
             "first_textured_surface_age_myr",
@@ -864,13 +1363,16 @@ def main() -> int:
     args = parse_args()
     try:
         criteria = planet.build_criteria(args.step_years)
-        validate_model()
+        surface_grid_resolution = volcanic_impact_resurfacing.large_scale_topography.plate_system.parse_surface_grid_resolution(
+            args.surface_grid_resolution
+        )
+        validate_model(surface_grid_resolution)
     except ValueError as exc:
         raise SystemExit(str(exc))
 
-    print_input_criteria(criteria)
-    print_table(criteria)
-    print_present_day_summary(criteria)
+    print_input_criteria(criteria, surface_grid_resolution)
+    print_table(criteria, surface_grid_resolution)
+    print_present_day_summary(criteria, surface_grid_resolution)
     return 0
 
 

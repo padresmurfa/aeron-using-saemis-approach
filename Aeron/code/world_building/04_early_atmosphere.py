@@ -9,10 +9,12 @@ from decimal import Decimal, getcontext
 from typing import Iterable
 
 try:
-    from . import planet, primary_crust
+    from .world_building_support import load_pipeline_module, materialize_layer_states
 except ImportError:
-    import planet  # type: ignore
-    import primary_crust  # type: ignore
+    from world_building_support import load_pipeline_module, materialize_layer_states  # type: ignore
+
+planet = load_pipeline_module(__package__, __file__, "01_planet")
+primary_crust = load_pipeline_module(__package__, __file__, "03_primary_crust")
 
 getcontext().prec = 50
 
@@ -329,12 +331,15 @@ def atmosphere_state_from_primary_crust_state(
 
 
 def simulate(criteria: planet.SimulationCriteria) -> Iterable[EarlyAtmosphereState]:
-    crust_states = list(primary_crust.simulate(criteria))
-    pressure_history = build_pressure_history(criteria, crust_states)
-    for base_state, atmospheric_pressure_bar in zip(crust_states, pressure_history):
-        yield atmosphere_state_from_primary_crust_state(
-            base_state, atmospheric_pressure_bar
-        )
+    def build_states() -> Iterable[EarlyAtmosphereState]:
+        crust_states = tuple(primary_crust.simulate(criteria))
+        pressure_history = build_pressure_history(criteria, crust_states)
+        for base_state, atmospheric_pressure_bar in zip(crust_states, pressure_history):
+            yield atmosphere_state_from_primary_crust_state(
+                base_state, atmospheric_pressure_bar
+            )
+
+    return materialize_layer_states(__file__, criteria, build_states)
 
 
 def first_precipitation_state(
@@ -369,9 +374,9 @@ def validate_model() -> None:
 def print_input_criteria(criteria: planet.SimulationCriteria) -> None:
     fields = [
         ("layer_name", "early_atmosphere_and_volatile_accumulation"),
-        ("primary_crust_source", "primary_crust.py"),
-        ("interior_source", "interior.py"),
-        ("planet_source", "planet.py"),
+        ("primary_crust_source", "03_primary_crust.py"),
+        ("interior_source", "02_interior.py"),
+        ("planet_source", "01_planet.py"),
         ("coupled_primary_crust_layer", "true"),
         ("coupled_interior_layer", "true"),
         ("coupled_bulk_layer", "true"),

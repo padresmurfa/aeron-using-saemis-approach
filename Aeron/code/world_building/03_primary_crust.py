@@ -4,15 +4,21 @@
 from __future__ import annotations
 
 import argparse
+import math
 from dataclasses import dataclass
 from decimal import Decimal, getcontext
-from typing import Iterable
+from pathlib import Path
+from typing import Iterable, Sequence
 
 try:
-    from . import interior, planet
+    from .world_building_paths import step_output_path
+    from .world_building_support import load_pipeline_module, materialize_layer_states
 except ImportError:
-    import interior  # type: ignore
-    import planet  # type: ignore
+    from world_building_paths import step_output_path  # type: ignore
+    from world_building_support import load_pipeline_module, materialize_layer_states  # type: ignore
+
+interior = load_pipeline_module(__package__, __file__, "02_interior")
+planet = load_pipeline_module(__package__, __file__, "01_planet")
 
 getcontext().prec = 50
 
@@ -28,6 +34,20 @@ WEAK_ZONE_CONVECTION_WEIGHT = Decimal("0.42")
 WEAK_ZONE_SURFACE_WEIGHT = Decimal("0.25")
 WEAK_ZONE_STABILITY_WEIGHT = Decimal("0.15")
 VALIDATION_STEP_YEARS = 100_000_000
+ZONAL_LATITUDE_BAND_COUNT = 181
+ZONAL_POLAR_SOLIDIFICATION_RELIEF = Decimal("0.22")
+ZONAL_SOLID_SURFACE_THRESHOLD = Decimal("0.58")
+ZONAL_STABLE_CRUST_THRESHOLD = Decimal("0.10")
+SURFACE_CATEGORY_COLORS = {
+    "molten": "#d1495b",
+    "mixed": "#edae49",
+    "solid_crust": "#5c5346",
+}
+SURFACE_CATEGORY_LABELS = {
+    "molten": "Molten",
+    "mixed": "Mixed",
+    "solid_crust": "Solid Crust",
+}
 
 
 @dataclass(frozen=True)
@@ -78,6 +98,10 @@ def clamp_unit_interval(value: Decimal) -> Decimal:
     if value > Decimal("1"):
         return Decimal("1")
     return value
+
+
+def decimal_from_float(value: float) -> Decimal:
+    return Decimal(str(value))
 
 
 def surface_solid_index_at(state: interior.InteriorState) -> Decimal:
@@ -205,8 +229,11 @@ def primary_crust_state_from_interior_state(
 
 
 def simulate(criteria: planet.SimulationCriteria) -> Iterable[PrimaryCrustState]:
-    for base_state in interior.simulate(criteria):
-        yield primary_crust_state_from_interior_state(base_state)
+    def build_states() -> Iterable[PrimaryCrustState]:
+        for base_state in interior.simulate(criteria):
+            yield primary_crust_state_from_interior_state(base_state)
+
+    return materialize_layer_states(__file__, criteria, build_states)
 
 
 def first_stable_crust_state(
@@ -216,6 +243,212 @@ def first_stable_crust_state(
         if state.stable_crust_state != "absent":
             return state
     return None
+
+
+def zonal_surface_indices_at(
+    state: PrimaryCrustState, latitude_degrees: float
+) -> tuple[Decimal, Decimal]:
+    """Return a latitude-only solidification view for the crust layer.
+
+    This layer does not own longitude-resolved structure. The visualization
+    therefore stays zonal and uses only a symmetric pole-to-equator relief:
+    poles cool slightly faster, the equator slightly slower. The result is a
+    latitude-band schematic derived from the real global crust state rather than
+    a fake 2D world map.
+    """
+
+    latitude_radians = math.radians(latitude_degrees)
+    polar_relief = ZONAL_POLAR_SOLIDIFICATION_RELIEF * decimal_from_float(
+        abs(math.sin(latitude_radians)) - 0.5
+    )
+    local_surface_solid_index = clamp_unit_interval(
+        state.surface_solid_index + polar_relief
+    )
+    local_stable_crust_fraction = clamp_unit_interval(
+        state.stable_crust_fraction + (polar_relief * Decimal("0.75"))
+    )
+    return local_surface_solid_index, local_stable_crust_fraction
+
+
+def zonal_surface_category_at(state: PrimaryCrustState, latitude_degrees: float) -> str:
+    local_surface_solid_index, local_stable_crust_fraction = zonal_surface_indices_at(
+        state, latitude_degrees
+    )
+    if local_surface_solid_index < Decimal("0.35"):
+        return "molten"
+    if (
+        local_surface_solid_index >= ZONAL_SOLID_SURFACE_THRESHOLD
+        and local_stable_crust_fraction >= ZONAL_STABLE_CRUST_THRESHOLD
+    ):
+        return "solid_crust"
+    return "mixed"
+
+
+def zonal_latitude_samples() -> list[float]:
+    return [
+        -90.0 + (180.0 * index / (ZONAL_LATITUDE_BAND_COUNT - 1))
+        for index in range(ZONAL_LATITUDE_BAND_COUNT)
+    ]
+
+
+def zonal_surface_heatmap(
+    states: Sequence[PrimaryCrustState],
+) -> tuple[list[list[int]], dict[str, list[float]], list[float]]:
+    state_order = ("molten", "mixed", "solid_crust")
+    category_to_code = {name: index for index, name in enumerate(state_order)}
+    latitudes = zonal_latitude_samples()
+    heatmap = [[0 for _ in states] for _ in latitudes]
+    coverage = {name: [] for name in state_order}
+
+    for state_index, state in enumerate(states):
+        counts = {name: 0.0 for name in state_order}
+        total_weight = 0.0
+        for latitude_index, latitude in enumerate(latitudes):
+            category = zonal_surface_category_at(state, latitude)
+            heatmap[latitude_index][state_index] = category_to_code[category]
+            weight = max(0.0, math.cos(math.radians(latitude)))
+            counts[category] += weight
+            total_weight += weight
+
+        for category in state_order:
+            if total_weight == 0.0:
+                coverage[category].append(0.0)
+            else:
+                coverage[category].append(counts[category] / total_weight)
+
+    return heatmap, coverage, latitudes
+
+
+def zonal_visualization_output_path(current_file: str) -> Path:
+    return step_output_path(current_file, "zonal_solidification.png")
+
+
+def write_zonal_solidification_png(
+    states: Sequence[PrimaryCrustState], current_file: str
+) -> Path:
+    try:
+        import matplotlib
+
+        matplotlib.use("Agg")
+        from matplotlib import pyplot as plt
+        from matplotlib.colors import BoundaryNorm, ListedColormap
+    except ImportError as exc:  # pragma: no cover - import-time dependency guard
+        raise ImportError(
+            "Zonal solidification visualization requires matplotlib. Install "
+            "dependencies with `python3 -m pip install -r requirements.txt`."
+        ) from exc
+
+    if not states:
+        raise ValueError("Primary crust visualization requires at least one state.")
+
+    output_path = zonal_visualization_output_path(current_file)
+    heatmap, coverage, latitudes = zonal_surface_heatmap(states)
+    ages_myr = [
+        float(Decimal(state.age_years) / planet.YEARS_PER_MYR) for state in states
+    ]
+    first_stable_state = first_stable_crust_state(states)
+    first_stable_age_myr = (
+        float(Decimal(first_stable_state.age_years) / planet.YEARS_PER_MYR)
+        if first_stable_state is not None
+        else None
+    )
+
+    fig = plt.figure(figsize=(13.4, 9.6), facecolor="#f6f1e8")
+    grid = fig.add_gridspec(2, 1, height_ratios=(1.0, 1.35), hspace=0.26)
+    coverage_ax = fig.add_subplot(grid[0, 0])
+    heatmap_ax = fig.add_subplot(grid[1, 0])
+
+    coverage_ax.set_facecolor("#fffdf8")
+    baseline = [0.0 for _ in ages_myr]
+    for category in ("molten", "mixed", "solid_crust"):
+        values = coverage[category]
+        top = [base + value for base, value in zip(baseline, values)]
+        coverage_ax.fill_between(
+            ages_myr,
+            baseline,
+            top,
+            color=SURFACE_CATEGORY_COLORS[category],
+            alpha=0.92,
+            linewidth=0.0,
+            label=SURFACE_CATEGORY_LABELS[category],
+        )
+        baseline = top
+
+    if first_stable_age_myr is not None:
+        coverage_ax.axvline(
+            first_stable_age_myr,
+            color="#1f2937",
+            linewidth=1.2,
+            linestyle="--",
+            alpha=0.7,
+        )
+
+    coverage_ax.set_ylim(0.0, 1.0)
+    coverage_ax.set_xlim(ages_myr[0], ages_myr[-1])
+    coverage_ax.set_ylabel("Area Fraction", color="#1f2937")
+    coverage_ax.set_title(
+        "03 Primary Crust: Zonal Surface Solidification",
+        loc="left",
+        color="#1f2937",
+        fontsize=18,
+        pad=14,
+    )
+    coverage_ax.grid(True, axis="y", color="#d7d2c8", linewidth=0.8, alpha=0.8)
+    for spine in coverage_ax.spines.values():
+        spine.set_color("#d7d2c8")
+    coverage_ax.tick_params(colors="#6b7280")
+    coverage_ax.legend(frameon=False, ncol=3, loc="upper left")
+
+    cmap = ListedColormap(
+        [
+            SURFACE_CATEGORY_COLORS["molten"],
+            SURFACE_CATEGORY_COLORS["mixed"],
+            SURFACE_CATEGORY_COLORS["solid_crust"],
+        ]
+    )
+    norm = BoundaryNorm([-0.5, 0.5, 1.5, 2.5], cmap.N)
+    heatmap_ax.set_facecolor("#fffdf8")
+    heatmap_ax.imshow(
+        heatmap,
+        origin="lower",
+        aspect="auto",
+        extent=(ages_myr[0], ages_myr[-1], latitudes[0], latitudes[-1]),
+        cmap=cmap,
+        norm=norm,
+        interpolation="nearest",
+    )
+    if first_stable_age_myr is not None:
+        heatmap_ax.axvline(
+            first_stable_age_myr,
+            color="#1f2937",
+            linewidth=1.2,
+            linestyle="--",
+            alpha=0.7,
+        )
+    heatmap_ax.set_xlabel("Age (Myr)", color="#1f2937")
+    heatmap_ax.set_ylabel("Latitude (degrees)", color="#1f2937")
+    heatmap_ax.set_yticks([-90, -60, -30, 0, 30, 60, 90])
+    heatmap_ax.tick_params(colors="#6b7280")
+    for spine in heatmap_ax.spines.values():
+        spine.set_color("#d7d2c8")
+
+    fig.text(
+        0.125,
+        0.02,
+        (
+            "Zonal-only schematic: this layer resolves latitude bands, not true "
+            "surface geography. The polar bands cool ahead of the equator using a "
+            "deterministic symmetric relief applied to the real global crust state."
+        ),
+        ha="left",
+        va="bottom",
+        fontsize=10,
+        color="#6b7280",
+    )
+    fig.subplots_adjust(left=0.08, right=0.97, top=0.93, bottom=0.12, hspace=0.28)
+    fig.savefig(output_path, dpi=180, bbox_inches="tight", facecolor=fig.get_facecolor())
+    plt.close(fig)
+    return output_path
 
 
 def validate_model() -> None:
@@ -245,8 +478,8 @@ def validate_model() -> None:
 def print_input_criteria(criteria: planet.SimulationCriteria) -> None:
     fields = [
         ("layer_name", "primary_crust_formation"),
-        ("interior_source", "interior.py"),
-        ("planet_source", "planet.py"),
+        ("interior_source", "02_interior.py"),
+        ("planet_source", "01_planet.py"),
         ("coupled_interior_layer", "true"),
         ("coupled_bulk_layer", "true"),
         ("deterministic", "true"),
@@ -284,7 +517,7 @@ def print_input_criteria(criteria: planet.SimulationCriteria) -> None:
     print()
 
 
-def print_table(criteria: planet.SimulationCriteria) -> None:
+def print_table(states: Sequence[PrimaryCrustState]) -> None:
     headers = (
         ("step", 8),
         ("age_myr", 12),
@@ -307,7 +540,7 @@ def print_table(criteria: planet.SimulationCriteria) -> None:
     print(header_line)
     print(divider_line)
 
-    for state in simulate(criteria):
+    for state in states:
         age_myr = planet.format_decimal(
             Decimal(state.age_years) / planet.YEARS_PER_MYR, 3
         )
@@ -329,8 +562,7 @@ def print_table(criteria: planet.SimulationCriteria) -> None:
         )
 
 
-def print_present_day_summary(criteria: planet.SimulationCriteria) -> None:
-    states = list(simulate(criteria))
+def print_present_day_summary(states: Sequence[PrimaryCrustState]) -> None:
     final_state = states[-1]
     first_stable_state = first_stable_crust_state(states)
 
@@ -386,9 +618,21 @@ def main() -> int:
     except ValueError as exc:
         raise SystemExit(str(exc))
 
+    states = simulate(criteria)
+    if not states:
+        raise SystemExit("Primary crust simulation produced no timestep states.")
+
     print_input_criteria(criteria)
-    print_table(criteria)
-    print_present_day_summary(criteria)
+    print_table(states)
+    print_present_day_summary(states)
+
+    try:
+        write_zonal_solidification_png(states, __file__)
+    except (ImportError, OSError, ValueError) as exc:
+        raise SystemExit(
+            f"Failed to write zonal solidification visualization: {exc}"
+        ) from exc
+
     return 0
 
 
