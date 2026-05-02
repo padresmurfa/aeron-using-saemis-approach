@@ -3,6 +3,7 @@
 **Created:** 2026-05-01T00:00:00Z
 **Revised:** 2026-05-02 (folded in user design direction; supersedes the original "five framework options" framing).
 **Revised:** 2026-05-02 (later) -- six open questions resolved by user; new canon doctrines added; one reconciliation question remains.
+**Revised:** 2026-05-02 (final) -- stars-doctrine reconciliation resolved by user (R2 + positional-weighting mechanic).
 
 ## Context
 
@@ -23,7 +24,7 @@ Aeron's mythic hierarchy needs a unified framework spanning **Creator -> mortals
 | 3 | Celestials (planet-like bodies in the sky) | Primal forces between moons and gods. | Likely direct Creator-creation; specialists confirm. |
 | 4 | Galaxies and patterns within them | Pantheons and individual gods. | Pantheon-leader gods are direct Creator-creations. Lesser gods are descendants of pantheon leaders **or** elevated heroes (typically as demi-gods, angels, or similar). |
 | 5 | Constellations (`Tavirath`) | **Legendary beasts.** Each constellation is a beast. They have **physical presence on Aeron**, typically dormant on mortal timescales. Their constellation shines brightest over the continent they dwell in and dims with distance. | **Direct Creator-creation.** Dragons (and similar) are descended from legendary beasts. |
-| -- | Stars (`Taviloren`) | **Fated-being witness tier (transverse, not stacked).** Each star is the sky-witness of a fated being below celestial tier -- dragons, kings, heroes, saints, individuals favoured by gods. The existing "every word has a star" doctrine needs reconciliation with this; see open question below. | Born with the fated being. |
+| -- | Stars (`Taviloren`) | **Transverse witness tier (two classes, R2).** Class 1: eternal lexical-witness stars — every primal-language word has a permanent corresponding star; the sky is a visible lexicon of creation. Class 2: fated-being stars — born with a fated being (dragon, king, hero, saint, god-favored individual), mirrors their life-arc, fades as legend fades. Fated-being stars appear in a position determined by the **weighted list of primal-language words associated with that being's fate**, so they cluster near the primal-word stars they are attuned to. Astrologers learn to distinguish the two classes. | Class 1: eternal (born with creation). Class 2: born with the fated being. |
 | 6 | Aeron's inhabitants | Humanic, demonic, mundane races, monsters, magic, heroes, demi-gods, angels, spirits. | Humanic and demonic Adam/Eve are direct Creator-creations. All other mortals descend from those firsts (or from beasts/gods). |
 
 **Gaze-resolution mechanic.** Applies to legendary beasts (tier 5) and to galaxies/gods (tier 4); the same mechanic applies in weaker form to fated-being stars.
@@ -84,17 +85,23 @@ Aeron's mythic hierarchy needs a unified framework spanning **Creator -> mortals
 - **Q3 origin of humanic/demonic**: light/darklight affinity, direct Creator-creation, Adam/Eve in unreachable Eden, chaotic/lawful gradient bias. Not moral.
 - **Q4 mana**: transverse, Creator's lifeblood, unique flavor per Creator-created entity.
 - **Q5 calendar timescales**: Earth-equivalent, with moons varying as canon already has.
-- **Q6 star transversality**: stars represent fated beings (dragons, kings, heroes, saints, god-favored individuals). Born with the being, mirror the being's life-arc, fade as legend fades.
+- **Q6 star transversality**: R2 — two classes coexist. Class 1: eternal lexical-witness stars (one per primal-language word). Class 2: fated-being stars — born with the being, mirror their life-arc, fade as legend fades. A fated-being star's sky position is the weighted centroid of the Class-1 stars corresponding to the primal-words in that being's fate.
 
-## One remaining reconciliation question
+## Resolved: stars-doctrine reconciliation (R2)
 
-**Stars-doctrine reconciliation.** Existing canon (`Aeron/mythopedia/astrology/stars.md`, `primal_stars.md`) says every primal-language word has a corresponding star and the sky is a "visible lexicon of creation." The new design says every fated being has a star that tracks their life. Three plausible reconciliations:
+**Stars-doctrine reconciliation — RESOLVED (2026-05-02). User chose R2.**
 
-- **(R1) Synthesis: every fated being's birth coins a primal-language word.** The being's name is a primal-language entry; the star is bonded to both. The existing star-per-word doctrine is preserved by extension. Fated-being stars are a subset of the lexical-witness layer. Brightest, most foundational stars (cosmological-scale words) may not be tied to any fated being -- those are the ancient ones.
-- **(R2) Two star-classes.** Some stars are eternal lexical witnesses (cosmological-scale words); others are fated-being stars that come and go. Both coexist in the sky. Astrologers learn to distinguish them.
-- **(R3) Replacement.** The lexical-witness doctrine is retired; the fated-being doctrine takes over. Every star is a fated-being star; the "word" tier is reconceived. (Largest break with existing canon.)
+**R2: Two star-classes coexist in the same sky.**
 
-This is a substantive choice that should be made by `team-aeron-narrative` + `role-aeron-narrative-astrologer` during Step 2 drafting, with Devil's Advocate review. R1 is the natural-fit synthesis; R2 is the most conservative; R3 is the cleanest if existing canon is treated as fully revisable. **Specialists decide; user reviews.**
+- **Class 1 — Lexical-witness stars (eternal).** Every primal-language word has a permanent corresponding `Taviloren` bearing the same name. The sky is a visible lexicon of creation. The star does not create the word, and the word does not create the star; both witness the same underlying truth. These stars predate any mortal, existing since creation.
+- **Class 2 — Fated-being stars (transient).** A star is born when a fated being is born. It mirrors the being's life-arc and fades as their legend fades. A fated-being star's **position in the sky is determined by the weighted list of primal-language words associated with that being's fate**: the star appears close to the Class-1 lexical-witness stars of its highest-weight fate-words. Scholars who identify the weighted primal-words in a being's fate can predict where in the sky their star will be found. Astrologers learn to distinguish Class 1 (permanent, anchored) from Class 2 (transient, positionally shifting with fate).
+
+**Positional-weighting mechanic (canon).** A fated being's fate is represented as an ordered weighted list of primal-language words. The star occupies a position in the sky that is the weighted centroid of the Class-1 lexical-witness stars corresponding to those primal words. As a fated being's fate evolves — they mature, deviate from their destiny, deepen an attunement — the weights shift and the star drifts. A sudden shift in a star's position is an astrological event. Scholars can partially read a fated being's fate by cataloging the primal words closest to their star's current position.
+
+**Consequences carried into Step 2 and the star-fate doctrine page:**
+- Class 2 stars create a navigation problem for astrologers: distinguishing permanent from transient in a crowded sky. This is an in-world scholarly discipline.
+- Hero summoning / prophecy readers are therefore reading the primal-word adjacency pattern first, not a birth chart.
+- The sky is simultaneously a complete lexicon (Class 1) and a living biography archive (Class 2). Both layers are always present.
 
 ## Checklist
 
@@ -136,7 +143,7 @@ These are new doctrines the user introduced that need their own canon pages or c
 - **Eden canon.** A page for the hidden garden on Aeron, unreachable except by the Creator. Address: its location-status, its inhabitants, its function in cosmology.
 - **Mana doctrine page.** A new canon page (likely `Aeron/mythopedia/cosmology/mana.md`) covering: mana as Creator's lifeblood, mana-flavor per Creator-created entity, mana-flow through the stack, mortal use of mana.
 - **Light/darklight affinity page.** Extension of `astrology/luminaries.md` or a new page covering the affinity axis as it propagates through tiers (sky entities, races, individuals).
-- **Star-fate doctrine.** Revision/extension of `astrology/stars.md` and `astrology/primal_stars.md` to canonize the fated-being model and the chosen reconciliation from Step 2.
+- **Star-fate doctrine (R2 + positional weighting).** Revision/extension of `astrology/stars.md` and `astrology/primal_stars.md` to canonize the two-class model: Class 1 lexical-witness stars (eternal) and Class 2 fated-being stars (transient, positionally determined by the weighted list of primal-language words in the being's fate). Cover: the positional-weighting mechanic, the astrological discipline of distinguishing the two classes, and the hero-summoning/prophecy implications of primal-word adjacency reading.
 - **Direct-vs-derived creation hierarchy.** A page enumerating which classes of being are direct Creator-creations versus descended/elevated. This is the spine for narrative authority claims.
 - **Hero-summoning and reincarnation mechanic.** A canon page for the star-identification ritual; covers cross-world reincarnation and demon-lord summoning. Likely under `Aeron/mythopedia/events/` or a new `Aeron/mythopedia/mechanics/` directory.
 - **Dragons (and similar beast-descendants).** Catalog of derived classes that descend from legendary beasts, with their relationship to the parent beast and their inherited mana-flavor.
