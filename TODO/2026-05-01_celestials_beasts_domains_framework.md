@@ -109,9 +109,9 @@ Each step names the LP routing that should run when that step is taken. Each sub
 
 - [x] **Step 1 -- Resolve open questions.** Done. Six of six resolved; one reconciliation question (stars doctrine) deferred to Step 2 specialist call.
 
-- [ ] **Step 2 -- Draft the unifying tier-framework canon page.** Produce `Aeron/mythopedia/cosmology/mythic_hierarchy.md` (or equivalent) that codifies: tier table with creation provenance, above-physics rule with sky-size scaling, gaze-resolution mechanic with bidirectional connection rule, pantheon faith-brightness rule, fated-being star doctrine with chosen reconciliation, mana-as-Creator-lifeblood doctrine, humanic/demonic light-darklight-affinity model, hard-canon list, and where universal-vs-positional applies.
-  - Route: `team-aeron-narrative` with mandatory `role-aeron-narrative-astrologer` overlay.
-  - Devil's Advocate must stress-test against the hard canon, the existing celestial sagas, and the open reconciliation question.
+- [x] **Step 2 -- Draft the unifying tier-framework canon page.** Done 2026-05-02. Produced `Aeron/mythopedia/cosmology/mythic_hierarchy.md` codifying: tier table with creation provenance, above-physics rule with sky-size scaling, gaze-resolution mechanic with bidirectional connection rule, pantheon faith-brightness rule, R2 stars doctrine with positional-weighting mechanic, mana-as-Creator-lifeblood doctrine, humanic/demonic light-darklight-affinity model, hard-canon list, and the universal-vs-positional seam.
+  - Routed: `team-aeron-narrative` with mandatory `role-aeron-narrative-astrologer` overlay.
+  - Devil's Advocate cleared all four blocking constraints (Aru/Loran trap, R2 cross-pollination, above-physics under-specification, pantheon-brightness collapse).
 
 - [ ] **Step 3 -- Refine moon canon (tier 2).** Reframe `Aeron/mythopedia/astrology/moons_of_aeron.md` from "balanced elemental matrix" toward "raw Creator-derived powers." Each moon should have an articulated mana-flavor. Audit each celestial saga in `Aeron/sagas/celestials/` for the seven moons.
   - Route: `team-aeron-narrative` + `role-aeron-narrative-astrologer` + `role-aeron-narrative-mythopedia-consistency-editor`.
