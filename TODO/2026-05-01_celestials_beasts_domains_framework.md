@@ -2,60 +2,72 @@
 
 **Created:** 2026-05-01T00:00:00Z
 **Revised:** 2026-05-02 (folded in user design direction; supersedes the original "five framework options" framing).
+**Revised:** 2026-05-02 (later) -- six open questions resolved by user; new canon doctrines added; one reconciliation question remains.
 
 ## Context
 
-Aeron's mythic hierarchy needs a unified framework spanning **Creator -> mortals**. The user has provided design direction that fixes the tier structure, the gaze-resolution mechanic for legendary beasts and gods, and the above-physics rule. Existing definitions at every tier are now treated as drafts to be improved -- except for the hard canon listed below.
+Aeron's mythic hierarchy needs a unified framework spanning **Creator -> mortals**. The user has provided design direction that fixes the tier structure, the gaze-resolution mechanic, the above-physics rule, the creation hierarchy (direct vs derived), the mana doctrine, the calendar baseline, and the humanic/demonic origin and alignment. Existing definitions at every tier are now treated as drafts to be improved -- except for the hard canon listed below.
 
-### User design direction (2026-05-02)
+### User design direction (consolidated 2026-05-02)
 
 **Geometry.** Aeron is geocentric but **round**, not flat. Sun, moons, celestials (planet-like), stars, constellations, and galaxies all rotate around Aeron. The same sky is **not** visible everywhere on Aeron at the same time; visibility is positional. Celestials are universal as entities but positional as observed phenomena.
 
-**Above-physics rule.** Celestials mostly follow fixed paths but are above physics. They can deviate in ways that would be impossible in our world. **Rarity of deviation scales with the scale of the entity.** (Open question: does *scale* mean physical size, metaphysical seniority, or both? See open questions below.)
+**Above-physics rule.** Celestials mostly follow fixed paths but are above physics. They can deviate in ways that would be impossible in our world. **Bigger (as observed in the sky) = rarer deviation, and more consequential when it happens.** *Scale* is sky-observed apparent size, not our-world physics size.
 
-**Tier mapping (top-down "directness to the Creator").**
+**Tier mapping (top-down "directness to the Creator") and creation hierarchy.**
 
-| Tier | Class | Represents | Status |
+| Tier | Class | Represents | Creation provenance |
 | --- | --- | --- | --- |
-| 1 | Creator (`Aru`/`Loran`) | The Source. `Loran` is `Aru` after the First Pulse, in oscillating harmonic state -- not a second being. | Hard canon. |
-| 2 | Moons (`Seravel`) | Raw powers most directly derived from the Creator. | Existing names locked; tier role and domains open to refinement. |
-| 3 | Celestials (planet-like bodies in the sky) | Primal forces between moons and gods. | Open: not yet catalogued. |
-| 4 | Galaxies and patterns within them | Pantheons and individual gods within those pantheons. | Open: not yet catalogued. |
-| 5 | Constellations (`Tavirath`) | **Legendary beasts.** Each constellation is a beast. | Names like `Phaemorath`, `Taviron` exist as doctrine; full beast catalog is empty. |
-| -- | Stars (`Taviloren`) | **Lexical witness tier (transverse, not stacked).** Every primal-language word has a corresponding star; the sky is the visible lexicon of creation. | Hard canon (per `astrology/stars.md` and `astrology/primal_stars.md`). |
-| 6 | Aeron's inhabitants | Humanic, demonic, mundane races, monsters, magic, heroes, demi-gods, angels, spirits. | Mostly open. |
+| 1 | Creator (`Aru`/`Loran`) | The Source. `Loran` is `Aru` after the First Pulse, in oscillating harmonic state -- not a second being. | Self. |
+| 2 | Moons (`Seravel`) | Raw powers most directly derived from the Creator. | Direct Creator-creation (treated as direct given "raw powers most directly derived"; specialists may refine). |
+| 3 | Celestials (planet-like bodies in the sky) | Primal forces between moons and gods. | Likely direct Creator-creation; specialists confirm. |
+| 4 | Galaxies and patterns within them | Pantheons and individual gods. | Pantheon-leader gods are direct Creator-creations. Lesser gods are descendants of pantheon leaders **or** elevated heroes (typically as demi-gods, angels, or similar). |
+| 5 | Constellations (`Tavirath`) | **Legendary beasts.** Each constellation is a beast. They have **physical presence on Aeron**, typically dormant on mortal timescales. Their constellation shines brightest over the continent they dwell in and dims with distance. | **Direct Creator-creation.** Dragons (and similar) are descended from legendary beasts. |
+| -- | Stars (`Taviloren`) | **Fated-being witness tier (transverse, not stacked).** Each star is the sky-witness of a fated being below celestial tier -- dragons, kings, heroes, saints, individuals favoured by gods. The existing "every word has a star" doctrine needs reconciliation with this; see open question below. | Born with the fated being. |
+| 6 | Aeron's inhabitants | Humanic, demonic, mundane races, monsters, magic, heroes, demi-gods, angels, spirits. | Humanic and demonic Adam/Eve are direct Creator-creations. All other mortals descend from those firsts (or from beasts/gods). |
 
-Stars are not a "rank" between tiers 5 and 6; they are a **transverse witness tier** that accompanies the entire stack. A moon-tier word will have a moon-tier star; a god-tier word will have a god-tier star; and so on.
-
-**Gaze-resolution mechanic** (legendary beasts at tier 5; the user has confirmed the same mechanic applies to galaxies/gods at tier 4).
+**Gaze-resolution mechanic.** Applies to legendary beasts (tier 5) and to galaxies/gods (tier 4); the same mechanic applies in weaker form to fated-being stars.
 
 - A humanic/demonic viewer glancing at a constellation sees the faint outline of the beast. These outlines are not imaginary lines; they have no real-world equivalent.
-- Resolution increases with: time spent focusing, viewer's mana, and the viewer's attunement to the beast's aspects.
+- Resolution scales with: time spent focusing, viewer's mana, and the viewer's attunement to the beast's aspects.
 - At the highest mortal level, a fully attuned viewer with sufficient mana focuses and sees the beast as if watching from above and afar, **positioned between the viewer and the constellation**, with detail down to the slightest movement.
-- The beast is **aware** of being gazed upon. Depending on the strength of the connection, the beast can interact with the viewer.
+- The beast is **aware** of being gazed upon. The connection is **bidirectional** based on its strength.
+- Mortal prayer to a legendary beast is one such bidirectional act -- a double-edged sword depending on the beast's personality.
+- The same mechanism applies to all sky-presence entities; only constellation, galaxy, god, or moon status can typically hold a strong connection.
 - Each legendary beast is visually distinct, with form derived from its primal powers.
 
-**Existing definitions are not set in stone.** The user has explicitly invited better patterns and definitions at every tier between Creator and inhabitants, especially for legendary beasts.
+**Pantheon brightness.** A galaxy/pantheon's brightness over a region is **dictated by aggregate faith in it in the lands below**. This may vary between kingdoms on the same continent. So pantheons are universal as entities but their visible presence is faith-modulated.
+
+**Stars as fated-being witnesses.** A star is born when a fated being is born. It shines brightest at the moment of their birth, then matches the intensity and trajectory of their life. As their legend fades after death, so too does their star. If they follow their fated path, the star moves predictably. If they deviate, the star deviates with them. A fated being's star appears close to the more powerful entities (gods, beasts) they are attuned to. Scholars can study a star and learn things about the fated being. A fated being is aware of attention paid to their star (weaker than the legendary-beast bond, but real). Reincarnation flares the star anew. A non-fated person who deeply entangles with a fated being's path can be drawn into the fate, and a new star can be born for them.
+
+**Hero summoning, reincarnation, prophecy.** Identifying a star and performing a magical ritual can summon the fated being it represents. This includes cross-world reincarnation. Demon lord summoning works the same way. Predictions of when a demon lord will be born, when a hero will rise, etc., are read from the stars. The hero/demon lord's fate is **scribed in the stars first**.
+
+**Mana.** Mana is the **fundamental substance** that flows through the entire stack. It is the **lifeblood of the Creator**. Each Creator-created entity has its own **mana-flavor**, which colors how it expresses power and how mortals interact with it.
+
+**Calendar baseline.** Equivalent to Earth's: 24-hour day, ~365-day year. The seven moons orbit at different rates, producing the existing canonical lunar cycles (`Serenel`/`Seramor` 28 days; `Tavrekal` 3 months; `Oraemor` 5 months; `Taviril` 8 months; `Serathil` 9 months; `Kethorel` 15 months).
+
+**Humanic/Demonic.**
+- Primary race split. **All** humanoid creatures are either humanic or demonic in nature.
+- **Not** a good/evil split. It is a **light/darklight affinity** split. Most sky-presence entities also have a light/darklight affinity.
+- Both races are direct Creator-creations.
+- Each race has an **Adam/Eve first generation**. Both pairs live blessed eternal lives in an **Eden** on Aeron, hidden and unreachable except by the Creator. They have **not** fallen.
+- D&D-style alignment gradient: **humanic biased toward chaotic**; **demonic biased toward lawful**. Gradient bias, not absolute.
+- `Solaryth` (light) and `Nyxorys` (darklight) are independent direct Creator-creations and affect all races.
 
 ### Hard canon that must not be broken
 
-- Aeron is geocentric but round. The sky rotates around Aeron and visibility is positional.
+- Aeron is geocentric but round. The sky rotates around Aeron; visibility is positional.
 - `Solaryth` and `Nyxorys` counter-orbit Aeron every 24 hours in permanent diametric opposition. Both are `Taviran` (luminaries), not moons.
 - The seven `Seravel` (moons) orbit Aeron. Existing primal-language headwords for them are locked.
-- `Loran` is not a second being. `Loran` is `Aru` after `Orun` (the First Pulse), the same singular Creator in dynamic oscillation. The Aru/Loran polarity is **not** good-vs-evil; the canon explicitly rejects ethical opposition there.
+- `Loran` is not a second being. `Loran` is `Aru` after `Orun` (the First Pulse), the same singular Creator in dynamic oscillation. The Aru/Loran polarity is **not** good-vs-evil.
 - Constellations are `Tavirath`: lawful patterns of relation and memory.
-- Every primal-language word has a corresponding `Taviloren` (star). Stars are not ornamental.
+- Stars are not ornamental.
 - Every named entity must have a primal-language headword. After first introduction, prefer the primal name alone or `PrimalWord (English gloss)`.
 - Existing canon files in `Aeron/mythopedia/cosmology/` and `Aeron/mythopedia/astrology/` cannot be silently contradicted; revisions must be routed through `team-aeron-narrative`.
-
-### What is open and needs design work
-
-- **Tier 2 (moons):** existing domain catalog is partial and largely planet-era flavored. Needs reframing as "raw Creator-derived powers" rather than as elemental matrix.
-- **Tier 3 (celestials/planets):** the celestial layer between moons and gods is not yet populated. What primal forces does it host? How many bodies? How do they relate to moons (above) and to gods (below)?
-- **Tier 4 (galaxies/pantheons):** how many pantheons? Are pantheons structurally similar across continents (single mother-pattern) or distinct (each continent's pantheon is its own galaxy)? How are individual gods identified within a galaxy's "patterns"?
-- **Tier 5 (legendary beasts):** the constellation catalog is empty. Needs: enumeration, primal-language naming, aspect/domain assignment, visual identity rules, gaze-mechanic specifics, awareness/interaction rules.
-- **Tier 6 (mortals):** humanic/demonic split has been used twice by the user but has no canonical origin. Where does the demonic side come from, given that neither Aru/Loran nor Solaryth/Nyxorys is a moral axis? Mundane races, monsters, heroes, angels, spirits, demi-gods, magic-as-substance all need slotted roles.
-- **Cross-cutting: above-physics deviation rules.** When does a celestial deviate? What in-world causes it? What does deviation look like at each tier?
+- Direct Creator-creations: humanic Adam/Eve, demonic Adam/Eve, legendary beasts, pantheon-leader gods, `Solaryth`, `Nyxorys` (and likely all moons; specialists confirm).
+- Light/darklight is an **affinity axis**, not a moral axis.
+- Humanic = chaotic-biased gradient; demonic = lawful-biased gradient.
+- Calendar baseline: Earth-equivalent day and year length.
 
 ### What is explicitly out of scope
 
@@ -63,42 +75,51 @@ Stars are not a "rank" between tiers 5 and 6; they are a **transverse witness ti
 - Changing the geocentric reference frame.
 - Splitting `Loran` from `Aru` into separate beings.
 - Renaming existing primal-language headwords for moons, luminaries, constellations, or stars.
+- Treating humanic/demonic as a moral split.
 
-## Open questions for the user
+## Resolved questions (2026-05-02)
 
-These need answers (or explicit "specialists decide") before the next routing step:
+- **Q1 above-physics scaling**: physical size as observed in the sky. Bigger = rarer + more consequential.
+- **Q2 universal-vs-positional seam**: legendary beasts have physical presence on Aeron, brightest over their continent. Pantheons/galaxies are universal entities but brightness is faith-modulated by region/kingdom.
+- **Q3 origin of humanic/demonic**: light/darklight affinity, direct Creator-creation, Adam/Eve in unreachable Eden, chaotic/lawful gradient bias. Not moral.
+- **Q4 mana**: transverse, Creator's lifeblood, unique flavor per Creator-created entity.
+- **Q5 calendar timescales**: Earth-equivalent, with moons varying as canon already has.
+- **Q6 star transversality**: stars represent fated beings (dragons, kings, heroes, saints, god-favored individuals). Born with the being, mirror the being's life-arc, fade as legend fades.
 
-1. **Above-physics scaling** -- does *scale* mean: (a) physical size (galaxy > celestial > moon), (b) metaphysical seniority (closer to Creator = rarer deviation), or (c) both, with the scaling rule TBD? An example for each tier (one canonical deviation event per tier) would lock this.
-2. **Universal-vs-positional seam below celestials.** Celestials are universal but positional. Below them: are pantheons (galaxies) universal-but-positional too, or is each continent's pantheon a different galaxy in the sky? Are legendary beasts universal but seen from different angles, or does each continent inherit a different sky-slice that gives them different beasts?
-3. **Origin of humanic/demonic.** With Aru/Loran and Solaryth/Nyxorys both confirmed non-moral, where does the moral split that produces "humanic" vs "demonic" come from? Three plausible origins: (a) at the pantheon tier (some pantheons are demonic, some humanic); (b) at the legendary-beast tier (some beasts are demonic in nature); (c) at the mortal tier (the split is a mortal-only categorization, not a cosmic one).
-4. **Mana / magic.** Referenced by the gaze mechanic but undefined. Is mana its own substance/tier, or transverse like stars (every tier has a mana correspondence)? Specialists will need a one-line position before drafting beast-interaction rules.
-5. **Calendar timescales by tier.** Existing canon: 24-hour day for `Solaryth`/`Nyxorys`; 28-day cycle for `Serenel`/`Seramor`; 3/5/8/9/15-month cycles for the secondary moons. What are the natural timescales for celestials (annual?), galaxies (epochal?), constellations (generational?)? Some tiers may not have rotational cycles in the conventional sense.
-6. **Star-tier transversality detail.** If every primal-language word has a star, do *higher tiers* (gods, beasts) each have their own star bearing their own name? Existing canon supports this (foundational words = brighter stars), but it needs to be restated within the new tier framework.
+## One remaining reconciliation question
+
+**Stars-doctrine reconciliation.** Existing canon (`Aeron/mythopedia/astrology/stars.md`, `primal_stars.md`) says every primal-language word has a corresponding star and the sky is a "visible lexicon of creation." The new design says every fated being has a star that tracks their life. Three plausible reconciliations:
+
+- **(R1) Synthesis: every fated being's birth coins a primal-language word.** The being's name is a primal-language entry; the star is bonded to both. The existing star-per-word doctrine is preserved by extension. Fated-being stars are a subset of the lexical-witness layer. Brightest, most foundational stars (cosmological-scale words) may not be tied to any fated being -- those are the ancient ones.
+- **(R2) Two star-classes.** Some stars are eternal lexical witnesses (cosmological-scale words); others are fated-being stars that come and go. Both coexist in the sky. Astrologers learn to distinguish them.
+- **(R3) Replacement.** The lexical-witness doctrine is retired; the fated-being doctrine takes over. Every star is a fated-being star; the "word" tier is reconceived. (Largest break with existing canon.)
+
+This is a substantive choice that should be made by `team-aeron-narrative` + `role-aeron-narrative-astrologer` during Step 2 drafting, with Devil's Advocate review. R1 is the natural-fit synthesis; R2 is the most conservative; R3 is the cleanest if existing canon is treated as fully revisable. **Specialists decide; user reviews.**
 
 ## Checklist
 
-Each step names the LP routing that should run when that step is taken. Specialists are not invoked until the user confirms the open questions or explicitly delegates them. Each substantive step requires Devil's Advocate per LP rules.
+Each step names the LP routing that should run when that step is taken. Each substantive step requires Devil's Advocate per LP rules.
 
-- [ ] **Step 1 -- Resolve open questions.** User answers (or delegates) the six items above. LP synthesizes the answers into the framework before any specialist routing. *(LP-side, no specialist routing.)*
+- [x] **Step 1 -- Resolve open questions.** Done. Six of six resolved; one reconciliation question (stars doctrine) deferred to Step 2 specialist call.
 
-- [ ] **Step 2 -- Draft the unifying tier-framework canon page.** Produce `Aeron/mythopedia/cosmology/mythic_hierarchy.md` (or equivalent path) that codifies: tier table, above-physics rule, gaze-resolution mechanic, star-tier transversality, hard-canon list, and where the universal-vs-positional seam falls. This is the keystone document; everything below depends on it.
+- [ ] **Step 2 -- Draft the unifying tier-framework canon page.** Produce `Aeron/mythopedia/cosmology/mythic_hierarchy.md` (or equivalent) that codifies: tier table with creation provenance, above-physics rule with sky-size scaling, gaze-resolution mechanic with bidirectional connection rule, pantheon faith-brightness rule, fated-being star doctrine with chosen reconciliation, mana-as-Creator-lifeblood doctrine, humanic/demonic light-darklight-affinity model, hard-canon list, and where universal-vs-positional applies.
   - Route: `team-aeron-narrative` with mandatory `role-aeron-narrative-astrologer` overlay.
-  - Devil's Advocate must stress-test against the open questions and the hard canon.
+  - Devil's Advocate must stress-test against the hard canon, the existing celestial sagas, and the open reconciliation question.
 
-- [ ] **Step 3 -- Refine moon canon (tier 2).** Reframe `Aeron/mythopedia/astrology/moons_of_aeron.md` from "balanced elemental matrix" toward "raw Creator-derived powers." Keep all primal-language names; revisit domains if the new framework demands it. Audit each celestial saga in `Aeron/sagas/celestials/` for the seven moons.
+- [ ] **Step 3 -- Refine moon canon (tier 2).** Reframe `Aeron/mythopedia/astrology/moons_of_aeron.md` from "balanced elemental matrix" toward "raw Creator-derived powers." Each moon should have an articulated mana-flavor. Audit each celestial saga in `Aeron/sagas/celestials/` for the seven moons.
   - Route: `team-aeron-narrative` + `role-aeron-narrative-astrologer` + `role-aeron-narrative-mythopedia-consistency-editor`.
 
-- [ ] **Step 4 -- Define celestial (planet-like) tier 3.** Decide what bodies populate this tier. Coin primal-language names with `team-aeron-primal-language`. Define what "primal forces between moons and gods" means concretely (one paragraph per body).
+- [ ] **Step 4 -- Define celestial (planet-like) tier 3.** Decide what bodies populate this tier. Coin primal-language names with `team-aeron-primal-language`. Define what "primal forces between moons and gods" means concretely (one paragraph per body, plus mana-flavor).
   - Route: `team-aeron-narrative` + `role-aeron-narrative-astrologer` + `team-aeron-primal-language`.
 
-- [ ] **Step 5 -- Define galaxy / pantheon tier 4.** Decide pantheon structure: how many pantheons; whether they share a common skeleton; what "patterns within a galaxy" means for individual god identification; how gaze-resolution works on gods. Hold off on naming individual gods until the structural rule is set.
+- [ ] **Step 5 -- Define galaxy / pantheon tier 4.** Decide pantheon structure: how many pantheons; whether they share a common skeleton; what "patterns within a galaxy" means for individual god identification; gaze-resolution and faith-brightness specifics. Hold off on naming individual gods until the structural rule is set.
   - Route: `team-aeron-narrative` + `role-aeron-narrative-astrologer`.
 
-- [ ] **Step 6 -- Draft the legendary beast catalog (tier 5).** Produce the first cohort of legendary beasts -- recommended starting size: seven beasts, enough to populate distinct visual identities and aspect domains without overcommitting. Each beast needs: primal-language headword, constellation it occupies, aspects/domains, visual rules from primal powers, gaze-resolution specifics, awareness/interaction rules, and a one-paragraph mythic role.
+- [ ] **Step 6 -- Draft the legendary beast catalog (tier 5).** Produce the first cohort of legendary beasts -- recommended starting size: seven beasts, enough to populate distinct visual identities and aspect domains without overcommitting. Each beast needs: primal-language headword, constellation it occupies, aspects/domains, visual rules from primal powers, gaze-resolution specifics, awareness/interaction rules, the continent it physically dwells on (per the dwelling rule), mana-flavor, dormancy state, and a one-paragraph mythic role. Note descended classes (e.g., dragons) for later.
   - Route: `team-aeron-narrative` + `role-aeron-narrative-astrologer` + `team-aeron-primal-language` + `role-aeron-narrative-mythopedia-consistency-editor`.
   - Output home: `Aeron/mythopedia/legendary_beasts/` (new directory) and primal-language entries under `Aeron/primal_language/structural_principles/`.
 
-- [ ] **Step 7 -- Slot the mortal tier (tier 6).** Sketch the slots: monsters, magic-as-substance, gods (if any are mortal-bound rather than galaxy-bound), demi-gods, pantheons (if continent-local), angels, heroes, spirits, mundane races (humanic, demonic, others). For each slot, mark: where it inherits from above; whether it is universal or continent-local; one-paragraph intent. Do not populate; just slot.
+- [ ] **Step 7 -- Slot the mortal tier (tier 6).** Sketch the slots: monsters, magic-as-substance (subordinate to mana doctrine), gods (if any are mortal-bound rather than galaxy-bound), demi-gods (often elevated heroes), pantheons (continental as worship-structures), angels, heroes, spirits, mundane races (humanic, demonic, others). For each slot, mark: where it inherits from above; whether it is universal or continent-local; one-paragraph intent. Do not populate; just slot.
   - Route: `team-aeron-narrative` + `role-aeron-narrative-astrologer`.
 
 - [ ] **Step 8 -- Reconcile existing celestial sagas with the new framework.** Audit the eleven existing celestial sagas under `Aeron/sagas/celestials/` for contradictions with the unified tier framework. Flag and rewrite where needed.
@@ -107,18 +128,31 @@ Each step names the LP routing that should run when that step is taken. Speciali
 - [ ] **Step 9 -- Update mythopedia indexes.** Update READMEs across `Aeron/mythopedia/cosmology/`, `Aeron/mythopedia/astrology/`, and any new directories so cross-links reflect the new tier framework.
   - Route: `team-documentation` reviews after `team-aeron-narrative` drafts.
 
+## Follow-up canon to slot in (separate TODOs once Step 2 lands)
+
+These are new doctrines the user introduced that need their own canon pages or canon-page sections. They are gated to follow Step 2 because the unifying framework should reference them as cross-links, not invent them in isolation:
+
+- **Adam/Eve canon.** A page (likely under `Aeron/mythopedia/entities/` or a new `Aeron/mythopedia/firsts/` directory) for the humanic Adam/Eve and the demonic Adam/Eve, with primal-language headwords. Address: their nature, their non-fall, their mana-flavor.
+- **Eden canon.** A page for the hidden garden on Aeron, unreachable except by the Creator. Address: its location-status, its inhabitants, its function in cosmology.
+- **Mana doctrine page.** A new canon page (likely `Aeron/mythopedia/cosmology/mana.md`) covering: mana as Creator's lifeblood, mana-flavor per Creator-created entity, mana-flow through the stack, mortal use of mana.
+- **Light/darklight affinity page.** Extension of `astrology/luminaries.md` or a new page covering the affinity axis as it propagates through tiers (sky entities, races, individuals).
+- **Star-fate doctrine.** Revision/extension of `astrology/stars.md` and `astrology/primal_stars.md` to canonize the fated-being model and the chosen reconciliation from Step 2.
+- **Direct-vs-derived creation hierarchy.** A page enumerating which classes of being are direct Creator-creations versus descended/elevated. This is the spine for narrative authority claims.
+- **Hero-summoning and reincarnation mechanic.** A canon page for the star-identification ritual; covers cross-world reincarnation and demon-lord summoning. Likely under `Aeron/mythopedia/events/` or a new `Aeron/mythopedia/mechanics/` directory.
+- **Dragons (and similar beast-descendants).** Catalog of derived classes that descend from legendary beasts, with their relationship to the parent beast and their inherited mana-flavor.
+
 ## Additional Notes
 
-- **Sequencing rationale.** Step 1 (resolve open questions) is now the keystone. Step 2 produces the unifying canon page that every later step depends on. Steps 3-7 walk the tiers top-down (the user's "top-down" requirement). Step 8 reconciles legacy content. Step 9 fixes indexes.
+- **Sequencing rationale.** Step 2 (unifying canon) is the keystone. Steps 3-7 walk the tiers top-down (the user's "top-down" requirement). Step 8 reconciles legacy content. Step 9 fixes indexes. The follow-up canon items expand outward from Step 2 once it lands.
 - **Devil's Advocate red flags.**
   - Any framework that contradicts the Aru/Loran identity (treating Loran as a separate being) breaks hard canon.
-  - Any framework that places stars *between* moons and constellations as a power tier (rather than as a transverse lexical tier) breaks `astrology/stars.md`.
-  - Any framework that lets one continent claim exclusive ownership of a celestial breaks the geocentric universality (a celestial may be unseen from one continent at a given time but is not absent).
-  - "Humanic/demonic" must not be smuggled back into the Aru/Loran or Solaryth/Nyxorys axis as moral content -- those are explicitly non-moral.
-  - "Above physics" must not become a license for arbitrary deviation; the rule needs scaling, frequency, and consequence rules so it stays narratively coherent.
+  - Any framework that re-moralizes the Aru/Loran or `Solaryth`/`Nyxorys` axes breaks hard canon.
+  - "Above physics" must not become a license for arbitrary deviation; the rule needs the sky-size scaling, frequency, and consequence rules so it stays narratively coherent.
+  - Pantheon-faith-brightness must not collapse into "more worshippers = stronger god"; it is **visibility**, not raw power.
+  - Hero summoning is a high-impact mechanic. It must not be cheap, or every kingdom would do it constantly. Specialists must price it.
+  - Star reconciliation must not silently retire the existing lexical-witness doctrine without explicit user sign-off if R3 is chosen.
 - **Future follow-ups, intentionally not in this TODO.**
   - Continent-by-continent pantheon canon (gated to follow steps 5 and 7).
-  - Magic / mana system canonization (gated to follow open question 4).
   - A possible `12_celestial_clockwork.py` simulator layer if the framework eventually wants deterministic moon, constellation, and galaxy positions over time. **Currently deprioritized per user.**
 
 ## References
@@ -128,7 +162,7 @@ Each step names the LP routing that should run when that step is taken. Speciali
 - `Aeron/mythopedia/cosmology/divine_oscillation.md` -- `Loran` as oscillating `Aru`
 - `Aeron/mythopedia/entities/aru.md`, `Aeron/mythopedia/entities/loran.md` -- Creator identity
 - `Aeron/mythopedia/astrology/luminaries.md` -- `Solaryth`/`Nyxorys`
-- `Aeron/mythopedia/astrology/stars.md`, `Aeron/mythopedia/astrology/primal_stars.md` -- star-as-lexical-witness doctrine
+- `Aeron/mythopedia/astrology/stars.md`, `Aeron/mythopedia/astrology/primal_stars.md` -- existing star doctrine (subject to Step 2 reconciliation)
 - `Aeron/mythopedia/astrology/moons_of_aeron.md` -- the seven `Seravel`
 - `Aeron/mythopedia/astrology/constellations.md` -- `Tavirath` doctrine
 
@@ -136,7 +170,6 @@ Each step names the LP routing that should run when that step is taken. Speciali
 - `Aeron/sagas/celestials/` -- saga prose for eleven celestial beings
 - `Aeron/primal_language/structural_principles/` -- primal-language headwords
 - `Aeron/mythopedia/events/first_pulse.md` -- `Orun` event
-- `Aeron/mythopedia/cosmology/divine_oscillation.md`
 
 ### Prior specialist work
 - `REPORTS/team-aeron-narrative/20260329_celestial_enrichment_report.md`

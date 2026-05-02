@@ -40,13 +40,19 @@ Aeron is a created fantasy world being built **top-down** — from the Creator a
 5. Constellations (`Tavirath`) — legendary beasts (each constellation **is** a beast)
 6. Aeron's inhabitants — humanic, demonic, mundane races, monsters, magic, heroes, demi-gods, angels, spirits
 
-Stars (`Taviloren`) are a **transverse lexical witness tier**, not a rank between others — every primal-language word has a corresponding star (per `Aeron/mythopedia/astrology/stars.md`).
+Stars (`Taviloren`) are a **transverse witness tier**, not a rank between others. Per the active design direction, each star tracks a **fated being** (dragon, king, hero, saint, god-favored individual) — born with the being, mirroring their life-arc, fading with their legend. Reconciliation with the existing "every primal-language word has a star" canon is open and will be settled during Step 2 of the active plan.
 
-**Gaze-resolution mechanic.** Legendary beasts (and per the same rule, galaxies/gods) are seen as faint outlines by default. Resolution scales with the viewer's mana, attunement to the beast's aspects, and time spent focusing. At peak mortal attunement the viewer perceives the beast in full detail, positioned between viewer and constellation. The beast is aware of being gazed upon and may interact based on connection strength.
+**Gaze-resolution mechanic.** Legendary beasts (and per the same rule, galaxies/gods, and weakly fated-being stars) are seen as faint outlines by default. Resolution scales with the viewer's mana, attunement to the beast's aspects, and time spent focusing. At peak mortal attunement the viewer perceives the beast in full detail, positioned between viewer and constellation. The beast is aware of being gazed upon and the connection is **bidirectional** — mortal prayer to a beast is heard, with consequences depending on the beast's personality. Pantheon visibility over a region is **faith-modulated** rather than fixed.
 
-The intended mythic taxonomy at tier 6 includes: **monsters, magic, gods, demi-gods, pantheons, angels, heroes, spirits, mundane races**. Where the universal-vs-continent-specific seam falls inside the stack is open (see the active plan).
+**Mana** is the fundamental substance flowing through the entire stack — the Creator's lifeblood. Each Creator-created entity has its own mana-flavor.
 
-**Existing definitions are not set in stone.** Hard canon (geocentric round, `Aru`/`Loran` identity, primal-language conventions, every-word-has-a-star) is locked. Tier roles, domains, and content at every other level are open to refinement.
+**Race axis.** All humanoids are either **humanic** or **demonic**. This is a **light/darklight affinity** axis (not good/evil) inherited from `Solaryth`/`Nyxorys` exposure. Humanic = chaotic-biased gradient; demonic = lawful-biased gradient. Humanic and demonic each have an Adam/Eve first generation living in a hidden Eden on Aeron, all four directly Creator-created.
+
+**Direct vs derived creation.** Direct Creator-creations include humanic/demonic Adam/Eve, legendary beasts, pantheon-leader gods, `Solaryth`, `Nyxorys`, and (likely) all moons. Lesser gods descend from pantheon leaders or are elevated heroes. Dragons descend from legendary beasts. Most mortals descend from the firsts.
+
+The intended mythic taxonomy at tier 6 includes: **monsters, magic, gods, demi-gods, pantheons, angels, heroes, spirits, mundane races**.
+
+**Existing definitions are not set in stone.** Hard canon (geocentric round, `Aru`/`Loran` identity, primal-language conventions, `Solaryth`/`Nyxorys` non-moral axis) is locked. Tier roles, domains, and content at every other level are open to refinement.
 
 ## Where things live
 
