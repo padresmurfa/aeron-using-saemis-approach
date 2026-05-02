@@ -27,9 +27,26 @@ Aeron is a created fantasy world being built **top-down** — from the Creator a
 
 **North star:** myth and physics must align. The cosmology was created; everything that follows must be consistent with that act of creation.
 
-**Core architectural constraint:** different continents may host entirely different mythic hierarchies — different pantheons, different gods, different demi-gods, different heroes, different mundane races. But **fundamental laws of reality are universal across the whole world**. Aeron is geocentric (see `Aeron/mythopedia/cosmology/aeron.md`), so the celestials — `Solaryth`, `Nyxorys`, the seven `Seravel`, and the named constellations (`Tavirath`) — are visible from every continent and are therefore universal by construction.
+**Core architectural constraint:** different continents may host entirely different mythic hierarchies — different pantheons, different gods, different demi-gods, different heroes, different mundane races. But **fundamental laws of reality are universal across the whole world**.
 
-The complete intended mythic taxonomy includes: **monsters, magic, gods, demi-gods, pantheons, angels, heroes, spirits, mundane races**. Where the universal/continent-specific seam falls inside that stack is an open architecture question (see the active plan).
+**Cosmological geometry.** Aeron is geocentric but **round** (see `Aeron/mythopedia/cosmology/aeron.md`). The sun, moons, celestials (planet-like bodies), stars, constellations, and galaxies all rotate around Aeron. The same sky is **not** visible everywhere on Aeron at the same time — visibility is positional. Celestials are universal as entities but positional as observed phenomena. They mostly follow fixed paths but are **above physics** and may deviate, with rarity scaling with the entity's scale.
+
+**Tier framework (top-down, "directness from Creator").** The active design direction (see active plan) treats the mythic stack as:
+
+1. Creator (`Aru`/`Loran`)
+2. Moons (`Seravel`) — raw Creator-derived powers
+3. Celestials (planet-like) — primal forces between moons and gods
+4. Galaxies and patterns within them — pantheons and individual gods
+5. Constellations (`Tavirath`) — legendary beasts (each constellation **is** a beast)
+6. Aeron's inhabitants — humanic, demonic, mundane races, monsters, magic, heroes, demi-gods, angels, spirits
+
+Stars (`Taviloren`) are a **transverse lexical witness tier**, not a rank between others — every primal-language word has a corresponding star (per `Aeron/mythopedia/astrology/stars.md`).
+
+**Gaze-resolution mechanic.** Legendary beasts (and per the same rule, galaxies/gods) are seen as faint outlines by default. Resolution scales with the viewer's mana, attunement to the beast's aspects, and time spent focusing. At peak mortal attunement the viewer perceives the beast in full detail, positioned between viewer and constellation. The beast is aware of being gazed upon and may interact based on connection strength.
+
+The intended mythic taxonomy at tier 6 includes: **monsters, magic, gods, demi-gods, pantheons, angels, heroes, spirits, mundane races**. Where the universal-vs-continent-specific seam falls inside the stack is open (see the active plan).
+
+**Existing definitions are not set in stone.** Hard canon (geocentric round, `Aru`/`Loran` identity, primal-language conventions, every-word-has-a-star) is locked. Tier roles, domains, and content at every other level are open to refinement.
 
 ## Where things live
 
@@ -48,8 +65,9 @@ The complete intended mythic taxonomy includes: **monsters, magic, gods, demi-go
 ## Current scope and stuck points
 
 **In scope right now:**
-- The relationship between celestials (moons, luminaries, constellations) and the mythic hierarchy (legendary beasts, gods, pantheons, and below).
-- Defining where the universal-vs-continent-specific seam falls.
+- Producing a unified tier-framework canon that codifies Creator → moons → celestials → galaxies/gods → constellations/legendary beasts → mortals.
+- Resolving the open questions surfaced in the active plan (above-physics scaling rule, universal-vs-positional seam below celestials, origin of humanic/demonic, mana/magic placement, calendar timescales by tier, star-tier transversality detail).
+- Improving definitions at every tier; the user has invited "better patterns and definitions at all levels," especially for legendary beasts.
 
 **Deferred:**
 - Extending the world-building simulator beyond `11_hydrology_before_life.py`.
