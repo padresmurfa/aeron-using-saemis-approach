@@ -113,8 +113,10 @@ Each step names the LP routing that should run when that step is taken. Each sub
   - Routed: `team-aeron-narrative` with mandatory `role-aeron-narrative-astrologer` overlay.
   - Devil's Advocate cleared all four blocking constraints (Aru/Loran trap, R2 cross-pollination, above-physics under-specification, pantheon-brightness collapse).
 
-- [ ] **Step 3 -- Refine moon canon (tier 2).** Reframe `Aeron/mythopedia/astrology/moons_of_aeron.md` from "balanced elemental matrix" toward "raw Creator-derived powers." Each moon should have an articulated mana-flavor. Audit each celestial saga in `Aeron/sagas/celestials/` for the seven moons.
-  - Route: `team-aeron-narrative` + `role-aeron-narrative-astrologer` + `role-aeron-narrative-mythopedia-consistency-editor`.
+- [x] **Step 3 -- Refine moon canon (tier 2).** Done 2026-05-02. Added Tier 2 Status section to `Aeron/mythopedia/astrology/moons_of_aeron.md` cross-linking the spine; replaced "balanced elemental matrix" framing with "raw Creator-derived powers"; added Mana-Flavors section articulating one flavor per moon with expressive descriptor + mortal-interaction line; renamed "Pressure Fields And Affinities" to "Mana-Flavor Pressure And Affinities" with mana-as-not-parallel-subsystem framing; extended Canon Boundaries to constrain mana-flavors (no sub-entities, no numeric magnitudes).
+  - Routed: `team-aeron-narrative` + `role-aeron-narrative-astrologer` + `role-aeron-narrative-mythopedia-consistency-editor`.
+  - Devil's Advocate cleared three blocking constraints (reductionism, parallel-structure clone cadence, pressure-field terminology drift).
+  - Saga audit (Step 8 input): the seven moon sagas (`serenel.md`, `seramor.md`, `tavrekal.md`, `taviril.md`, `kethorel.md`, `oraemor.md`, `serathil.md`) are framework-clean. One transitional artifact flagged for Step 8: `oraemor.md` opening line "no longer counted among the blunt elemental powers" is residue from a prior canon revision and can be cleaned up once the spine fully retires elemental-matrix framing.
 
 - [ ] **Step 4 -- Define celestial (planet-like) tier 3.** Decide what bodies populate this tier. Coin primal-language names with `team-aeron-primal-language`. Define what "primal forces between moons and gods" means concretely (one paragraph per body, plus mana-flavor).
   - Route: `team-aeron-narrative` + `role-aeron-narrative-astrologer` + `team-aeron-primal-language`.
