@@ -26,7 +26,7 @@ The mythic stack is read top-down by **directness from the Creator**: tier 1 is 
 | 1 | Creator | [Aru](../entities/aru.md) before [Orun](../events/first_pulse.md), [Loran](../entities/loran.md) after. The Source. | Self. |
 | 2 | [Seravel (moons)](../../primal_language/structural_principles/seravel.md) | Raw powers most directly derived from the Creator. | Direct Creator-creation. |
 | 3 | Planet-like celestials ([Vatharen](../astrology/celestials.md)) | Primal forces between moons and gods. Eight `Vatharen` in four polar pairs: Time/Memory, Order/Strife, Increase/Decay, Binding/Severance. **Forces, not personalities.** | Direct Creator-creation. |
-| 4 | Galaxies and patterns within them | Pantheons and individual gods. | Pantheon-leader gods are direct Creator-creations. Lesser gods descend from pantheon leaders or are elevated heroes (typically as demi-gods, angels, or similar). |
+| 4 | Galaxies and patterns within them ([Pantheons](pantheons.md)) | Pantheons and individual gods. Five canonical pantheons; each is a galaxy whose internal star-cluster patterns are individual gods. **Personalities, not forces.** | Pantheon-leader gods are direct Creator-creations. Lesser gods descend from pantheon leaders or are elevated heroes (typically as demi-gods, angels, or similar). |
 | 5 | [Tavirath (constellations)](../../primal_language/structural_principles/tavirath.md) | **Legendary beasts.** Each constellation is a beast with physical presence on Aeron, typically dormant on mortal timescales. Its constellation shines brightest over the continent the beast dwells on. | Direct Creator-creation. Dragons and similar derived classes descend from legendary beasts. |
 | 6 | Aeron's inhabitants | Humanic, demonic, mundane races, monsters, magic, heroes, demi-gods, angels, spirits. | Humanic and demonic Adam/Eve are direct Creator-creations; all other mortals descend from those firsts, from beasts, or from gods. |
 | -- | [Taviloren (stars)](../../primal_language/structural_principles/taviloren.md) | **Transverse witness tier.** Two classes coexist: Class 1 lexical-witness stars (one per primal-language word, eternal) and Class 2 fated-being stars (born with a fated being, drift with their fate, fade as legend fades). Not a vertical rank between other tiers. | Class 1: eternal, present from creation. Class 2: born with the fated being. |
@@ -45,7 +45,7 @@ Planet-like celestials are bodies that appear in Aeron's sky as discs or bright 
 
 ### Tier 4: Galaxies and Pantheons
 
-Galaxies are pantheons. The patterns within a galaxy distinguish individual gods. Pantheon-leader gods are direct Creator-creations; lesser gods descend from those leaders or are elevated heroes ascending from tier 6. A galaxy/pantheon **exists universally** as a being; only its **observed brightness over a region** varies with the aggregate faith of the lands beneath it (see "Pantheon Faith-Brightness" below).
+Galaxies are pantheons. The patterns within a galaxy distinguish individual gods. Pantheon-leader gods are direct Creator-creations; lesser gods descend from those leaders or are elevated heroes ascending from tier 6. Aeron's tier-4 canon names [five canonical pantheons](pantheons.md), universal as entities and continent-variable in worship, primary affiliation, and content. **The gods of tier 4 are personalities, not forces**: they reply with personal will, in distinction from the [Vatharen](../astrology/celestials.md) of tier 3. A galaxy/pantheon **exists universally** as a being; only its **observed brightness over a region** varies with the aggregate faith of the lands beneath it (see "Pantheon Faith-Brightness" below), with an additional independent layer of god-specific brightness modulated by faith targeted at each individual god.
 
 ### Tier 5: Constellations and Legendary Beasts
 
@@ -178,7 +178,7 @@ This page locks the following framework canon in:
 
 This page defines the framework. The following are deliberately deferred to downstream canon and must not be inferred from this spine alone:
 
-- The named catalog of pantheons, individual gods, and lesser-god lineages at tier 4.
+- The named catalog of pantheons, individual gods, and lesser-god lineages at tier 4 (the structural rule is locked at [pantheons.md](pantheons.md); naming and per-pantheon population are downstream).
 - The named cohort of legendary beasts and their domains at tier 5.
 - The full mortal-tier slot expansion at tier 6 (mundane races, monster classes, magic systems, spirits, angels).
 - The Adam/Eve canon page and the Eden canon page.
