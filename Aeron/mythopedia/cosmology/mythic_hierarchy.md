@@ -25,7 +25,7 @@ The mythic stack is read top-down by **directness from the Creator**: tier 1 is 
 | --- | --- | --- | --- |
 | 1 | Creator | [Aru](../entities/aru.md) before [Orun](../events/first_pulse.md), [Loran](../entities/loran.md) after. The Source. | Self. |
 | 2 | [Seravel (moons)](../../primal_language/structural_principles/seravel.md) | Raw powers most directly derived from the Creator. | Direct Creator-creation. |
-| 3 | Planet-like celestials | Primal forces between moons and gods. | Direct Creator-creation. |
+| 3 | Planet-like celestials ([Vatharen](../astrology/celestials.md)) | Primal forces between moons and gods. Eight `Vatharen` in four polar pairs: Time/Memory, Order/Strife, Increase/Decay, Binding/Severance. **Forces, not personalities.** | Direct Creator-creation. |
 | 4 | Galaxies and patterns within them | Pantheons and individual gods. | Pantheon-leader gods are direct Creator-creations. Lesser gods descend from pantheon leaders or are elevated heroes (typically as demi-gods, angels, or similar). |
 | 5 | [Tavirath (constellations)](../../primal_language/structural_principles/tavirath.md) | **Legendary beasts.** Each constellation is a beast with physical presence on Aeron, typically dormant on mortal timescales. Its constellation shines brightest over the continent the beast dwells on. | Direct Creator-creation. Dragons and similar derived classes descend from legendary beasts. |
 | 6 | Aeron's inhabitants | Humanic, demonic, mundane races, monsters, magic, heroes, demi-gods, angels, spirits. | Humanic and demonic Adam/Eve are direct Creator-creations; all other mortals descend from those firsts, from beasts, or from gods. |
@@ -41,7 +41,7 @@ Aeron's seven `Seravel` are raw Creator-derived powers. Each carries a distinct 
 
 ### Tier 3: Planet-Like Celestials
 
-Planet-like celestials are bodies that appear in Aeron's sky as discs or bright wandering points. They sit between moons and gods on the directness ladder, expressing primal forces that are no longer raw Creator-power but not yet personal divine will. Their named catalog is not yet canon.
+Planet-like celestials are bodies that appear in Aeron's sky as discs or bright wandering points. They sit between moons and gods on the directness ladder, expressing primal forces that are no longer raw Creator-power but not yet personal divine will. Aeron's tier-3 canon names eight such bodies — the [Vatharen](../astrology/celestials.md) — organized in four polar pairs: Time/Memory, Order/Strife, Increase/Decay, Binding/Severance. **The `Vatharen` are forces, not personalities**: they can be gazed upon and resonated with, but they do not reply with personal will. What returns is the felt presence of the force, not the spoken answer of a god. This is the canonical seam between tier 3 and tier 4.
 
 ### Tier 4: Galaxies and Pantheons
 
@@ -178,7 +178,6 @@ This page locks the following framework canon in:
 
 This page defines the framework. The following are deliberately deferred to downstream canon and must not be inferred from this spine alone:
 
-- The named catalog of planet-like celestials at tier 3.
 - The named catalog of pantheons, individual gods, and lesser-god lineages at tier 4.
 - The named cohort of legendary beasts and their domains at tier 5.
 - The full mortal-tier slot expansion at tier 6 (mundane races, monster classes, magic systems, spirits, angels).

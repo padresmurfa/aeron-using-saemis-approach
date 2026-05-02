@@ -118,8 +118,10 @@ Each step names the LP routing that should run when that step is taken. Each sub
   - Devil's Advocate cleared three blocking constraints (reductionism, parallel-structure clone cadence, pressure-field terminology drift).
   - Saga audit (Step 8 input): the seven moon sagas (`serenel.md`, `seramor.md`, `tavrekal.md`, `taviril.md`, `kethorel.md`, `oraemor.md`, `serathil.md`) are framework-clean. One transitional artifact flagged for Step 8: `oraemor.md` opening line "no longer counted among the blunt elemental powers" is residue from a prior canon revision and can be cleaned up once the spine fully retires elemental-matrix framing.
 
-- [ ] **Step 4 -- Define celestial (planet-like) tier 3.** Decide what bodies populate this tier. Coin primal-language names with `team-aeron-primal-language`. Define what "primal forces between moons and gods" means concretely (one paragraph per body, plus mana-flavor).
-  - Route: `team-aeron-narrative` + `role-aeron-narrative-astrologer` + `team-aeron-primal-language`.
+- [x] **Step 4 -- Define celestial (planet-like) tier 3.** Done 2026-05-02. Produced `Aeron/mythopedia/astrology/celestials.md` defining the eight `Vatharen` in four polar pairs: `Vaelvor`/`Vaelmor` (Time/Memory), `Taelden`/`Taelmoth` (Order/Strife), `Yirven`/`Yirmor` (Increase/Decay), `Aenel`/`Aenor` (Binding/Severance). Coined nine new primal-language headwords under `Aeron/primal_language/structural_principles/` (one class word + eight celestials). Updated `mythic_hierarchy.md` table and tier-3 section to point to the new canon and reinforce the forces-not-personalities doctrine.
+  - Routed: `team-aeron-narrative` + `role-aeron-narrative-astrologer` + `team-aeron-primal-language`.
+  - Selected design from `REPORTS/team-aeron-narrative/20260502_folk_memory_force_domain_survey.md`: Option B (the Eight, four polar pairs).
+  - Devil's Advocate cleared all post-survey carry-forward constraints (forces-not-personalities, coining quality, pair-structure clarity, tier-collision avoidance, pair non-antagonism, above-physics rule application, numeric concretization deferred).
 
 - [ ] **Step 5 -- Define galaxy / pantheon tier 4.** Decide pantheon structure: how many pantheons; whether they share a common skeleton; what "patterns within a galaxy" means for individual god identification; gaze-resolution and faith-brightness specifics. Hold off on naming individual gods until the structural rule is set.
   - Route: `team-aeron-narrative` + `role-aeron-narrative-astrologer`.
