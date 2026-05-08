@@ -15,7 +15,7 @@ Constellations in Aeron are [Tavirath (constellations)](../../primal_language/st
 
 ## Prominent Constellations and the `Vorothar`
 
-The most prominent `Tavirath` in Aeron's sky — the brightest, most legible, most recurrent in folk-memory across continents — are the constellations of the thirteen [`Vorothar` (Greater Legendary Beasts)](../legendary_beasts/README.md). Each `Vorothar` IS a `Tavirath` viewed from the beast-side; the constellation IS the beast viewed from the sky-side. Lesser legendary beasts occupy the smaller, dimmer constellations scattered between the prominent thirteen. Together the prominent and lesser constellations populate tier 5 of the [mythic hierarchy](../cosmology/mythic_hierarchy.md).
+The most prominent `Tavirath` in Aeron's sky — the brightest, most legible, most recurrent in folk-memory across continents — are the constellations of the fourteen [`Vorothar` (Greater Legendary Beasts)](../legendary_beasts/README.md). Each `Vorothar` IS a `Tavirath` viewed from the beast-side; the constellation IS the beast viewed from the sky-side. Lesser legendary beasts occupy the smaller, dimmer constellations scattered between the prominent fourteen. Together the prominent and lesser constellations populate tier 5 of the [mythic hierarchy](../cosmology/mythic_hierarchy.md).
 
 ## Canon Boundaries
 

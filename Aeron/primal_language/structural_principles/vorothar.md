@@ -6,7 +6,7 @@
 
 ## Meaning
 
-`Vorothar` names the sky-office by which a wandering Creator-created beast becomes readable as a world-shaking progenitor of a whole class of legendary kin. It is the principle by which a single beast can stand at the head of a category — wyrm, chimera, eldritch horror, colossus, devourer, swarm, wraith-sovereign, leviathan, stormwing, plague-mother, form-thief, demon-sire, wild-heart — and through descent populate the lesser legendary beasts of every continent.
+`Vorothar` names the sky-office by which a wandering Creator-created beast becomes readable as a world-shaking progenitor of a whole class of legendary kin. It is the principle by which a single beast can stand at the head of a category — wyrm, chimera, eldritch horror, colossus, devourer, swarm, wraith-sovereign, leviathan, stormwing, plague-mother, form-thief, hellspawn-sire, wild-heart, bloodborn-sire — and through descent populate the lesser legendary beasts of every continent.
 
 ## Scope
 
@@ -21,7 +21,7 @@
 
 ## Planetary Use
 
-In Aeron's sky, `Vorothar` are the **thirteen Greater Legendary Beasts** of [tier 5 of the mythic hierarchy](../../mythopedia/cosmology/mythic_hierarchy.md). Their constellations are the brightest and most legible in any region, and their physical bodies dwell — typically dormant — at storied sites across the continents of Aeron. Lesser legendary beasts (the descended kin) populate the world in their hundreds and inherit dilute mana-flavor from their `Vorothar` parent.
+In Aeron's sky, `Vorothar` are the **fourteen Greater Legendary Beasts** of [tier 5 of the mythic hierarchy](../../mythopedia/cosmology/mythic_hierarchy.md). Their constellations are the brightest and most legible in any region, and their physical bodies dwell — typically dormant — at storied sites across the continents of Aeron. Lesser legendary beasts (the descended kin) populate the world in their hundreds and inherit dilute mana-flavor from their `Vorothar` parent.
 
 ## Boundaries
 
