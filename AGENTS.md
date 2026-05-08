@@ -58,7 +58,7 @@ The intended mythic taxonomy at tier 6 includes: **monsters, magic, gods, demi-g
 
 | Path | Contents |
 |---|---|
-| `Aeron/mythopedia/` | Canonical reference. `cosmology/` (era doctrine), `astrology/` (sky law), `entities/` (named beings), `events/`, `timeline/eras/`. |
+| `Aeron/mythopedia/` | Canonical reference. `cosmology/` (era doctrine + tier-framework spine `mythic_hierarchy.md`, mana, pantheons, mortal_tier, light/darklight, creation hierarchy), `astrology/` (sky law including `celestials.md` for Vatharen and `star_fate.md` for R2), `entities/` (Aru, Loran, the Firsts), `events/`, `legendary_beasts/` (the 14 Vorothar plus dragons-and-descendants), `mechanics/` (hero-summoning), `places/` (Eden), `timeline/eras/`. |
 | `Aeron/sagas/` | Narrative prose. `tales_of_creation/` (era stories), `celestials/` (named celestial beings). |
 | `Aeron/primal_language/` | The invented primal language. `dictionary/`, `grammar/`, `era_names/`, `high_abstractions/`, `structural_principles/` (~115 root words), `threshold_events/`. |
 | `Aeron/code/world_building/` | Deterministic Python simulator, layers `01_planet.py` through `11_hydrology_before_life.py`. **Side project. Currently deprioritized.** |
@@ -70,10 +70,25 @@ The intended mythic taxonomy at tier 6 includes: **monsters, magic, gods, demi-g
 
 ## Current scope and stuck points
 
-**In scope right now:**
-- Producing a unified tier-framework canon that codifies Creator → moons → celestials → galaxies/gods → constellations/legendary beasts → mortals.
-- Resolving the open questions surfaced in the active plan (above-physics scaling rule, universal-vs-positional seam below celestials, origin of humanic/demonic, mana/magic placement, calendar timescales by tier, star-tier transversality detail).
-- Improving definitions at every tier; the user has invited "better patterns and definitions at all levels," especially for legendary beasts.
+**Framework canon now landed (as of 2026-05-02):**
+- Tier-framework spine: `Aeron/mythopedia/cosmology/mythic_hierarchy.md`.
+- Tier 2 mana-flavors: `Aeron/mythopedia/astrology/moons_of_aeron.md` (Tier 2 Status + Mana-Flavors sections).
+- Tier 3 (eight Vatharen, four polar pairs): `Aeron/mythopedia/astrology/celestials.md` plus 9 primal-language headwords under `structural_principles/` (`vatharen`, `vaelvor`, `vaelmor`, `taelden`, `taelmoth`, `yirven`, `yirmor`, `aenel`, `aenor`).
+- Tier 4 (five canonical pantheons, structural rule only): `Aeron/mythopedia/cosmology/pantheons.md`.
+- Tier 5 (14 Vorothar = Greater Cataclysmic Beasts; Lesser-kin descended): `Aeron/mythopedia/legendary_beasts/README.md` + 14 per-Vorothar canon entries + 14+1 primal-language headwords + `dragons.md` for descended classes.
+- Tier 6 (mortal slot inventory): `Aeron/mythopedia/cosmology/mortal_tier.md`.
+- Stars (R2 + positional weighting): `Aeron/mythopedia/astrology/star_fate.md`.
+- Cross-tier doctrines: `cosmology/mana.md`, `cosmology/light_darklight_affinity.md`, `cosmology/creation_hierarchy.md`.
+- Hero-summoning, reincarnation, prophecy: `Aeron/mythopedia/mechanics/hero_summoning.md`.
+- The Firsts and Eden: `Aeron/mythopedia/entities/firsts.md`, `Aeron/mythopedia/places/eden.md`.
+
+**Now open / next-up work (downstream of the framework):**
+- Continent canon (no continents are yet named; many tier-5 and tier-4 Canon Boundaries are gated on this).
+- Per-pantheon naming, primal-language headwords, and per-pantheon population (gods, demi-gods, angels).
+- Per-Vorothar saga prose (canon entries are landed; saga-form prose is downstream).
+- Lesser legendary beast catalog (the 70-120 total population, currently sketched at the parent Vorothar level only).
+- Tier-6 population per continent (mundane races, named heroes, mage-orders, monsters, spirits, mortal-bound gods).
+- Vatharen saga prose (canon page is landed; saga-form prose is downstream).
 
 **Deferred:**
 - Extending the world-building simulator beyond `11_hydrology_before_life.py`.
