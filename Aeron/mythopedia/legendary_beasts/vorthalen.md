@@ -35,7 +35,7 @@ A fully attuned viewer of the Hellspawn-Sire's constellation sees `Vorthalen` po
 
 ## Dwelling and Dormancy
 
-`Vorthalen` dwells dormant in a great volcanic-throne complex on a continent (specific continent open canon) — a place where the magma-deep meets a fortified architecture of black stone and iron, with the dormant body seated upon a throne that is itself part of the volcanic system. The local geography is unmistakable: persistent volcanic activity, unusual lava-flow patterns that mortal geomancers read as architectural rather than natural, occasional eruption events that rearrange the local landscape into more throne-like configurations.
+`Vorthalen` dwells dormant in a great volcanic-throne complex on [Miravarath](../places/miravarath.md), the Burning South — a place where the magma-deep meets a fortified architecture of black stone and iron, with the dormant body seated upon a throne that is itself part of the volcanic system. The local geography is unmistakable: persistent volcanic activity, unusual lava-flow patterns that mortal geomancers read as architectural rather than natural, occasional eruption events that rearrange the local landscape into more throne-like configurations. The continent's mortal demonologist orders are canonically headquartered close enough to the throne complex to maintain pilgrimage relations with it.
 
 ## Stirring
 

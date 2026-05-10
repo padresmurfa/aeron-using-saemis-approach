@@ -35,7 +35,7 @@ A fully attuned viewer of the Bloodborn-Sire's constellation sees `Krevoraen` po
 
 ## Dwelling and Dormancy
 
-`Krevoraen` dwells dormant in a ruined mortal-style castle or ancestral estate on a continent (specific continent open canon). The site is folk-known but rarely visited; mortals who approach report a sense of being watched from windows that should be empty, of the architecture being *maintained* in a way that suggests presence rather than abandonment, of the surrounding region being unusually free of ordinary wildlife. The dormancy is shallow; folk-memory holds that `Krevoraen` is closer to wakefulness than most `Vorothar`, because his work is conducted continuously through his descended kin.
+`Krevoraen` dwells dormant in a ruined mortal-style castle on a major island of [Seralinor](../places/seralinor.md), the Sea-Threading archipelago. The site is folk-known but rarely visited; mortals who approach report a sense of being watched from windows that should be empty, of the architecture being *maintained* in a way that suggests presence rather than abandonment, of the surrounding region being unusually free of ordinary wildlife. The dormancy is shallow; folk-memory holds that `Krevoraen` is closer to wakefulness than most `Vorothar`, because his work is conducted continuously through his descended kin across the islands of Seralinor and beyond. The hunter-mage-orders headquartered on Seralinor maintain canonical wards against the dwelling-island.
 
 ## Stirring
 

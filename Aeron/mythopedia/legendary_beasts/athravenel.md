@@ -30,7 +30,7 @@ A fully attuned viewer of the Wild-Heart's constellation sees `Athravenel` posit
 
 ## Dwelling and Dormancy
 
-`Athravenel` dwells throughout an entire continent — that continent itself is her dormant body (specific continent open canon). The dormancy is partial: while the continental-scale body is asleep, smaller territorial sub-bodies (regional kin) are routinely awake and active. A traveler crossing the Wild-Heart's continent is, in folk-memory, never quite alone; the territory itself attends.
+`Athravenel` dwells throughout the entire [Oraevenel](../places/oraevenel.md) (Lost Verge) — that continent itself is her dormant body. **The continent and the Vorothar are the same being viewed from two angles**: `Oraevenel` is the territory; `Athravenel` is the territory's awareness. The dormancy is partial: while the continental-scale body is asleep, smaller territorial sub-bodies (regional kin) are routinely awake and active. A traveler crossing `Oraevenel` is, in folk-memory, never quite alone; the territory itself attends.
 
 ## Stirring
 

@@ -30,7 +30,7 @@ A fully attuned viewer of the Colossus-Father's constellation sees `Drathalon` p
 
 ## Dwelling and Dormancy
 
-`Drathalon` dwells dormant either in a seated posture along a mountain range that bears his outline (legend says one continent has a "sleeping titan range") or in a prone posture beneath a great plain that subtly rises and falls with breathing on a multi-millennial cycle. Either way, mortal civilization that lives over the dwelling has long-standing taboos against deep mining or great construction at certain folk-known sites. The taboos are usually, in folk-memory, justified by stories of failed kingdoms.
+`Drathalon` dwells dormant on [Athralorn](../places/athralorn.md), the Heartland — either in a seated posture along the central mountain range that bears his outline (legend says one continent has a "sleeping titan range") or in a prone posture beneath a great central plain that subtly rises and falls with breathing on a multi-millennial cycle. Either way, mortal civilization that lives over the dwelling has long-standing taboos against deep mining or great construction at certain folk-known sites. The taboos are usually, in folk-memory, justified by stories of failed kingdoms.
 
 ## Stirring
 

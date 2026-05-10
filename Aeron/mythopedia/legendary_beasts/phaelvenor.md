@@ -30,7 +30,7 @@ A fully attuned viewer of the Swarm-Voice's constellation sees `Phaelvenor` posi
 
 ## Dwelling and Dormancy
 
-`Phaelvenor` does not dwell at a single point. The dwelling-substrate is a continent (specific continent open canon), and within that continent the swarm-body is dispersed across thousands of square miles, with the small bodies individually replaceable and the swarm-as-a-whole reconvening at folk-known sites for canonical assembly. Mortal travelers in the dwelling-continent learn to recognize the signs: birds gathering against the wind, insects accumulating in unusual densities, small mammals moving in synchronized lines.
+`Phaelvenor` does not dwell at a single point. The dwelling-substrate is [Phaeravar](../places/phaeravar.md), the Eastern Ancient — and within that continent the swarm-body is dispersed across thousands of square miles of the great steppe of Phaeravar's interior, with the small bodies individually replaceable and the swarm-as-a-whole reconvening at folk-known sites for canonical assembly. Mortal travelers in the dwelling-continent learn to recognize the signs: birds gathering against the wind, insects accumulating in unusual densities, small mammals moving in synchronized lines.
 
 ## Stirring
 

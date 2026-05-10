@@ -30,7 +30,7 @@ A fully attuned viewer of the Form-Thief's constellation sees `Khaethorom` posit
 
 ## Dwelling and Dormancy
 
-`Khaethorom` dwells dormant in a place that mortal cartography cannot stably locate. Folk-memory across continents identifies "the Form-Thief's hollow" by various local names, but no two cartographers map it to the same coordinates, and travelers who claim to have visited never produce consistent accounts. The dwelling is canonically real and on a continent (specific continent open canon), but its mappability is canonically unstable. Some scholars argue the dwelling moves; others argue it is in many places at once; others argue mortals who arrive there cease to be themselves and so cannot report the location consistently.
+`Khaethorom` dwells at the unmappable edges within [Oraevenel](../places/oraevenel.md), the Lost Verge — which itself is the dormant body of `Athravenel` (Wild-Heart). Folk-memory across continents identifies "the Form-Thief's hollow" by various local names, but no two cartographers map it to the same coordinates, and travelers who claim to have visited never produce consistent accounts. The dwelling is canonically real and on `Oraevenel`, but its mappability is canonically unstable. Some scholars argue the dwelling moves; others argue it is in many places at once; others argue mortals who arrive there cease to be themselves and so cannot report the location consistently. The instability is canonically reinforced by `Oraevenel`'s own being-Athravenel-dormant nature.
 
 ## Stirring
 

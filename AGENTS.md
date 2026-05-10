@@ -82,12 +82,22 @@ The intended mythic taxonomy at tier 6 includes: **monsters, magic, gods, demi-g
 - Hero-summoning, reincarnation, prophecy: `Aeron/mythopedia/mechanics/hero_summoning.md`.
 - The Firsts and Eden: `Aeron/mythopedia/entities/firsts.md`, `Aeron/mythopedia/places/eden.md`.
 
-**Now open / next-up work (downstream of the framework):**
-- Continent canon (no continents are yet named; many tier-5 and tier-4 Canon Boundaries are gated on this).
-- Per-pantheon naming, primal-language headwords, and per-pantheon population (gods, demi-gods, angels).
+**Continent canon now landed (2026-05-02):** seven canonical `Athralin`:
+1. `Athralorn` (Heartland, central) — hosts `Drathalon`, `Aelvorath`
+2. `Kethrarvel` (Frostbound North) — hosts `Skaelmorath`, `Velkoraen`
+3. `Miravarath` (Burning South) — hosts `Vorthalen`, `Khoramor`
+4. `Phaeravar` (Eastern Ancient) — hosts `Vothorisk`, `Phaelvenor`
+5. `Seralinor` (Sea-Threading archipelago) — hosts `Drovenrath`, `Krevoraen`
+6. `Tavorath` (High Crown high-altitude) — hosts `Mirathven`, `Vesselrath`
+7. `Oraevenel` (Lost Verge small/liminal) — IS `Athravenel`'s body; also hosts `Khaethorom`
+
+Continent canon spine at `Aeron/mythopedia/places/continents.md`; per-continent entries in same directory; primal-language headwords under `structural_principles/` (`athralin`, `athralorn`, `kethrarvel`, `miravarath`, `phaeravar`, `seralinor`, `tavorath`, `oraevenel`). All 14 Vorothar canon entries now reference their dwelling continent.
+
+**Now open / next-up work:**
+- Per-pantheon naming, primal-language headwords, and per-pantheon population (gods, demi-gods, angels). Pantheon-to-continent primary-affiliation also follows from this.
+- Per-continent population (named kingdoms, mortal races, mage-orders, monsters, spirits, mortal-bound gods).
 - Per-Vorothar saga prose (canon entries are landed; saga-form prose is downstream).
 - Lesser legendary beast catalog (the 70-120 total population, currently sketched at the parent Vorothar level only).
-- Tier-6 population per continent (mundane races, named heroes, mage-orders, monsters, spirits, mortal-bound gods).
 - Vatharen saga prose (canon page is landed; saga-form prose is downstream).
 
 **Deferred:**

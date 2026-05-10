@@ -30,7 +30,7 @@ A fully attuned viewer of the Leviathan-Deep's constellation sees `Drovenrath` p
 
 ## Dwelling and Dormancy
 
-`Drovenrath` dwells in the deepest oceanic trench on Aeron — a continental-shelf-edge trench whose depth is mortal-unmeasurable. The body lies dormant in slow-coil along the trench floor, occupying many leagues of length. Surface ocean above the dwelling shows characteristic patterns: peculiar tide-cycles, occasional updrafts of unusually cold water, periodic schools of dead fish floating up that do not match local ecology (they are deep-fish, killed by ascent, and folk-memory reads them as the Leviathan's slow exhalation).
+`Drovenrath` dwells in the deepest oceanic trench within [Seralinor](../places/seralinor.md), the Sea-Threading archipelago — a deep trench at the edge of the archipelago system whose depth is mortal-unmeasurable. The body lies dormant in slow-coil along the trench floor, occupying many leagues of length. Surface ocean above the dwelling shows characteristic patterns: peculiar tide-cycles, occasional updrafts of unusually cold water, periodic schools of dead fish floating up that do not match local ecology (they are deep-fish, killed by ascent, and folk-memory reads them as the Leviathan's slow exhalation). Maritime mortals of Seralinor steer wide of these surface-waters.
 
 ## Stirring
 
