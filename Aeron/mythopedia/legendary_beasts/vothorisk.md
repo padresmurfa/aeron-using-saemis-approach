@@ -32,7 +32,7 @@ Peak attunement to `Vothorisk`'s constellation is **not recommended** by mortal 
 
 ## Dwelling and Dormancy
 
-`Vothorisk` dwells in a place that the geography of Aeron does not properly contain. Mortal travelers attempting to approach the dwelling find that the journey extends inexplicably, or that they arrive without having traveled, or that the place was never quite where they expected. The location is "on" a continent in the sense that the continent is the substrate, but not "at" any mortal-mappable site. Folk-memory across multiple continents identifies the same place by entirely different geographic descriptions, and these descriptions are not contradictory; they are incompatible.
+`Vothorisk` dwells in a place that the geography of Aeron does not properly contain. Mortal travelers attempting to approach the dwelling find that the journey extends inexplicably, or that they arrive without having traveled, or that the place was never quite where they expected. The location is **on [Phaeravar](../places/phaeravar.md), the Eastern Ancient**, in the sense that the continent is the substrate, but not "at" any mortal-mappable site. Folk-memory across multiple continents identifies the same place by entirely different geographic descriptions, and these descriptions are not contradictory; they are incompatible.
 
 ## Stirring
 

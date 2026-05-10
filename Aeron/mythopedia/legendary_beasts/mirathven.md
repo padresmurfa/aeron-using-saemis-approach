@@ -30,7 +30,7 @@ A fully attuned viewer of the Chimera-Mother's constellation sees `Mirathven` po
 
 ## Dwelling and Dormancy
 
-`Mirathven` dwells dormant in a great labyrinth-territory on a continent (precise continent open canon) — a region characterized by braided rivers, double-canyons, twin-peaks, or other geographies of lawful pairing. Mortal travel into this region is uncommon; `Mirathven`'s territory has the property of presenting itself as two paths even when it is one, and both paths arrive at the same dormancy-site whether the traveler intended them to or not.
+`Mirathven` dwells dormant in a great labyrinth-territory of mountain-passes within [Tavorath](../places/tavorath.md), the High Crown — a high-altitude region characterized by braided rivers, double-canyons, twin-peaks, or other geographies of lawful pairing. Mortal travel into this region is uncommon; `Mirathven`'s territory has the property of presenting itself as two paths even when it is one, and both paths arrive at the same dormancy-site whether the traveler intended them to or not.
 
 ## Stirring
 

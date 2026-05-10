@@ -30,7 +30,7 @@ A fully attuned viewer of the Plague-Mother's constellation sees `Vesselrath` po
 
 ## Dwelling and Dormancy
 
-`Vesselrath` dwells dormant in a marshland or wetland on a continent (specific continent open canon). The dwelling-marsh is folk-known to be poisonous; mortal travelers do not enter it; the wildlife of the marsh is itself sub-lineages of `Vesselrath`'s kin. The body is dormant amid the wet, partly submerged, slowly breathing. The marsh's slow exhalation is visible as mist that does not quite settle, and the mist carries low-grade contagion to surrounding regions in the years when the dormancy is shallowest.
+`Vesselrath` dwells dormant in the cloud-marsh plateau of [Tavorath](../places/tavorath.md), the High Crown — a high-altitude wetland system that contradicts mortal expectation (marshes are typically lowland) and that is canonically her dwelling-territory. The cloud-marsh is folk-known to be poisonous; mortal travelers do not enter it; the wildlife of the marsh is itself sub-lineages of `Vesselrath`'s kin. The body is dormant amid the wet, partly submerged, slowly breathing. The marsh's slow exhalation is visible as mist that does not quite settle, and the mist carries low-grade contagion to surrounding regions in the years when the dormancy is shallowest.
 
 ## Stirring
 

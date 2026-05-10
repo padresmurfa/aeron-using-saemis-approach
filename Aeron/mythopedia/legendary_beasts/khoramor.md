@@ -30,7 +30,7 @@ A fully attuned viewer of the Maw-Eternal's constellation sees `Khoramor` positi
 
 ## Dwelling and Dormancy
 
-`Khoramor` dwells dormant in a great cleft or cavern at the heart of a continent — a place that mortals know to avoid because animals do not return from it and the wind makes a low constant sound that mortals hear as breathing. The dwelling-region is canonically barren. Plants grow elsewhere. Within, even moss does not.
+`Khoramor` dwells dormant in a great cleft or cavern at the heart of [Miravarath](../places/miravarath.md), the Burning South — a place that mortals know to avoid because animals do not return from it and the wind makes a low constant sound that mortals hear as breathing. The dwelling-region is canonically barren. Plants grow elsewhere on Miravarath. Within the cleft, even moss does not.
 
 ## Stirring
 

@@ -30,7 +30,7 @@ A fully attuned viewer of the Stormwing's constellation sees `Aelvorath` positio
 
 ## Dwelling and Dormancy
 
-`Aelvorath` dwells dormant in a great mountain-eyrie at the highest reachable altitude on a continent (specific continent open canon). The eyrie is a folk-known site: travelers who approach it report a constant high wind and the felt sense of being watched from above. The body is dormant in a perched posture, wings folded, eyes open. Even dormant, the eyrie's local weather is unstable across multi-decade cycles.
+`Aelvorath` dwells dormant in a great mountain-eyrie at the highest reachable altitude on [Athralorn](../places/athralorn.md), the Heartland — perched above the central peak of Athralorn's mountainous spine. The eyrie is a folk-known site: travelers who approach it report a constant high wind and the felt sense of being watched from above. The body is dormant in a perched posture, wings folded, eyes open. Even dormant, the eyrie's local weather is unstable across multi-decade cycles, and Athralorn's continent-scale weather patterns are canonically read against `Aelvorath`'s slow respiration.
 
 ## Stirring
 

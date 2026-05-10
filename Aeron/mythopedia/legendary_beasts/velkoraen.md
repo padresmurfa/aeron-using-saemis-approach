@@ -30,7 +30,7 @@ A fully attuned viewer of the Wyrm-Sire's constellation sees `Velkoraen` positio
 
 ## Dwelling and Dormancy
 
-`Velkoraen` dwells dormant within the bones of a continent — coiled inside a great mountain or seated beneath a long range of peaks (the precise continent is open canon). The dormancy is deep but not absolute; the body's slow breathing creates seismic cycles measurable by the most patient geomancers. Mortals living over the dwelling are sometimes long-lived in unusual ways, as though the wyrm-mana suffuses local vitality.
+`Velkoraen` dwells dormant within the bones of [Kethrarvel](../places/kethrarvel.md), the Frostbound North — coiled inside a great ice-mountain, the body extending through deep cold passages no mortal has fully mapped. The dormancy is deep but not absolute; the body's slow breathing creates seismic cycles measurable by the most patient geomancers. Mortals living over the dwelling are sometimes long-lived in unusual ways, as though the wyrm-mana suffuses local vitality.
 
 ## Stirring
 

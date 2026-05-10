@@ -30,7 +30,7 @@ A fully attuned viewer of the Wraith-Sovereign's constellation sees `Skaelmorath
 
 ## Dwelling and Dormancy
 
-`Skaelmorath` dwells dormant in a great mausoleum-throne complex within a continent (specific continent open canon). Mortal architecture and statecraft know the site by various names; pilgrim-mortals visit it as a place where the breath-edge thins. The dormant body sits upon the throne in formal posture, and folk-memory holds that the dormancy is itself a continuous act of state — `Skaelmorath` is **ruling** while dormant, in slow time, by the mere fact of presence.
+`Skaelmorath` dwells dormant in a great frozen mausoleum-throne complex deep within the interior of [Kethrarvel](../places/kethrarvel.md), the Frostbound North, beneath ice and stone. Mortal architecture and statecraft know the site by various names; pilgrim-mortals visit it as a place where the breath-edge thins. The dormant body sits upon the throne in formal posture, and folk-memory holds that the dormancy is itself a continuous act of state — `Skaelmorath` is **ruling** while dormant, in slow time, by the mere fact of presence. The frostbound climate of Kethrarvel preserves the throne complex against decay.
 
 ## Stirring
 
